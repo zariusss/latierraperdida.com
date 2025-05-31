@@ -53,7 +53,7 @@
 }
 
 .accent-background {
-  --background-color: #0078ff;
+  --background-color: #000000;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --accent-color: #ffffff;
@@ -537,7 +537,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color:#999999;
   width: 44px;
   height: 44px;
   border-radius: 50px;
