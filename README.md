@@ -1,2 +1,0 @@
-# latierraperdida.com
-latierraperdida.com
