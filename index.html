@@ -30,7 +30,12 @@
 </head>
 
 <body class="index-page">
-
+<!-- Aquí va el script dinámico para evitar caché -->
+  <script>
+    const script = document.createElement('script');
+    script.src = 'script.js?t=' + new Date().getTime();
+    document.body.appendChild(script);
+  </script>
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
