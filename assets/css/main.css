@@ -1,15 +1,4 @@
-/**
-* Template Name: DevFolio
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -1635,3 +1624,35 @@ p.blue{
 .starter-section {
   /* Add your styles here */
 }
+
+ .custom-button {
+      height: 25px;
+      min-width: 90px;
+      padding: 0 12px;
+      background-color: #ffffff;
+      border: 1.5px solid #0078FF;
+      color: #0078FF;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-sizing: border-box;
+      line-height: 1;
+    }
+
+    .custom-button:hover {
+      background-color: #0078FF;
+      color: #ffffff;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 10px;
+      padding: 20px;
+    }
