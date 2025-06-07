@@ -516,6 +516,25 @@ h6 {
   }
 }
 
+div.page-move-div{
+    margin: 0 0 0 0;
+    float:left;
+    width: 50%;
+}
+
+.page-move {
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background-color:#999999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  color: #FFFFFF;
+  font-size: 26px;
+
+}
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
