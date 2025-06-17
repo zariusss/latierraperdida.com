@@ -516,6 +516,25 @@ h6 {
   }
 }
 
+div.page-move-div{
+    margin: 0 0 0 0;
+    float:left;
+    width: 50%;
+}
+
+.page-move {
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background-color:#999999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  color: #FFFFFF;
+  font-size: 26px;
+
+}
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
@@ -1475,7 +1494,7 @@ p.blue{
   font-size: 14px;
 }
 
-.portfolio-details .portfolio-info .btn-visit {
+.btn-visit {
   padding: 8px 40px;
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -1483,7 +1502,7 @@ p.blue{
   transition: 0.3s;
 }
 
-.portfolio-details .portfolio-info .btn-visit:hover {
+.btn-visit:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -1655,4 +1674,39 @@ p.blue{
       display: flex;
       gap: 10px;
       padding: 20px;
+    }
+
+    .relato-largo p {
+      text-indent: 20px;
+      margin-bottom: 5px;
+      text-align: justify;
+    }
+
+    section.ecos {
+      background-image: url('../img/bgecos.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+  .t-menos {
+   font-size: 20px;
+   margin-top: 18pt;
+   margin-right: 0;
+   margin-bottom: 18pt;
+   margin-left: 0;
+   text-align: right;
+   text-indent: 14.2pt;
+   color: black;
+   font-weight: bold;
+   text-decoration: underline;
+  }
+
+    @media screen and (min-width: 1024px) {
+
+      .container-reader{
+        max-width: 70ch !important;
+      }
+
     }

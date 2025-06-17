@@ -109,6 +109,21 @@
       backDelay: 2000
     });
   }
+  /**
+   * Init typed.js
+   */
+  const selectPubli = document.querySelector('.publi');
+  if (selectPubli) {
+    let publi_strings = selectPubli.getAttribute('data-publi-items');
+    publi_strings = publi_strings.split(',');
+    new Typed('.publi', {
+      strings: publi_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
 
   /**
    * Animate the skills items on reveal
