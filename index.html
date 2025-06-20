@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- python -m http.server 8000 -->
 <html lang="en">
 
 <head>
@@ -32,29 +33,21 @@
 <!-- Aquí va el script dinámico para evitar caché -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMTQEQV0HZ"></script>
 <script>
-  const script = document.createElement('script');
-  script.src = 'script.js?t=' + new Date().getTime();
-  document.head.appendChild(script);
+  fetch("commons.html")
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById("commons").innerHTML = html;
+
+    const script = document.createElement('script');
+    script.src = 'script.js?t=' + new Date().getTime();
+    document.head.appendChild(script);
+
+  });
 </script>
 
 <body class="index-page">
 
-  <!-- Banner de Cookies -->
-  <div id="cookie-banner" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: white; padding: 15px; z-index: 9999; box-shadow: 0 -2px 10px rgba(0,0,0,0.3);">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
-      <p style="margin: 0; flex: 1; min-width: 250px;">
-        🍪 Usamos cookies para analizar el tráfico del sitio web.
-      </p>
-      <div style="display: flex; gap: 10px;">
-        <button onclick="acceptCookies()" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 14px;">
-          Aceptar
-        </button>
-        <button onclick="acceptCookies()" style="background: transparent; color: white; border: 1px solid white; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 14px;">
-          Rechazar
-        </button>
-      </div>
-    </div>
-  </div>
+  <div id="commons"></div>
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -183,7 +176,7 @@
                 <p><strong>Género: </strong> <span>Historia corta de ciencia ficción</span></p>
                 <p><strong>Ambientación: </strong> <span>Post-colonial, siglo XLV [45]</span></p>
                 <p><strong>Tono: </strong> <span>Misterio, drama, cyberpunk, IA.</span></p>
-                <p class="blue"><a target="_blank" href="https://www.amazon.es/dp/B0FCXZTCYQ">Ver más</a> <i class="bi bi-arrow-right-short"></i></p>
+                <p class="blue"><a  data-prod="piloto2" href="#" class="producto-enlace">Ver más</a> <i class="bi bi-arrow-right-short"></i></p>
               </div>
             </div>
           </div>
@@ -201,7 +194,7 @@
                 <p><strong>Género: </strong> <span>Historia corta de sci-fi, precuela de la novela.</span></p>
                 <p><strong>Ambientación: </strong> <span>Post-colonial, siglo XLV [45]</span></p>
                 <p><strong>Tono: </strong> <span>Adrenalina, aventuras, miterioso, carrera.</span></p>
-                <p class="blue"><a target="_blank" href="https://www.amazon.es/gp/product/B0DXC3GP39">Ver más</a> <i class="bi bi-arrow-right-short"></i></p>
+                <p class="blue"><a  data-prod="piloto" href="#" class="producto-enlace">Ver más</a> <i class="bi bi-arrow-right-short"></i></p>
               </div>
               <hr>
               <div class="col-lg-5">
@@ -212,7 +205,8 @@
                 <p><strong>Género: </strong> <span>Historia corta de sci-fi, precuela de la novela.</span></p>
                 <p><strong>Ambientación: </strong> <span>Post-colonial, siglo XLV [45]</span></p>
                 <p><strong>Tono: </strong> <span>Amor, drama, poder y pérdida</span></p>
-                <p class="blue"><a target="_blank" href="https://www.amazon.es/gp/product/B0F3XXGD7G">Ver más</a> <i class="bi bi-arrow-right-short"></i></p>
+                <p class="blue">
+                  <a data-prod="erik" href="#" class="producto-enlace">Ver más</a> <i class="bi bi-arrow-right-short"></i></p>
               </div>
               <hr>
             </div>
@@ -267,35 +261,35 @@
 
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3><a target="_blank" href="https://www.amazon.es/dp/B0F298W7WJ" style="color:#000000" >Hijas de Elysium</a></h3>
-              <h4>17, 99€</h4>
+              <h3><a target="_blank" href="#" data-prod="novela" style="color:#000000" class="producto-enlace">Hijas de Elysium</a></h3>
+              <h4>5, 99€</h4>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3><a target="_blank" href="ecos-equality-reader.html" style="color:#000000">Los Ecos de la Equality</a></h3>
+              <h3><a target="_blank" href="ecos-equality-reader.html" style="color:#000000" >Los Ecos de la Equality</a></h3>
               <h4>Gratis</h4>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3><a target="_blank" href="https://www.amazon.es/gp/product/B0DXC3GP39" style="color:#000000">La piloto</a></h3>
+              <h3><a target="_blank" href="#"  data-prod="piloto"  style="color:#000000" class="producto-enlace">La piloto</a></h3>
               <h4>0, 99€</h4>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3><a target="_blank" href="https://www.amazon.es/gp/product/B0F3XXGD7G" style="color:#000000">El renacimiento de Erik</a></h3>
+              <h3><a target="_blank" href="#"  data-prod="erik"  style="color:#000000" class="producto-enlace">El renacimiento de Erik</a></h3>
               <h4>0, 99€</h4>
             </div>
           </div><!-- End Pricing Item -->
 
           <div class="col-lg-6">
             <div class="pricing-item d-flex justify-content-between">
-              <h3><a target="_blank" href="https://www.amazon.es/dp/B0FCXZTCYQ" style="color:#000000">La piloto, el despertar</a></h3>
+              <h3><a target="_blank" href="#"  data-prod="piloto2"  style="color:#000000" class="producto-enlace">La piloto, el despertar</a></h3>
               <h4>0, 99€</h4>
             </div>
           </div><!-- End Pricing Item -->
@@ -345,6 +339,3 @@
 </body>
 
 </html>
-<script>
-  showCookieBanner();
-</script>

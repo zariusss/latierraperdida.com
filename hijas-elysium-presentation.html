@@ -32,30 +32,21 @@
 <!-- Aquí va el script dinámico para evitar caché -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMTQEQV0HZ"></script>
 <script>
-  const script = document.createElement('script');
-  script.src = 'script.js?t=' + new Date().getTime();
-  document.head.appendChild(script);
+  fetch("commons.html")
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById("commons").innerHTML = html;
+
+    const script = document.createElement('script');
+    script.src = 'script.js?t=' + new Date().getTime();
+    document.head.appendChild(script);
+
+  });
 </script>
 
 <body class="index-page">
 
-  <!-- Banner de Cookies -->
-  <div id="cookie-banner" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: white; padding: 15px; z-index: 9999; box-shadow: 0 -2px 10px rgba(0,0,0,0.3);">
-    <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
-      <p style="margin: 0; flex: 1; min-width: 250px;">
-        🍪 Usamos cookies para analizar el tráfico del sitio web.
-      </p>
-      <div style="display: flex; gap: 10px;">
-        <button onclick="acceptCookies()" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 14px;">
-          Aceptar
-        </button>
-        <button onclick="acceptCookies()" style="background: transparent; color: white; border: 1px solid white; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 14px;">
-          Rechazar
-        </button>
-      </div>
-    </div>
-  </div>
-
+  <div id="commons"></div>
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -109,7 +100,7 @@
               <p>Sumérgete en el mundo de La Tierra Perdida...</p>
 
 
-              <p>Disfrútalo en formato <a  target="_blank" href="https://www.amazon.es/dp/B0F298W7WJ"><b>físico - 17,99 €</b></a>, o en formato <a  target="_blank" href="https://www.amazon.es/dp/B0F286H12V"><b>digital - 5,99 €</b></a>. </p>
+              <p>Disfrútalo en formato <a data-prod="novela-fisica" href="#" class="producto-enlace"><b>físico - 17,99 €</b></a>, o en formato <a data-prod="novela" href="#" class="producto-enlace"><b>digital - 5,99 €</b></a>. </p>
 
             </article>
           </div>

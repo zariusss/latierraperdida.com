@@ -2,25 +2,35 @@
 // Función para mostrar el banner si no se ha dado consentimiento
 function showCookieBanner() {
     const consent = localStorage.getItem('cookieConsent');
-    console.log('cookieConsent=' + consent)
-    if (!consent) {
-        document.getElementById('cookie-banner').style.display = 'block';
+    const country = localStorage.getItem('country');
+
+    console.log('cookieConsent=' + consent + '; country=' + country);
+
+    if (consent===null || country===null) {
+        document.getElementById('countryModal').style.display = 'block';
     }
 }
 
 // Función para aceptar cookies
 function acceptCookies() {
-    // Guardar consentimiento
-    localStorage.setItem('cookieConsent', 'accepted');
-    localStorage.setItem('cookieConsentDate', new Date().toISOString());
 
-    // Ocultar banner
-    document.getElementById('cookie-banner').style.display = 'none';
+    const checkbox = document.getElementById('cookieCheckbox');
 
-    // Activar Google Analytics
-    enableGoogleAnalytics();
+    if (checkbox && checkbox.checked) {
+      console.log('El usuario ha aceptado el uso de cookies.');
+      // Guardar consentimiento
+      localStorage.setItem('cookieConsent', 'accepted');
+      localStorage.setItem('cookieConsentDate', new Date().toISOString());
 
-    console.log('Cookies aceptadas');
+      // Ocultar banner
+//      document.getElementById('cookie-banner').style.display = 'none';
+
+      // Activar Google Analytics
+      enableGoogleAnalytics();
+    } else {
+      rejectCookies()
+      console.log('El usuario NO ha aceptado el uso de cookies.');
+    }
 }
 
 // Función para rechazar cookies no esenciales
@@ -30,7 +40,7 @@ function rejectCookies() {
     localStorage.setItem('cookieConsentDate', new Date().toISOString());
 
     // Ocultar banner
-    document.getElementById('cookie-banner').style.display = 'none';
+//    document.getElementById('cookie-banner').style.display = 'none';
 
     // NO activar Google Analytics
     disableGoogleAnalytics();
@@ -86,16 +96,20 @@ function areCookiesAccepted() {
     return localStorage.getItem('cookieConsent') === 'accepted';
 }
 
-// Inicializar cuando se carga la página
-document.addEventListener('DOMContentLoaded', function() {
-    // Mostrar banner si es necesario
-    showCookieBanner();
+(function init() {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run);
+  } else {
+    run(); // El DOM ya está listo
+  }
 
-    // Si ya se aceptaron las cookies, activar GA inmediatamente
+  function run() {
+    showCookieBanner();
     if (areCookiesAccepted()) {
-        enableGoogleAnalytics();
+      enableGoogleAnalytics();
     }
-});
+  }
+})();
 
 // Función opcional para resetear el consentimiento (para testing)
 function resetCookieConsent() {
@@ -103,3 +117,62 @@ function resetCookieConsent() {
     localStorage.removeItem('cookieConsentDate');
     location.reload();
 }
+
+
+function selectCountry(code) {
+  localStorage.setItem('country', code);
+  document.getElementById('countryModal').style.display = 'none';
+  acceptCookies();
+}
+
+// Opcional: si ya hay país seleccionado, ocultar el modal al cargar
+window.onload = () => {
+  if (localStorage.getItem('country')) {
+    document.getElementById('countryModal').style.display = 'none';
+  }
+};
+
+// Matriz de países con su URL base
+const paises = [
+  { codigo: 'ES', baseUrl: 'https://www.amazon.es/' },
+  { codigo: 'MX', baseUrl: 'https://www.amazon.com.mx/' },
+  { codigo: 'OTHER', baseUrl: 'https://www.amazon.com/' }
+];
+
+// Matriz de productos con su ruta
+const productos = [
+  { nombre: 'novela', path: 'dp/B0F286H12V' },
+  { nombre: 'novela-fisica', path: 'dp/B0F298W7WJ' },
+  { nombre: 'ecos', path: 'gp/product/B0DWK97P98' },
+  { nombre: 'piloto', path: 'gp/product/B0DXC3GP39' },
+  { nombre: 'erik', path: 'gp/product/B0F3XXGD7G' },
+  { nombre: 'piloto2', path: 'dp/B0FCXZTCYQ' }
+];
+
+// Función que construye la URL
+function obtenerUrlProducto(nombreProducto, codigoPais) {
+  const pais = paises.find(p => p.codigo === codigoPais);
+  const producto = productos.find(p => p.nombre === nombreProducto);
+
+  if (!pais || !producto) return null;
+
+  // Concatenamos con cuidado de los slashes
+  return pais.baseUrl.replace(/\/+$/, '') + '/' + producto.path.replace(/^\/+/, '');
+}
+
+document.querySelectorAll('.producto-enlace').forEach(enlace => {
+  enlace.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    const pais = localStorage.getItem('country');
+    const producto = this.dataset.prod;
+
+    const url = obtenerUrlProducto(producto, pais);
+
+    if (url) {
+      window.open(url, '_blank');
+    } else {
+      alert('URL no disponible para esta combinación.');
+    }
+  });
+});
