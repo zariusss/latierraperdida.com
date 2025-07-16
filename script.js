@@ -142,7 +142,7 @@ const paises = [
 // Matriz de productos con su ruta
 const productos = [
   { nombre: 'novela', path: 'dp/B0F286H12V' },
-  { nombre: 'novela-fisica', path: 'dp/B0F298W7WJ' },
+  { nombre: 'novela-fisica', path: 'dp/B0FHQCH9GP' },
   { nombre: 'ecos', path: 'gp/product/B0DWK97P98' },
   { nombre: 'piloto', path: 'gp/product/B0DXC3GP39' },
   { nombre: 'erik', path: 'gp/product/B0F3XXGD7G' },
