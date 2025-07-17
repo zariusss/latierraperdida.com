@@ -135,7 +135,7 @@ window.onload = () => {
 // Matriz de países con su URL base
 const paises = [
   { codigo: 'ES', baseUrl: 'https://www.amazon.es/' },
-  { codigo: 'MX', baseUrl: 'https://www.amazon.com.mx/' },
+  { codigo: 'MX', baseUrl: 'https://www.amazon.com/' },
   { codigo: 'OTHER', baseUrl: 'https://www.amazon.com/' }
 ];
 
