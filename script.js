@@ -135,11 +135,12 @@ window.onload = () => {
 // Matriz de países con su URL base
 const paises = [
   { codigo: 'ES', baseUrl: 'https://www.amazon.es/' },
-  { codigo: 'MX', baseUrl: 'https://www.amazon.com/' },
+  { codigo: 'MX', baseUrl: 'https://www.amazon.com,mx/' },
   { codigo: 'OTHER', baseUrl: 'https://www.amazon.com/' }
 ];
 
 // Matriz de productos con su ruta
+//https://www.amazon.com.mx/dp/B0FHQCH9GP/ref=cbw_us_mx_dp_narx_gl_book
 const productos = [
   { nombre: 'novela', path: 'dp/B0F286H12V' },
   { nombre: 'novela-fisica', path: 'dp/B0FHQCH9GP' },
