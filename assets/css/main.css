@@ -707,7 +707,7 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 700;
 }
 
@@ -1711,8 +1711,6 @@ p.blue{
 
     }
 
-
-
     /* Modal fondo */
     .modal {
       position: fixed;
@@ -1789,3 +1787,67 @@ p.blue{
         font-size: 14px;
         color: #fff;
     }
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  border: 1px solid #FFFFFF;
+  width: 192px;
+  height: 292px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* texto abajo */
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.card h3 {
+  margin: 5px 0;
+  font-size: 1rem;
+  background: rgba(0,0,0,0.6); /* fondo para legibilidad */
+
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 6px 10px;
+  background: rgba(0,119,255,0.9);
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.card a:hover {
+  background: #0055bb;
+}
+
+/* Fondos específicos */
+.card.novela {
+  background-image: url("../img/NovelaImg.jpg");
+}
+
+.card.hq {
+  background-image: url("../img/HistoriasCortas.jpg");
+}
+
+.card.podcast {
+  background-image: url("../img/PodcastMini.jpg");
+}
+
+/* 📱 En móvil, apilar verticalmente */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
