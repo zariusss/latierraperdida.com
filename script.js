@@ -172,6 +172,14 @@ document.querySelectorAll('.producto-enlace').forEach(enlace => {
     const url = obtenerUrlProducto(producto, pais);
 
     if (url) {
+      // 🔹 Enviar evento a Google Analytics
+      gtag('event', 'click_amazon', {
+        event_category: 'Outbound',
+        event_label: url,
+        country: pais,
+        product: producto,
+        transport_type: 'beacon'
+      });
       window.open(url, '_blank');
     } else {
       alert('URL no disponible para esta combinación.');
