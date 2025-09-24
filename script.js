@@ -174,7 +174,7 @@ document.querySelectorAll('.producto-enlace').forEach(enlace => {
 
     if (url) {
       // 🔹 Enviar evento a Google Analytics
-      gtag('event', 'click_amazon', {
+      gtag('event', url, {
         event_category: 'Outbound',
         event_label: url,
         country: pais,

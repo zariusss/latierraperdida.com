@@ -1498,7 +1498,7 @@ p.blue{
   padding: 8px 40px;
   background: var(--accent-color);
   color: var(--contrast-color);
-  border-radius: 50px;
+  /**border-radius: 50px;**/
   transition: 0.3s;
 }
 
