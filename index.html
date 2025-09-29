@@ -24,6 +24,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -59,6 +60,14 @@
     document.head.appendChild(script);
 
   });
+
+  function openModal() {
+    document.getElementById('modalOverlay').style.display = 'flex';
+  }
+  function closeModal() {
+    document.getElementById('modalOverlay').style.display = 'none';
+  }
+
 </script>
 
 <body class="index-page">
@@ -121,19 +130,14 @@
 
           <div class="card podcast">
             <h3>Voz del universo</h3>
-            <a target="_blank"  href="https://www.ivoox.com/podcast-tierra-perdida_sq_f11098716_1.html">🎧 Escuchar</a>
+            <a href="#" onclick="openModal()">🎧 Escuchar</a>
           </div>
         </div>
 
-
-        </p>
-
-        <!--        <br/>-->
-<!--        <p><span>¡<a class="blue" target="_blank" href="ecos-equality-reader.html">Descubre GRATIS</a> la historia corta, precuela de <i>Hijas de Elysium</i>!</span></p>-->
-<!--        <br/>-->
-<!--        <p><span>¿Quieres apoyarnos? ¡Compra la novela <a target="_blank" href="#" data-prod="novela" class="producto-enlace blue">Hijas de Elysium</a>!</span></p>-->
       </div>
     </section>
+
+
     <!-- About Section -->
     <section id="universe" class="about section">
 
@@ -398,6 +402,29 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Overlay + Modal -->
+  <div class="platform-modal-overlay" id="modalOverlay">
+    <div class="platform-modal">
+      <h2>Elige tu plataforma</h2>
+      <div class="platform-options">
+        <a href="https://www.ivoox.com/podcast-tierra-perdida_sq_f11098716_1.html" target="_blank" class="platform-option">
+          <i class="fa-solid fa-podcast" style="color:#f60;"></i>
+          Ivoox
+        </a>
+        <a href="https://podcasts.apple.com/us/podcast/la-tierra-perdida/id1541459038" target="_blank" class="platform-option">
+          <i class="fa-brands fa-apple" style="color:#000;"></i>
+          Apple Podcast
+        </a>
+        <a href="https://open.spotify.com/show/5vSBNhMu4CjQUPyGvvE7xd" target="_blank" class="platform-option">
+          <i class="fa-brands fa-spotify" style="color:#1DB954;"></i>
+          Spotify
+        </a>
+      </div>
+      <button class="platform-close-btn" onclick="closeModal()">Cerrar</button>
+    </div>
+  </div>
+
 
 </body>
 

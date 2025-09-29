@@ -1851,3 +1851,71 @@ p.blue{
     justify-items: center;
   }
 }
+/** Modal css **/
+
+/* Fondo semitransparente del modal de plataformas */
+.platform-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Caja central del modal */
+.platform-modal {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+.platform-modal h2 {
+  margin-bottom: 20px;
+}
+
+/* Opciones */
+.platform-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.platform-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.platform-option i {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+/* Botón cerrar */
+.platform-close-btn {
+  padding: 8px 16px;
+  border: none;
+  background: #444;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.platform-close-btn:hover {
+  background: #000;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
