@@ -148,8 +148,8 @@ const productos = [
   { nombre: 'ecos', path: 'gp/product/B0DWK97P98' },
   { nombre: 'piloto', path: 'gp/product/B0DXC3GP39' },
   { nombre: 'erik', path: 'gp/product/B0F3XXGD7G' },
-  { nombre: 'piloto2', path: 'dp/B0FCXZTCYQ',
-    nombre: 'variable', path: 'dp/B0FRSVZ9KS'}
+  { nombre: 'piloto2', path: 'dp/B0FCXZTCYQ'},
+  { nombre: 'variable', path: 'dp/B0FRSVZ9KS'}
 ];
 
 // Función que construye la URL
