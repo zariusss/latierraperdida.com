@@ -1919,3 +1919,22 @@ p.blue{
   from {opacity: 0; transform: translateY(-20px);}
   to {opacity: 1; transform: translateY(0);}
 }
+/* 🔒 No pisa nada anterior: solo afecta al modal de plataformas */
+.platform-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* separa elementos */
+}
+
+/* Primera fila: 3 elementos */
+.platform-option:nth-child(-n+3) {
+  flex: 0 0 30%;
+  text-align: center;
+}
+
+/* Segunda fila: 2 elementos */
+.platform-option:nth-child(n+4) {
+  flex: 0 0 45%;
+  text-align: center;
+}
