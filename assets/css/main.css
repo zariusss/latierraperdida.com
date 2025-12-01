@@ -1927,6 +1927,11 @@ p.blue{
   gap: 15px; /* separa elementos */
 }
 
+.platform-option {
+  width: 120px;        /* 🔥 uniforma la anchura */
+  text-align: center;  /* c*
+
+
 /* Primera fila: 3 elementos */
 .platform-option:nth-child(-n+3) {
   flex: 0 0 30%;
