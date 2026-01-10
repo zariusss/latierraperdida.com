@@ -4,6 +4,7 @@
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
+  --sci-font: "Orbitron", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -674,9 +675,9 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: calc(100vh - 92px);
+  /** min-height: calc(100vh - 92px); **/
   position: relative;
-  padding: 60px 0;
+  /** padding: 60px 0; **/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1793,39 +1794,87 @@ p.blue{
   gap: 20px;
   max-width: 1000px;
   margin: auto;
+  align-items: end; /* 👈 todas apoyan abajo */
 }
 
-.card {
-  border: 1px solid #FFFFFF;
+.card{
+  border: 1px solid #000;
   width: 192px;
   height: 292px;
-  color: white;
+  color: #fff;
   text-align: center;
+
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* texto abajo */
+
   padding: 10px;
   background-size: cover;
   background-position: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 10px rgba(0,0,0,.5);
+
+  --card-font: "Orbitron", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-.card h3 {
-  margin: 5px 0;
-  font-size: 1rem;
-  background: rgba(0,0,0,0.6); /* fondo para legibilidad */
 
+/* bloque superior */
+.card-top{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.card a {
+/* bloque inferior pegado abajo */
+.card-bottom{
+  margin-top: auto;         /* 👈 esto lo empuja al fondo */
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* si quieres, compacta márgenes por defecto de h1/h2/h3 */
+.card h1, .card h2, .card h3{
+  font-family: var(--card-font);
+  color: #fff;
+  margin: 0;
+  line-height: 1.05;
+  letter-spacing: .5px;
+  text-shadow: 0 2px 10px rgba(0,0,0,.55);
+}
+
+
+/* “Novela” (h1) pequeño */
+.card h2.title{
+  font-size: clamp(22px, 3.2vw, 26px);
+  font-weight: 800;
+  opacity: .95;
+}
+
+/* Título grande (h2) pero controlado para que no se salga */
+.card h2{
+  font-size: clamp(12px, 1.8vw, 13px);
+  font-weight: 600;
+}
+
+/* Subtítulo (h3) más pequeño y legible */
+.card h3{
+  font-size: clamp(10px, 1.9vw, 10px);
+  font-weight: 600;
+  background: rgba(0,0,0,.45); /* mejor legibilidad sobre imagen */
+  padding: 6px 8px;
+  border-radius: 8px;
   display: inline-block;
-  margin-top: 5px;
-  padding: 6px 10px;
-  background: rgba(0,119,255,0.9);
-  color: white;
-  text-decoration: none;
-  font-size: 0.9rem;
+  align-self: center;
+  max-width: 100%;
 }
+
+/* Evita que un título largo rompa la tarjeta */
+.card h1,
+.card h2,
+.card h3{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 .card a:hover {
   background: #0055bb;
@@ -1837,11 +1886,15 @@ p.blue{
 }
 
 .card.hq {
-  background-image: url("../img/HistoriasCortas.jpg");
+    background-image: url("../img/HistoriasCortas.jpg");
+    height: 270px;   /* antes 292px: prueba 240–260 */
+    width: 192px;
 }
 
 .card.podcast {
-  background-image: url("../img/PodcastMini.jpg");
+    background-image: url("../img/PodcastMini.jpg");
+    height: 270px;   /* antes 292px: prueba 240–260 */
+    width: 192px;
 }
 
 /* 📱 En móvil, apilar verticalmente */
@@ -1929,8 +1982,8 @@ p.blue{
 
 .platform-option {
   width: 120px;        /* 🔥 uniforma la anchura */
-  text-align: center;  /* c*
-
+  text-align: center;
+}
 
 /* Primera fila: 3 elementos */
 .platform-option:nth-child(-n+3) {
@@ -1943,3 +1996,203 @@ p.blue{
   flex: 0 0 45%;
   text-align: center;
 }
+
+/* Botón SOLO dentro de las cards */
+.card .card-bottom .producto-enlace{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  padding: 8px 12px;          /* 👈 más bajo */
+  min-height: 30px;           /* 👈 controla altura */
+
+  font-family: var(--card-font);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .8px;
+
+  color: rgba(255,255,255,.92);
+  text-decoration: none;
+
+  border-radius: 8px;        /* 👈 menos “píldora” */
+  border: 1px solid rgba(120,255,220,.35);
+
+  background:
+    linear-gradient(180deg, rgba(10,14,18,.72), rgba(8,10,12,.92));
+  backdrop-filter: blur(6px);
+
+  box-shadow:
+    0 10px 18px rgba(0,0,0,.45),
+    inset 0 0 0 1px rgba(255,255,255,.06),
+    0 0 18px rgba(120,255,220,.18);  /* 👈 glow sutil */
+
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+
+.card .card-bottom .producto-enlace:hover{
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+  box-shadow:
+    0 14px 24px rgba(0,0,0,.55),
+    inset 0 0 0 1px rgba(255,255,255,.10),
+    0 0 26px rgba(120,255,220,.28);
+}
+
+.card .card-bottom .producto-enlace:active{
+  transform: translateY(0);
+  filter: brightness(.98);
+}
+
+/* CTA bajo las cards: pequeño, elegante, y no hereda el tamaño gigante del hero */
+.hero .hero-cta{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: .35em .55em;
+
+  font-family: var(--default-font);
+  margin-top: 18px;
+  font-size: clamp(14px, 1.6vw, 16px);
+  font-weight: 400;
+  line-height: 1.35;
+  color: rgba(255,255,255,.88);
+  text-shadow: 0 2px 12px rgba(0,0,0,.55);
+}
+
+.hero .hero-cta .hero-cta-lead{
+  color: rgba(255,255,255,.95);
+  font-weight: 700;
+}
+
+
+/* Enlaces: look más “UI sci-fi” (sin subrayado clásico) */
+.hero .hero-cta .hero-cta-link{
+  color: rgba(170, 200, 255, .92);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .15s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease, text-shadow .15s ease;
+}
+
+.hero .hero-cta .hero-cta-link:hover{
+  color: #ffffff;
+  box-shadow:
+    inset 0 0 0 1px rgba(170,200,255,.22),
+    0 0 16px rgba(120,170,255,.18);
+  text-shadow: 0 0 16px rgba(120, 170, 255, .18);
+}
+
+.hero .hero-cta .hero-cta-link:focus-visible{
+  outline: none;
+  box-shadow:
+    inset 0 0 0 1px rgba(170,200,255,.30),
+    0 0 0 3px rgba(170,200,255,.18),
+    0 0 18px rgba(120,170,255,.20);
+}
+
+.hero .hero-cta{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: .35em .55em;   /* espacio horizontal y vertical */
+}
+.hero .hero-cta-lead{
+  color: rgba(255,255,255,.95);
+  font-weight: 700;
+}
+
+
+.main-title {
+  font-family: var(--sci-font);
+  letter-spacing: .3px; /* sutil, sin “robótico” */
+  font-size: clamp(18px, 1.6vw, 22px);
+  font-weight: 700;
+}
+
+h1.sitename{
+  font-family: var(--sci-font);
+  letter-spacing: .3px; /* sutil, sin “robótico” */
+  font-size: clamp(18px, 1.6vw, 22px);
+  font-weight: 200;
+}
+
+
+/* --- Precio tipo HUD (solo para la card de novela) --- */
+/* --- NOVELA: precio HUD sin romper el título --- */
+/* Asegura el orden visual dentro de .card-top sin tocar HTML */
+.card-top{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+/* Badge precio */
+.price-chip-container {
+  position: relative;
+  right: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.price-chip{
+  margin-top: 20px;
+  padding: 0px 5px;
+  padding-right: 8px;
+  background: rgba(10, 14, 18, .25);
+  border: 1px solid rgba(170, 200, 255, .25);
+  border-right: none;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+/* Texto dentro del badge */
+.price-chip__label{
+  padding: 0px 5px;
+  font-family: var(--default-font);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .35px;
+  opacity: .8;
+  line-height: 1;
+}
+
+.price-chip__value{
+  font-family: var(--default-font);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+/* CTA en el nav (desktop y móvil) */
+.navmenu a.nav-cta,
+.navmenu a.nav-cta:focus {
+  padding: 8px 14px;
+  border-radius: 5px;
+
+  border: 1px solid color-mix(in srgb, var(--nav-color), transparent 55%);
+  background: color-mix(in srgb, var(--nav-color), transparent 92%);
+  color: var(--nav-color);
+
+  line-height: 1;
+}
+
+/* Hover */
+.navmenu a.nav-cta:hover,
+.navmenu li:hover > a.nav-cta {
+  background: color-mix(in srgb, var(--nav-color), transparent 85%);
+  border-color: color-mix(in srgb, var(--nav-color), transparent 35%);
+}
+
+/* Quita la “rayita” inferior del nav solo en el CTA */
+@media (min-width: 1200px) {
+  .navmenu > ul > li > a.nav-cta:before {
+    display: none;
+  }
+}
+

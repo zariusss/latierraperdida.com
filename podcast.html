@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+    <title>Audiorelatos de ciencia ficción en español | La Tierra Perdida</title>
+    <meta name="description" content="Podcast de audiorelatos de ciencia ficción en español. Arcos narrativos, guía para empezar y enlaces a plataformas.">
+    <link rel="canonical" href="https://tierraperdida.com/podcast">
+
+    <style>
+        :root{
+          --bg:#070a0f;
+          --panel:#0c1220;
+          --text:#e9eefb;
+          --muted:#aab6d6;
+          --line:rgba(255,255,255,.10);
+          --accent:#79a8ff;
+          --accent2:#7dffcf;
+          --max:980px;
+          --r:16px;
+
+          --pad:16px;         /* padding móvil */
+          --tap:48px;         /* altura mínima interactiva */
+          --shadow: 0 10px 30px rgba(0,0,0,.28);
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+          margin:0;
+          font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+          background:
+            radial-gradient(1100px 600px at 20% -10%, rgba(121,168,255,.18), transparent 55%),
+            radial-gradient(900px 500px at 90% 0%, rgba(125,255,207,.10), transparent 50%),
+            var(--bg);
+          color:var(--text);
+          line-height:1.55;
+          padding-bottom: calc(78px + env(safe-area-inset-bottom)); /* hueco para barra CTA */
+        }
+        a{color:inherit}
+        .wrap{max-width:var(--max); margin:0 auto; padding:20px var(--pad)}
+        /* Top bar minimal */
+        header{
+          position:sticky; top:0; z-index:20;
+          background: rgba(7,10,15,.76);
+          backdrop-filter: blur(10px);
+          border-bottom:1px solid var(--line);
+        }
+        .nav{
+          max-width:var(--max); margin:0 auto;
+          padding:12px var(--pad);
+          display:flex; align-items:center; justify-content:space-between; gap:12px;
+        }
+        .brand{
+          text-decoration:none;
+          font-weight:750;
+          letter-spacing:.4px;
+          white-space:nowrap;
+        }
+        .nav a.small{
+          text-decoration:none;
+          color:var(--muted);
+          padding:10px 12px;
+          border:1px solid var(--line);
+          border-radius:999px;
+          min-height:var(--tap);
+          display:inline-flex;
+          align-items:center;
+          gap:8px;
+        }
+
+        /* Hero */
+        .hero{
+          padding:18px 0 8px;
+        }
+        .kicker{
+          margin:0 0 8px;
+          color:var(--muted);
+          font-size:.95rem;
+        }
+        h1{
+          margin:0 0 10px;
+          font-size:1.9rem; /* móvil */
+          line-height:1.15;
+          letter-spacing:-.2px;
+        }
+        .lead{
+          margin:0 0 14px;
+          color:var(--muted);
+          max-width:70ch;
+          font-size:1.02rem;
+        }
+
+        /* Panels / cards */
+        .panel{
+          background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+          border:1px solid var(--line);
+          border-radius: var(--r);
+          padding:14px;
+          box-shadow: var(--shadow);
+        }
+        section{padding:12px 0}
+        h2{
+          margin:0 0 10px;
+          font-size:1.15rem;
+          letter-spacing:.2px;
+        }
+        .muted{color:var(--muted)}
+        .grid{display:grid; gap:12px}
+        /* En móvil: 1 columna. En >= 860px: 2 columnas */
+        @media (min-width: 860px){
+          h1{font-size:2.4rem}
+          .grid.cols2{grid-template-columns:repeat(2,1fr)}
+        }
+
+        /* Buttons */
+        .btnrow{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+        .btn{
+          display:inline-flex; align-items:center; justify-content:center; gap:8px;
+          min-height:var(--tap);
+          padding:0 14px;
+          border-radius:999px;
+          border:1px solid var(--line);
+          text-decoration:none;
+          color:var(--text);
+          background:transparent;
+          font-weight:600;
+          -webkit-tap-highlight-color: transparent;
+        }
+        .btn.primary{
+          border-color: rgba(121,168,255,.45);
+          background: linear-gradient(180deg, rgba(121,168,255,.22), rgba(121,168,255,.06));
+        }
+        .btn.ghost{color:var(--muted)}
+        .btn:active{transform: translateY(1px)}
+
+        /* Chips */
+        .meta{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+        .chip{
+          font-size:.84rem;
+          color:var(--muted);
+          padding:5px 10px;
+          border:1px solid var(--line);
+          border-radius:999px;
+        }
+
+        /* details accordion */
+        details{
+          border:1px solid var(--line);
+          border-radius: var(--r);
+          background: rgba(255,255,255,.02);
+          overflow:hidden;
+        }
+        summary{
+          list-style:none;
+          cursor:pointer;
+          padding:14px;
+          min-height:var(--tap);
+          display:flex;
+          align-items:center;
+          justify-content:space-between;
+          gap:12px;
+          font-weight:750;
+          -webkit-tap-highlight-color: transparent;
+        }
+        summary::-webkit-details-marker{display:none}
+        .sum-right{color:var(--muted); font-weight:600; font-size:.9rem}
+        .details-body{padding:0 14px 14px}
+
+        /* Episode item */
+        .ep{
+          padding:12px 0;
+          border-top:1px solid var(--line);
+        }
+        .ep:first-child{border-top:0; padding-top:0}
+        .ep-title{margin:0 0 6px; font-weight:750}
+        .ep-desc{margin:0; color:var(--muted)}
+        .links{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+        .links a{
+          color:var(--accent);
+          text-decoration:none;
+          min-height:var(--tap);
+          display:inline-flex;
+          align-items:center;
+          padding:0 6px;
+        }
+
+        /* Bottom CTA bar (mobile first) */
+        .cta-bar{
+          position:fixed;
+          left:0; right:0; bottom:0;
+          padding:10px var(--pad) calc(10px + env(safe-area-inset-bottom));
+          background: rgba(7,10,15,.85);
+          backdrop-filter: blur(10px);
+          border-top:1px solid var(--line);
+          z-index:30;
+        }
+        .cta-inner{
+          max-width:var(--max);
+          margin:0 auto;
+          display:grid;
+          grid-template-columns:1fr 1fr;
+          gap:10px;
+        }
+        /* En desktop, no hace falta CTA fija */
+        @media (min-width: 860px){
+          body{padding-bottom:0}
+          .cta-bar{display:none}
+        }
+
+        footer{
+          padding:22px 0;
+          color:var(--muted);
+          border-top:1px solid var(--line);
+          margin-top:18px;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="nav">
+        <a class="brand" href="/">La Tierra Perdida</a>
+        <a class="small" href="/#obras">Obras</a>
+    </div>
+</header>
+
+<main class="wrap">
+
+    <section class="hero">
+        <p class="kicker">Podcast • Ficción sonora</p>
+        <h1>Audiorelatos de ciencia ficción en español</h1>
+        <p class="lead">
+            Relatos originales ambientados en el universo de <b>La Tierra Perdida</b>.
+            Organizados por <b>arcos narrativos</b> para que sepas por dónde empezar.
+        </p>
+
+        <div class="btnrow">
+            <a class="btn primary" href="#empieza">▶ Empieza aquí</a>
+            <a class="btn ghost" href="#arcos">Arcos</a>
+            <a class="btn ghost" href="#episodios">Episodios</a>
+        </div>
+    </section>
+
+    <section id="empieza">
+        <h2>Empieza aquí</h2>
+        <div class="grid cols2">
+            <div class="panel">
+                <strong>⭐ Recomendado</strong>
+                <p class="muted" style="margin:8px 0 0">
+                    Un episodio para entrar sin contexto previo.
+                </p>
+                <div class="btnrow">
+                    <!-- TODO: cuando elijas el episodio, pon el link directo del episodio -->
+                    <a class="btn primary" target="_blank" rel="noopener"
+                       href="https://www.ivoox.com/podcast-tierra-perdida_sq_f11098716_1.html">Abrir en iVoox</a>
+                    <a class="btn" href="#plataformas">Más plataformas</a>
+                </div>
+            </div>
+
+            <div class="panel">
+                <strong>🧭 Ruta rápida</strong>
+                <p class="muted" style="margin:8px 0 0">
+                    Si prefieres serie: elige un arco. Si prefieres sueltos: baja al índice.
+                </p>
+                <div class="btnrow">
+                    <a class="btn" href="#arcos">Ver arcos</a>
+                    <a class="btn" href="#episodios">Ir a episodios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="arcos">
+        <h2>Arcos narrativos</h2>
+        <p class="muted" style="margin-top:0">
+            En móvil, mejor plegados: eliges uno, lees la premisa y te vas a escuchar.
+        </p>
+
+        <div class="grid">
+            <details>
+                <summary>
+                    <span>Arco: [Nombre 1]</span>
+                    <span class="sum-right">X episodios · ~Y min</span>
+                </summary>
+                <div class="details-body">
+                    <p class="muted" style="margin:0">
+                        Premisa en 2–3 líneas: conflicto + idea sci-fi + tono (sin spoilers).
+                    </p>
+                    <div class="meta">
+                        <span class="chip">Tono: misterio</span>
+                        <span class="chip">Tema: IA</span>
+                        <span class="chip">Acceso: recomendado</span>
+                    </div>
+                    <div class="btnrow">
+                        <a class="btn primary" href="#episodios">Ver episodios</a>
+                    </div>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span>Arco: [Nombre 2]</span>
+                    <span class="sum-right">X episodios · ~Y min</span>
+                </summary>
+                <div class="details-body">
+                    <p class="muted" style="margin:0">
+                        Premisa en 2–3 líneas: conflicto + idea sci-fi + tono.
+                    </p>
+                    <div class="meta">
+                        <span class="chip">Tono: supervivencia</span>
+                        <span class="chip">Tema: primer contacto</span>
+                    </div>
+                    <div class="btnrow">
+                        <a class="btn primary" href="#episodios">Ver episodios</a>
+                    </div>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <section id="episodios">
+        <h2>Episodios</h2>
+        <p class="muted" style="margin-top:0">
+            Descripciones precisas, sin spoilers. Empieza con 10–15 y luego amplías.
+        </p>
+
+        <div class="panel">
+            <div class="ep">
+                <p class="ep-title">EP 01 — [Título]</p>
+                <p class="ep-desc">2–3 líneas: conflicto + idea sci-fi + contexto mínimo (arco/autoconclusivo).</p>
+                <div class="meta">
+                    <span class="chip">Arco: [Nombre]</span>
+                    <span class="chip">~18 min</span>
+                    <span class="chip">Autoconclusivo</span>
+                </div>
+                <div class="links">
+                    <a target="_blank" rel="noopener" href="https://www.ivoox.com/podcast-tierra-perdida_sq_f11098716_1.html">iVoox</a>
+                    <a target="_blank" rel="noopener" href="https://open.spotify.com/show/5vSBNhMu4CjQUPyGvvE7xd">Spotify</a>
+                    <a target="_blank" rel="noopener" href="https://podcasts.apple.com/us/podcast/la-tierra-perdida/id1541459038">Apple</a>
+                    <a target="_blank" rel="noopener" href="https://www.youtube.com/@Zarius-o8t/podcasts">YouTube</a>
+                </div>
+            </div>
+
+            <!-- duplica .ep por episodio -->
+        </div>
+    </section>
+
+    <section id="plataformas">
+        <h2>Plataformas</h2>
+        <div class="panel">
+            <p class="muted" style="margin-top:0">
+                Suscríbete donde escuches: eso es lo que más empuja el proyecto.
+            </p>
+            <div class="links">
+                <a target="_blank" rel="noopener" href="https://www.ivoox.com/podcast-tierra-perdida_sq_f11098716_1.html">iVoox</a>
+                <a target="_blank" rel="noopener" href="https://open.spotify.com/show/5vSBNhMu4CjQUPyGvvE7xd">Spotify</a>
+                <a target="_blank" rel="noopener" href="https://podcasts.apple.com/us/podcast/la-tierra-perdida/id1541459038">Apple</a>
+                <a target="_blank" rel="noopener" href="https://www.youtube.com/@Zarius-o8t/podcasts">YouTube</a>
+                <a target="_blank" rel="noopener" href="https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio">Amazon</a>
+                <a target="_blank" rel="noopener" href="https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727">Podimo</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © La Tierra Perdida — Zarius · <a href="mailto:admin@tierraperdida.com">Contacto</a>
+    </footer>
+</main>
+
+<!-- CTA inferior móvil -->
+<div class="cta-bar" role="navigation" aria-label="Acciones rápidas">
+    <div class="cta-inner">
+        <a class="btn primary" target="_blank" rel="noopener"
+           href="https://open.spotify.com/show/5vSBNhMu4CjQUPyGvvE7xd">▶ Escuchar</a>
+        <a class="btn" href="#empieza">🧭 Empezar</a>
+    </div>
+</div>
+
+</body>
+</html>
