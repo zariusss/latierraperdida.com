@@ -1,9 +1,25 @@
-
-body.novela-page{
-  background:#07090d;
+/* =========================================================
+   NOVELA PAGE (cuidado: mantenemos tu fondo tal cual)
+   Solo añadimos color/acento y mejoramos legibilidad
+   ========================================================= */
+body.novela-page .hero::before {
+  background: none !important;
 }
 
-/* Fondo continuo (no se corta) */
+/* ---------- 0) Variables de color (no tocan fondos) ---------- */
+body.novela-page{
+  /* tu base */
+  background:#07090d;
+
+  /* acentos (solo texto/bordes/links/iconos) */
+  --accent:  #7cffdc;   /* menta */
+  --accent2: #66a3ff;   /* azul */
+  --text-1:  rgba(255,255,255,.92);
+  --text-2:  rgba(255,255,255,.78);
+  --text-3:  rgba(255,255,255,.62);
+}
+
+/* ---------- 1) Fondo continuo (NO TOCAR) ---------- */
 body.novela-page::before{
   content:"";
   position: fixed;
@@ -13,7 +29,7 @@ body.novela-page::before{
   z-index: -2;
 }
 
-/* Overlay oscuro continuo */
+/* Overlay oscuro continuo (NO TOCAR) */
 body.novela-page::after{
   content:"";
   position: fixed;
@@ -22,12 +38,11 @@ body.novela-page::after{
   z-index: -1;
 }
 
-/* Asegura que main/sections no pintan fondo */
+/* ---------- 2) Asegura que main/sections no pintan fondo (NO TOCAR) ---------- */
 body.novela-page .main,
 body.novela-page main.main section{
   background: transparent !important;
 }
-
 
 .novela-page main.main section{
   background: transparent !important;
@@ -35,205 +50,314 @@ body.novela-page main.main section{
   padding: 14px 0 !important; /* o 0 si prefieres que todo el espaciado lo haga la card */
 }
 
-/* El hero sí debe conservar su look si lo usas */
-.novela-page main.main section.hero{
-  padding: 60px 0 !important; /* si lo necesitas */
+body.novela-page main.main section{
+  overflow: visible !important;
 }
 
-/* Tus bloques oscuros */
+/* El hero sí debe conservar su look si lo usas */
+.novela-page main.main section.hero{
+  padding: 10px 0 !important; /* si lo necesitas */
+}
+
+/* ---------- 3) Bloques (misma estructura, solo afinamos color/borde) ---------- */
 .novela-page .section-card,
-.novela-page .buybox,
 .novela-page .quote-card,
 .novela-page .faq details,
 .novela-page .cta-band{
   background: rgba(0,0,0,.45);
   border: 1px solid rgba(255,255,255,.14);
-  color: rgba(255,255,255,.92);
+  color: var(--text-1);
 }
 
-    .book-hero__kicker {
-      opacity: .85;
-      margin-bottom: 10px;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      font-size: 12px;
-    }
+/* ---------- 4) Tipografía / legibilidad (solo color) ---------- */
+.novela-page .book-hero,
+.novela-page .book-hero p,
+.novela-page p,
+.novela-page li{
+  color: var(--text-2);
+}
 
-    .book-hero__title {
-      font-family: "Orbitron", sans-serif;
-      font-weight: 800;
-      letter-spacing: .02em;
-      margin: 0 0 8px;
-      font-size: 1.5rem;
-    }
+.novela-page h1,
+.novela-page h2,
+.novela-page h3{
+  color: var(--text-1);
+  text-shadow: 0 0 18px rgba(124,255,220,.10);
+}
 
-    .hero .book-hero  p{
-      font-size: 1rem;
-      font-weight: 400;
-    }
+.book-hero__kicker{
+  margin-top:20px;
+  opacity: .85;
+  margin-bottom: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--text-3);
+}
 
-    .book-hero p.book-hero__subtitle {
-      opacity: .9;
-      margin: 0 0 18px;
-    }
+.book-hero__title{
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  letter-spacing: .02em;
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  color: var(--text-1);
+}
 
-    .tag-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      border: 1px solid rgba(255, 255, 255, .16);
-      background: rgba(0, 0, 0, .25);
-      border-radius: 999px;
-      padding: 6px 10px;
-      font-size: 12px;
-      opacity: .95;
-      margin-right: 8px;
-      margin-bottom: 8px;
-    }
+.hero .book-hero p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-2);
+}
 
-    .buybox {
-      border: 1px solid rgba(255, 255, 255, .16);
-      background: rgba(0, 0, 0, .35);
-      border-radius: 14px;
-      padding: 16px;
-    }
+.book-hero p.book-hero__subtitle{
+  opacity: .9;
+  margin: 0 0 18px;
+  color: var(--text-2);
+}
 
-    /* Sticky solo en desktop */
-    @media (min-width: 992px) {
-      .buybox {
-        position: sticky;
-        top: 92px; /* header sticky */
-      }
-    }
+/* ---------- 5) Links (solo color) ---------- */
+.novela-page a{
+  color: var(--accent2);
+  text-decoration: none;
+}
+.novela-page a:hover{
+  color: rgba(255,255,255,.95);
+  text-shadow: 0 0 14px rgba(102,163,255,.22);
+}
 
-    .buybox .price {
-      font-family: "Orbitron", sans-serif;
-      font-weight: 800;
-      font-size: 20px;
-      margin: 6px 0 10px;
-    }
+/* ---------- 6) Tag pills (mantenemos tu fondo; solo borde/icono/texto) ---------- */
+.tag-pill{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  background: rgba(0, 0, 0, .25);
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 12px;
+  opacity: .95;
+  margin-right: 8px;
+  margin-bottom: 8px;
 
-    .buybox .stars {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      opacity: .95;
-      margin-bottom: 12px;
-      font-size: 14px;
-    }
+  color: var(--text-2);
+  border-color: rgba(124,255,220,.18);
+}
+.tag-pill i{
+  color: rgba(124,255,220,.80);
+}
 
-    .buybox .stars i {
-      margin-right: 2px;
-    }
 
-    .btn-amazon {
-      width: 100%;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      padding: 12px 14px;
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, .18);
-      background: rgba(0, 0, 0, .55);
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-    }
 
-    .btn-amazon:hover {
-      filter: brightness(1.1);
-      text-decoration: none;
-      color: #fff;
-    }
 
-    .btn-secondary {
-      width: 100%;
-      margin-top: 10px;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 14px;
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, .14);
-      background: rgba(0, 0, 0, .25);
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      opacity: .95;
-    }
+.price{
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin: 6px 0 10px;
+  color: rgba(255,255,255,.95);
+  text-shadow: 0 0 18px rgba(124,255,220,.12);
+  text-align:right;
+}
 
-    .section-card {
-      border: 1px solid rgba(255, 255, 255, .12);
-      background: rgba(0, 0, 0, .25);
-      border-radius: 14px;
-      padding: 18px;
-      margin: 18px 0;
-    }
+.stars{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: .95;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: var(--text-3);
+}
 
-    .hero .book-hero .section-title {
-      text-align: left;
-      padding-bottom: 0px;
-      font-family: "Orbitron", sans-serif;
-      font-weight: 700;
-      letter-spacing: .02em;
-      margin: 0 0 12px;
-      font-size: 18px;
-    }
+.stars i{
+  margin-right: 2px;
+  color: #FF9900 !important;      /* Amazon */
+  text-shadow: none;              /* opcional: evita glow verdoso */
+}
 
-    .bullets {
-      margin: 0;
-      padding-left: 18px;
-      opacity: .95;
-    }
+/* ---------- 8) Botones (NO cambiamos fondos; solo borde/halo/icono/hover) ---------- */
+.btn-amazon{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  background: rgba(0, 0, 0, .55);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
 
-    .quote-card {
-      border: 1px solid rgba(255, 255, 255, .12);
-      background: rgba(0, 0, 0, .22);
-      border-radius: 14px;
-      padding: 14px;
-      height: 100%;
-    }
+  border-color: rgba(124,255,220,.22);
+  box-shadow: 0 0 0 1px rgba(124,255,220,.06), 0 0 22px rgba(124,255,220,.10);
+}
+.btn-amazon i{
+  color: rgba(124,255,220,.90);
+}
+.btn-amazon:hover{
+  filter: brightness(1.08);
+  text-decoration: none;
+  color: #fff;
+}
 
-    .quote-card p {
-      margin: 0 0 10px;
-      opacity: .95;
-    }
+.btn-secondary{
+  width: 100%;
+  margin-top: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  background: rgba(0, 0, 0, .25);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: .95;
 
-    .quote-card .who {
-      opacity: .75;
-      font-size: 13px;
-    }
+  border-color: rgba(102,163,255,.22);
+  box-shadow: 0 0 0 1px rgba(102,163,255,.06), 0 0 22px rgba(102,163,255,.10);
+}
+.btn-secondary i{
+  color: rgba(102,163,255,.88);
+}
 
-    .faq details {
-      border: 1px solid rgba(255, 255, 255, .10);
-      background: rgba(0, 0, 0, .18);
-      border-radius: 12px;
-      padding: 12px 14px;
-      margin-bottom: 10px;
-    }
+/* ---------- 9) Section card + título con “subrayado” (solo color, sin tocar fondo) ---------- */
+.section-card{
+  border: 1px solid rgba(255, 255, 255, .12);
+  background: rgba(0, 0, 0, .25);
+  border-radius: 14px;
+  padding: 18px;
+  margin: 18px 0;
+}
 
-    .faq summary {
-      cursor: pointer;
-      font-weight: 700;
-    }
+.hero .book-hero .section-title{
+  text-align: left;
+  padding-bottom: 0px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  letter-spacing: .02em;
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: rgba(255,255,255,.93);
+}
 
-    .cta-band {
-      border: 1px solid rgba(255, 255, 255, .14);
-      background: rgba(0, 0, 0, .35);
-      border-radius: 16px;
-      padding: 18px;
-      margin: 26px 0 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+/* Subrayado/acento visual */
+.hero .book-hero .section-title::after{
+  content:"";
+  display:block;
+  width: 50%;
+  height: 2px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, rgba(124,255,220,.70), rgba(124,255,220,0));
+}
 
-    @media (min-width: 992px) {
-      .cta-band {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-      }
-    }
+/* Bullets con marcador de color */
+.bullets{
+  margin: 0;
+  padding-left: 18px;
+  opacity: .95;
+  color: var(--text-2);
+}
+.bullets li::marker{
+  color: rgba(124,255,220,.70);
+}
+
+/* ---------- 10) Quote card (solo texto) ---------- */
+.quote-card{
+  border: 1px solid rgba(255, 255, 255, .12);
+  background: rgba(0, 0, 0, .22);
+  border-radius: 14px;
+  padding: 14px;
+  height: 100%;
+}
+
+.quote-card p{
+  margin: 0 0 10px;
+  opacity: .95;
+  color: var(--text-2);
+  font-style: italic;
+  font-size: 0.8rem !important;
+}
+
+.quote-card .who{
+  opacity: .75;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+/* ---------- 11) FAQ (sin tocar fondos; solo summary/marker) ---------- */
+.faq details{
+  border: 1px solid rgba(255, 255, 255, .10);
+  background: rgba(0, 0, 0, .18);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.faq summary{
+  cursor: pointer;
+  font-weight: 700;
+  color: rgba(255,255,255,.90);
+}
+.faq summary::marker{
+  color: rgba(102,163,255,.85);
+}
+
+/* ---------- 12) CTA band (estructura igual; solo texto/acento) ---------- */
+.cta-band{
+  border: 1px solid rgba(255, 255, 255, .14);
+  background: rgba(0, 0, 0, .35);
+  border-radius: 16px;
+  padding: 18px;
+  margin: 26px 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--text-2);
+}
+
+@media (min-width: 992px){
+  .cta-band{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 992px){
+  .sample-actions .btn-secondary{
+    width: auto;          /* anula el 100% */
+    flex: 1 1 0;          /* ambos mismo ancho */
+    min-width: 260px;     /* opcional: evita que se aplasten */
+  }
+}
+
+.cta-band-title{
+  text-align: left;
+  padding-bottom: 0px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  letter-spacing: .02em;
+  margin: 0 0 12px;
+  font-size: 18px;
+  color: rgba(255,255,255,.93);
+}
+
+
+/* Subrayado/acento visual */
+.cta-band-title::after{
+  content:"";
+  display:block;
+  width: 50%;
+  height: 2px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, rgba(124,255,220,.70), rgba(124,255,220,0));
+}
+
+.encontrar{
+  font-size: 0.8rem !important;
+}
