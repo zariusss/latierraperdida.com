@@ -1,0 +1,239 @@
+
+body.novela-page{
+  background:#07090d;
+}
+
+/* Fondo continuo (no se corta) */
+body.novela-page::before{
+  content:"";
+  position: fixed;
+  inset: -60px; /* margen para que el blur no recorte */
+  background: url("../../assets/img/testimonials-bg.jpg") center 20% / cover no-repeat;
+  opacity: .75;
+  z-index: -2;
+}
+
+/* Overlay oscuro continuo */
+body.novela-page::after{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 20%, rgba(0,0,0,.35) 0%, rgba(0,0,0,.85) 60%, rgba(0,0,0,.92) 100%);
+  z-index: -1;
+}
+
+/* Asegura que main/sections no pintan fondo */
+body.novela-page .main,
+body.novela-page main.main section{
+  background: transparent !important;
+}
+
+
+.novela-page main.main section{
+  background: transparent !important;
+  display: block !important;
+  padding: 14px 0 !important; /* o 0 si prefieres que todo el espaciado lo haga la card */
+}
+
+/* El hero sí debe conservar su look si lo usas */
+.novela-page main.main section.hero{
+  padding: 60px 0 !important; /* si lo necesitas */
+}
+
+/* Tus bloques oscuros */
+.novela-page .section-card,
+.novela-page .buybox,
+.novela-page .quote-card,
+.novela-page .faq details,
+.novela-page .cta-band{
+  background: rgba(0,0,0,.45);
+  border: 1px solid rgba(255,255,255,.14);
+  color: rgba(255,255,255,.92);
+}
+
+    .book-hero__kicker {
+      opacity: .85;
+      margin-bottom: 10px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .book-hero__title {
+      font-family: "Orbitron", sans-serif;
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin: 0 0 8px;
+      font-size: 1.5rem;
+    }
+
+    .hero .book-hero  p{
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .book-hero p.book-hero__subtitle {
+      opacity: .9;
+      margin: 0 0 18px;
+    }
+
+    .tag-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(255, 255, 255, .16);
+      background: rgba(0, 0, 0, .25);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      opacity: .95;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    .buybox {
+      border: 1px solid rgba(255, 255, 255, .16);
+      background: rgba(0, 0, 0, .35);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    /* Sticky solo en desktop */
+    @media (min-width: 992px) {
+      .buybox {
+        position: sticky;
+        top: 92px; /* header sticky */
+      }
+    }
+
+    .buybox .price {
+      font-family: "Orbitron", sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      margin: 6px 0 10px;
+    }
+
+    .buybox .stars {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: .95;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .buybox .stars i {
+      margin-right: 2px;
+    }
+
+    .btn-amazon {
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, .18);
+      background: rgba(0, 0, 0, .55);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .btn-amazon:hover {
+      filter: brightness(1.1);
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .btn-secondary {
+      width: 100%;
+      margin-top: 10px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, .14);
+      background: rgba(0, 0, 0, .25);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      opacity: .95;
+    }
+
+    .section-card {
+      border: 1px solid rgba(255, 255, 255, .12);
+      background: rgba(0, 0, 0, .25);
+      border-radius: 14px;
+      padding: 18px;
+      margin: 18px 0;
+    }
+
+    .hero .book-hero .section-title {
+      text-align: left;
+      padding-bottom: 0px;
+      font-family: "Orbitron", sans-serif;
+      font-weight: 700;
+      letter-spacing: .02em;
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    .bullets {
+      margin: 0;
+      padding-left: 18px;
+      opacity: .95;
+    }
+
+    .quote-card {
+      border: 1px solid rgba(255, 255, 255, .12);
+      background: rgba(0, 0, 0, .22);
+      border-radius: 14px;
+      padding: 14px;
+      height: 100%;
+    }
+
+    .quote-card p {
+      margin: 0 0 10px;
+      opacity: .95;
+    }
+
+    .quote-card .who {
+      opacity: .75;
+      font-size: 13px;
+    }
+
+    .faq details {
+      border: 1px solid rgba(255, 255, 255, .10);
+      background: rgba(0, 0, 0, .18);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+
+    .faq summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .cta-band {
+      border: 1px solid rgba(255, 255, 255, .14);
+      background: rgba(0, 0, 0, .35);
+      border-radius: 16px;
+      padding: 18px;
+      margin: 26px 0 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media (min-width: 992px) {
+      .cta-band {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }

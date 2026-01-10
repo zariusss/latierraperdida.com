@@ -1,0 +1,335 @@
+/* =========================================================
+   NAV / HEADER (nav.css)
+   Requisitos:
+   - HTML/JS del template que usa:
+     .header, .navmenu, .mobile-nav-toggle
+     .mobile-nav-active en <body>
+     .dropdown + ul
+   ========================================================= */
+
+/* ---------- Variables (solo navegación) ---------- */
+:root{
+  --nav-bg: #000000;
+  --nav-text: #ffffff;
+  --nav-hover: #ffffff;
+
+  --nav-mobile-overlay: rgba(33, 37, 41, 0.80);
+  --nav-mobile-panel: #000000;
+
+  --nav-dropdown-bg: #0b0b0b;
+  --nav-dropdown-text: #ffffff;
+  --nav-dropdown-hover: #0078ff;
+
+  --nav-cta-bg: rgba(255,255,255,.08);
+  --nav-cta-border: rgba(255,255,255,.35);
+}
+
+/* ---------- Header base ---------- */
+.header{
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  padding: 20px 0;
+  transition: all .5s;
+  z-index: 997;
+}
+
+.header .logo h1{
+  color: var(--nav-text);
+}
+
+/* Sombrilla al hacer scroll (si usas .scrolled) */
+.scrolled .header{
+  box-shadow: 0 0 18px rgba(0,0,0,.20);
+}
+
+/* =========================================================
+   DESKTOP NAV
+   ========================================================= */
+@media (min-width: 1200px){
+  .navmenu{
+    padding: 0;
+  }
+
+  .navmenu ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .navmenu li{
+    position: relative;
+  }
+
+  .navmenu > ul > li{
+    white-space: nowrap;
+    padding: 15px 14px;
+  }
+
+  .navmenu > ul > li:last-child{
+    padding-right: 0;
+  }
+
+  .navmenu a,
+  .navmenu a:focus{
+    color: var(--nav-text);
+    font-size: 15px;
+    padding: 0 2px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: .3s;
+    position: relative;
+  }
+
+  /* Flecha/chevron en desktop */
+  .navmenu a i,
+  .navmenu a:focus i{
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 6px;
+    transition: .3s;
+  }
+
+  /* Subrayado activo/hover */
+  .navmenu > ul > li > a:before{
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    bottom:-6px;
+    left:0;
+    background: var(--nav-hover);
+    visibility:hidden;
+    transition: all .3s ease-in-out;
+  }
+
+  .navmenu a:hover:before,
+  .navmenu li:hover > a:before,
+  .navmenu .active:before{
+    visibility: visible;
+    width:100%;
+  }
+
+  .navmenu li:hover > a,
+  .navmenu .active,
+  .navmenu .active:focus{
+    color: var(--nav-hover);
+  }
+
+  /* Dropdown */
+  .navmenu .dropdown ul{
+    margin:0;
+    padding: 10px 0;
+    background: var(--nav-dropdown-bg);
+    display:block;
+    position:absolute;
+    visibility:hidden;
+    left: 14px;
+    top: 130%;
+    opacity:0;
+    transition:.3s;
+    border-radius: 8px;
+    z-index: 99;
+    box-shadow: 0 0 30px rgba(0,0,0,.25);
+    border: 1px solid rgba(255,255,255,.08);
+    min-width: 220px;
+  }
+
+  .navmenu .dropdown ul li{
+    min-width: 220px;
+  }
+
+  .navmenu .dropdown ul a{
+    padding: 10px 18px;
+    font-size: 15px;
+    text-transform: none;
+    color: var(--nav-dropdown-text);
+  }
+
+  .navmenu .dropdown ul a:hover,
+  .navmenu .dropdown ul .active:hover,
+  .navmenu .dropdown ul li:hover > a{
+    color: var(--nav-dropdown-hover);
+  }
+
+  .navmenu .dropdown:hover > ul{
+    opacity:1;
+    top: 100%;
+    visibility: visible;
+  }
+
+  /* Subdropdown (si lo usas) */
+  .navmenu .dropdown .dropdown ul{
+    top:0;
+    left:-90%;
+    visibility:hidden;
+  }
+
+  .navmenu .dropdown .dropdown:hover > ul{
+    opacity:1;
+    top:0;
+    left:-100%;
+    visibility: visible;
+  }
+
+  /* CTA (Apoyar) */
+  .navmenu a.nav-cta,
+  .navmenu a.nav-cta:focus{
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--nav-cta-border);
+    background: var(--nav-cta-bg);
+    color: var(--nav-text);
+    line-height: 1;
+  }
+
+  .navmenu a.nav-cta:hover,
+  .navmenu li:hover > a.nav-cta{
+    background: rgba(255,255,255,.14);
+    border-color: rgba(255,255,255,.55);
+  }
+
+  /* El CTA no necesita la rayita inferior */
+  .navmenu > ul > li > a.nav-cta:before{
+    display:none;
+  }
+}
+
+/* =========================================================
+   MOBILE NAV
+   ========================================================= */
+@media (max-width: 1199px){
+  .mobile-nav-toggle{
+    color: var(--nav-text);
+    font-size: 28px;
+    line-height: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color .3s;
+  }
+
+  .navmenu{
+    padding:0;
+    z-index: 9997;
+  }
+
+  /* Panel del menú */
+  .navmenu ul{
+    display:none;
+    list-style:none;
+    position:absolute;
+    inset: 60px 20px 20px 20px;
+    padding: 10px 0;
+    margin:0;
+    border-radius: 10px;
+    background: var(--nav-mobile-panel);
+    border: 1px solid rgba(255,255,255,.10);
+    box-shadow: 0 10px 25px rgba(0,0,0,.35);
+    overflow-y:auto;
+    transition:.3s;
+    z-index:9998;
+  }
+
+  .navmenu a,
+  .navmenu a:focus{
+    color: var(--nav-dropdown-text);
+    padding: 12px 18px;
+    font-family: var(--nav-font);
+    font-size: 18px;
+    font-weight: 500;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition:.3s;
+  }
+
+  /* IMPORTANTE: quitar “círculo raro” del chevron */
+  .navmenu a i,
+  .navmenu a:focus i{
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    align-items:center;
+    justify-content:center;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 0;
+    color: rgba(255,255,255,.80);
+    transition: .2s;
+  }
+
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus{
+    color: var(--nav-dropdown-hover);
+  }
+
+  /* Rotación del chevron si está activo */
+  .navmenu .active i,
+  .navmenu .active:focus i{
+    transform: rotate(180deg);
+    color: var(--nav-dropdown-hover);
+  }
+
+  /* Dropdown dentro de móvil */
+  .navmenu .dropdown ul{
+    position: static;
+    display:none;
+    z-index: 99;
+    padding: 8px 0;
+    margin: 6px 14px 10px 14px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 10px;
+    transition: all .25s ease-in-out;
+  }
+
+  .navmenu .dropdown > .dropdown-active{
+    display:block;
+  }
+
+  /* Overlay mobile activado (lo maneja el JS del template) */
+  .mobile-nav-active{
+    overflow:hidden;
+  }
+
+  .mobile-nav-active .navmenu{
+    position: fixed;
+    inset: 0;
+    background: var(--nav-mobile-overlay);
+    transition: .3s;
+  }
+
+  .mobile-nav-active .navmenu > ul{
+    display:block;
+  }
+
+  .mobile-nav-active .mobile-nav-toggle{
+    color:#fff;
+    position:absolute;
+    font-size:32px;
+    top:15px;
+    right:15px;
+    margin-right:0;
+    z-index:9999;
+  }
+
+  /* CTA en móvil (Apoyar) */
+  .navmenu a.nav-cta,
+  .navmenu a.nav-cta:focus{
+    margin: 8px 14px 10px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,.28);
+    background: rgba(255,255,255,.08);
+    color: #fff;
+  }
+}
