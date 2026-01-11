@@ -113,9 +113,9 @@
             <i class="bi bi-chevron-down toggle-dropdown"></i>
           </a>
           <ul>
-            <li><a href="/novela">Novela</a></li>
-            <li><a href="/historias?f=1e">Historias por 1€</a></li>
-            <li><a href="/historias#gratis">Historia gratis</a></li>
+            <li><a href="#">Novela</a></li>
+            <li><a href="../historias/index.html?f=1e">Historias por 1€</a></li>
+            <li><a href="../historias/index.html#gratis">Historia gratis</a></li>
           </ul>
         </li>
 
@@ -199,7 +199,7 @@
             </ul>
 
             <p class="opacity-80">
-              <em>Para ajustar expectativas:</em> si buscas una historia ligera o puramente romántica, quizá no sea tu novela.
+              <em>Para ajustar expectativas:</em> si buscas una historia ligera o romántica, esta no es tu novela.
               Aquí manda el <strong>misterio</strong>, la <strong>supervivencia</strong> y el <strong>universo</strong>.
               Porque esto es el universo de <strong>La Tierra Perdida</strong>.
             </p>
@@ -296,20 +296,26 @@
 
   <!-- MUESTRA -->
 
-  <section class="hero section dark-background" >
+  <section class="hero section dark-background" id="muestra">
     <div class="container book-hero" data-aos="fade-up">
 
       <div class="section-card">
-        <h2 class="section-title">Lee una muestra</h2>
+        <h2 class="section-title" >Lee una muestra</h2>
         <!-- TODO: pega un extracto de 150–250 palabras o enlace a capítulo 1 -->
         <p class="opacity-95">
-          [Extracto breve: 150–250 palabras. Debe cerrar con una frase que empuje a seguir.]
+          “No. No puedo morir.” El pensamiento irrumpió con la fuerza de un instinto primario. Si moría, lo olvidaría todo. Su vida, sus recuerdos, quién era… el experimento. Su mente se aferró a la consciencia con desesperación, pero la luz se atenuó de forma irremediable, deslizándose fuera de su alcance, hasta que la engulló la oscuridad.
+          Pasados unos pocos segundos, los datos biométricos de la cápsula redujeron el contador de supervivientes a dos. Algo menos de tres horas después del accidente, la cápsula sólo contenía cadáveres.
+          Quedó en silencio, incrustada en el suelo como una cicatriz en el paisaje desconocido. El cuerpo de Irina, atrapado entre los arneses, colgando de lado por la inclinación de la nave. Dos costillas sobresalían de su esternón, un reguero le cubría media cara.  El charco de sangre formado en el suelo había dejado de crecer desde el momento que su corazón había dejado de latir.
+
         </p>
 
         <!-- Si tienes un PDF/EPUB o una lectura en la web -->
         <div class="d-flex flex-wrap gap-2 mt-3 sample-actions">
-          <a href="#" class="btn-secondary"><i class="bi bi-file-earmark-text"></i> Descargar muestra (PDF)</a>
-          <a href="#" class="btn-secondary"><i class="bi bi-box-arrow-up-right"></i> Leer capítulo 1</a>
+          <a href="../assets/files/Hijas_de_Elysium_Extracto.pdf"
+             class="btn-secondary"
+             target="_blank"
+             rel="noopener"><i class="bi bi-file-earmark-text"></i> Descargar muestra (PDF)</a>
+          <a href="../lecturas/hijas-de-elysium/muestra.html" class="btn-secondary"><i class="bi bi-box-arrow-up-right"></i> Leer muestra</a>
         </div>
 
       </div>
@@ -449,7 +455,7 @@
           <div class="mt-2 opacity-95">
             Puedes empezar con la historia corta gratuita:
             <a href="/historias#gratis">Los Ecos de la Equality</a>.
-            Y si prefieres escucharlo, el <a href="/podcast">podcast</a> incluye esas historias en formato audio-relato.
+            Y si prefieres escucharlo, el <a href="/podcast">podcast</a> incluye estas mismas historias en formato audio-relato.
           </div>
         </details>
       </div>
@@ -463,15 +469,18 @@
     <div class="cta-band">
       <div>
         <div  class="cta-band-title">¿Listo para entrar en el universo de <b>La Tierra Perdida?</b></div>
-        <div class="opacity-85">Compra en Amazon o empieza gratis con el <a href="#">podcast</a> o la <a href="#">historia corta.</a></div>
+        <div class="opacity-85">Compra en Amazon o empieza gratis con el <a href="#">podcast</a> o la historia corta <a href="#">'Los ecos de la Equality'.</a></div>
       </div>
 
       <div class="d-flex flex-wrap gap-2">
-        <!-- TODO: enlace real de Amazon -->
-        <a class="btn-amazon" target="_blank" rel="noopener noreferrer"
-           href="https://www.amazon.es/">
-          <i class="fa-brands fa-amazon"></i> Comprar en Amazon
+        <a class="btn-amazon" target="_blank" rel="noopener noreferrer" href="https://www.amazon.es/dp/B0F286H12V" style="text-align:center">
+          <i class="fa-brands fa-amazon"></i>
+          <span style="display:flex; flex-direction:column; line-height:1.1;">
+          Hijas de Elysium<br>
+          <span style="font-size: 0.7rem;margin-top:5px; color: #FFFFFF">Comprar en Amazon</span>
+            </span>
         </a>
+
       </div>
     </div>
   </section>

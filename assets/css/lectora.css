@@ -1,0 +1,303 @@
+/* =========================
+   Reader page (aislado)
+   ========================= */
+body.reader-page{
+  /* Ajustes base */
+  --reader-font-size: 18px;
+  --reader-line-height: 1.85;
+  --reader-max-width: 70ch;
+
+  /* Altura header (la setea JS; fallback seguro) */
+  --header-h: 70px;
+
+  /* Capas */
+  --z-progress: 2600;
+  --z-header: 2400;
+  --z-dropdown: 2500;
+  --z-toolbar: 2000;
+
+  /* Tema oscuro */
+  --reader-bg: #07090d;
+  --reader-fg: rgba(255,255,255,.92);
+  --reader-muted: rgba(255,255,255,.68);
+  --reader-border: rgba(255,255,255,.14);
+  --reader-card: rgba(0,0,0,.40);
+  --reader-link: rgba(102,163,255,.95);
+
+  background: var(--reader-bg);
+  color: var(--reader-fg);
+}
+
+/* Tema claro (modo lectura) */
+body.reader-page.reader-theme-light{
+  --reader-bg: #fcfcfb;
+  --reader-fg: #111;
+  --reader-muted: rgba(0,0,0,.62);
+  --reader-border: rgba(0,0,0,.12);
+  --reader-card: rgba(255,255,255,.72);
+  --reader-link: #1b4fd6;
+}
+
+/* Header por encima de toolbar y dropdown por encima de todo (menos el progreso) */
+body.reader-page #header.header.sticky-top{
+  z-index: var(--z-header);
+}
+
+/* Asegura que el desplegable no quede por debajo de nada */
+body.reader-page .navmenu .dropdown ul{
+  z-index: var(--z-dropdown);
+}
+
+/* Fondo suave (oscuro) */
+body.reader-page::before{
+  content:"";
+  position: fixed;
+  inset: -80px;
+  background:
+    radial-gradient(ellipse at 50% 10%, rgba(102,163,255,.10) 0%, rgba(0,0,0,0) 55%),
+    radial-gradient(ellipse at 20% 30%, rgba(124,255,220,.07) 0%, rgba(0,0,0,0) 55%),
+    radial-gradient(ellipse at 80% 60%, rgba(102,163,255,.06) 0%, rgba(0,0,0,0) 55%);
+  z-index: -1;
+  pointer-events: none;
+  filter: blur(0px);
+}
+
+/* Progreso */
+.reader-progress{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: var(--z-progress);
+  background: transparent;
+}
+.reader-progress__bar{
+  height: 100%;
+  width: 0%;
+  background: currentColor;
+  opacity: .75;
+  transform-origin: left center;
+}
+
+/* Toolbar */
+.reader-toolbar{
+  position: sticky;
+  top: var(--header-h);
+  z-index: var(--z-toolbar);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  /* Nota: color-mix no está en todos los navegadores antiguos;
+     ponemos fallback abajo */
+  background: rgba(0,0,0,.35);
+  background: color-mix(in srgb, var(--reader-bg) 78%, transparent);
+
+  border-bottom: 1px solid var(--reader-border);
+}
+.reader-toolbar .inner{
+  max-width: min(1140px, 100%);
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.reader-toolbar .left,
+.reader-toolbar .right{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.reader-toolbar .label{
+  font-size: 13px;
+  color: var(--reader-muted);
+  letter-spacing: .02em;
+}
+
+/* Botones */
+.reader-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  border: 1px solid var(--reader-border);
+  background: rgba(0,0,0,.25);
+  background: color-mix(in srgb, var(--reader-card) 70%, transparent);
+
+  color: var(--reader-fg);
+  border-radius: 12px;
+  padding: 8px 10px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 1;
+  user-select: none;
+  cursor: pointer;
+}
+.reader-btn:hover{
+  filter: brightness(1.06);
+  text-decoration: none;
+  color: var(--reader-fg);
+}
+.reader-btn:active{ transform: translateY(1px); }
+.reader-btn .bi{ font-size: 16px; opacity: .92; }
+.reader-btn--ghost{
+  background: transparent;
+}
+
+/* Área de lectura */
+.reader-wrap{
+  padding: 22px 0 48px;
+}
+.reader{
+  max-width: var(--reader-max-width);
+  margin: 0 auto;
+  padding: 22px 18px;
+
+  background: rgba(0,0,0,.28);
+  background: color-mix(in srgb, var(--reader-card) 72%, transparent);
+
+  border: 1px solid var(--reader-border);
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.22);
+}
+body.reader-page.reader-theme-light .reader{
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.reader h1{
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
+  letter-spacing: .02em;
+  margin: 0 0 10px;
+  font-size: 1.65rem;
+  color: var(--reader-fg);
+}
+.reader .meta{
+  margin: 0 0 18px;
+  font-size: 13px;
+  color: var(--reader-muted);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.reader .meta .dot{ opacity: .55; }
+
+.reader p, .reader li{
+  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-size: var(--reader-font-size);
+  line-height: var(--reader-line-height);
+  letter-spacing: .01em;
+  color: var(--reader-fg);
+}
+.reader p{
+  margin: 0 0 1.05em;
+}
+.reader a{
+  color: var(--reader-link);
+  text-decoration: none;
+}
+.reader a:hover{
+  text-decoration: underline;
+}
+.reader hr{
+  border: 0;
+  border-top: 1px solid var(--reader-border);
+  margin: 22px 0;
+  opacity: .85;
+}
+
+/* Variación de ancho */
+body.reader-page.reader-wide{
+  --reader-max-width: 82ch;
+}
+
+/* Ajuste móvil */
+@media (max-width: 576px){
+  body.reader-page{ --reader-font-size: 17px; }
+  .reader{ padding: 18px 14px; border-radius: 16px; }
+  .reader h1{ font-size: 1.35rem; }
+  .reader-toolbar .label{ display:none; }
+}
+
+/* Evita que el main de tu tema “pinte” fondos raros aquí */
+body.reader-page .main,
+body.reader-page main.main section{
+  background: transparent !important;
+}
+
+/* Encabezado superior tipo “dateline” */
+.reader-dateline{
+  display: flex;
+  justify-content: flex-end;
+  margin: 6px 0 28px;
+}
+
+.reader-dateline__block{
+  text-align: right;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  line-height: 1.45;
+  color: var(--reader-muted);
+  font-size: 13px;
+}
+
+.reader-dateline__title{
+  color: var(--reader-fg);
+  font-weight: 800;
+  letter-spacing: .12em;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.reader-dateline__line{
+  margin: 0;
+}
+
+/* Números un pelín más “técnicos” */
+.reader-dateline__block .num{
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .06em;
+}
+
+/* (Extracto del prólogo) */
+.reader-extracto{
+  margin: 0 0 22px;
+  font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  font-style: italic;
+  color: var(--reader-muted);
+  font-size: 14px;
+}
+
+.reader-cta{
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid var(--reader-border);
+  color: var(--reader-muted);
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Header: animación de ocultación en página lectora */
+body.reader-page #header{
+  transition: transform .22s ease, opacity .22s ease;
+  will-change: transform;
+}
+
+/* Cuando ocultamos el header */
+body.reader-page.reader-header-hidden #header{
+  transform: translateY(-110%);
+  opacity: 0.98;
+}
+
+/* Si el header está oculto, la toolbar debe pegarse arriba */
+body.reader-page.reader-header-hidden{
+  --header-h: 0px;
+}

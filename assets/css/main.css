@@ -408,7 +408,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1712,7 +1712,7 @@ p.blue{
 }
 
 /* Botón SOLO dentro de las cards */
-.card .card-bottom .producto-enlace{
+.producto-enlace{
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1745,7 +1745,7 @@ p.blue{
   transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
 }
 
-.card .card-bottom .producto-enlace:hover{
+.producto-enlace:hover{
   transform: translateY(-1px);
   filter: brightness(1.08);
   box-shadow:
@@ -1754,7 +1754,7 @@ p.blue{
     0 0 26px rgba(120,255,220,.28);
 }
 
-.card .card-bottom .producto-enlace:active{
+.producto-enlace:active{
   transform: translateY(0);
   filter: brightness(.98);
 }
@@ -1881,4 +1881,10 @@ h1.sitename{
   font-size: 12px;
   font-weight: 800;
   line-height: 1.05;
+}
+
+/* MENU AZUL (global) — override a nav.css aunque main.css se cargue antes */
+.header .navmenu a,
+.header .navmenu a:focus{
+  color: #66a3ff;
 }
