@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<!-- python -m http.server 8000 -->
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hijas de Elysium (novela) | Ciencia ficción épica | La Tierra Perdida</title>
+
+  <meta name="description" content="Página de lectura de La Tierra Perdida: muestra de Hijas de Elysium. Modo lectura con tema claro/oscuro y ajustes de tipografía.">
+  <meta name="robots" content="index,follow">
+
+  <!-- Favicons -->
+  <link rel="icon" href="../../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400;600;800&display=swap">
+
+  <!-- Vendor CSS Files (mínimo) -->
+  <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/nav.css">
+  <link rel="stylesheet" href="../../assets/css/lectora.css">
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMTQEQV0HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PMTQEQV0HZ');
+  </script>
+
+</head>
+
+<body class="reader-page">
+
+  <!-- Barra de progreso -->
+  <div class="reader-progress" aria-hidden="true">
+    <div class="reader-progress__bar" id="readerProgressBar"></div>
+  </div>
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div style="margin-right:100px" class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">La Tierra Perdida</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../../index.html">Indice</a></li>
+          <!-- Leer (dropdown) -->
+          <li class="dropdown">
+            <a href="#">
+              <span>Leer</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="../../novela/index.html">Novela</a></li>
+              <li><a href="../../historias/index.html">Historias por 1€</a></li>
+              <li><a href="../../historias/index.html#gratis">Historia gratis</a></li>
+            </ul>
+          </li>
+
+<!--          <li><a href="/podcast">Escuchar</a></li>-->
+<!--          <li><a href="/universo">Universo</a></li>-->
+<!--          <li><a href="/#contrib" class="nav-cta">Apoyar</a></li>-->
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Toolbar de lectura -->
+    <div class="reader-toolbar">
+      <div class="inner">
+
+        <div class="left">
+          <a class="reader-btn reader-btn--ghost" id="btnBack" href="#" title="Volver">
+            <i class="bi bi-arrow-left"></i> Volver
+          </a>
+        </div>
+
+        <div class="right">
+          <button class="reader-btn" id="toggleTheme" type="button" title="Cambiar tema">
+            <i class="bi bi-circle-half"></i> Modo lectura
+          </button>
+
+          <button class="reader-btn" id="decFont" type="button" title="Reducir tamaño de letra">
+            <i class="bi bi-dash-lg"></i> A
+          </button>
+          <button class="reader-btn" id="incFont" type="button" title="Aumentar tamaño de letra">
+            <i class="bi bi-plus-lg"></i> A
+          </button>
+
+          <button class="reader-btn" id="toggleWidth" type="button" title="Cambiar ancho">
+            <i class="bi bi-arrows-angle-expand"></i> Ancho
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="reader-wrap">
+      <div class="container">
+        <article class="reader" id="readerArticle">
+
+          <h1>Los ecos de la Equality</h1>
+
+          <div class="meta">
+            <span id="readingTime">Tiempo de lectura: —</span>
+            <span class="dot">·</span>
+            <span>Precuela de la novela <a href="../../novela/index.html">«Hijas de Elysium»</a></span>
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row gap-2 mt-4">
+            <a class="reader-btn" href="../..//novela/index.html" title="Ver la página de la novela">
+              <i class="bi bi-book"></i> Ver novela
+            </a>
+            <a class="reader-btn" href="https://www.amazon.es/Los-Ecos-Equality-perdida-Historias-ebook/dp/B0DWK97P98" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-heart-fill"></i> Apoyar (1€)
+            </a>
+            <a class="reader-btn" href="../../assets/files/Los-ecos-de-la-equality.pdf" target="_blank" rel="noopener" title="Abrir PDF">
+              <i class="bi bi-file-earmark-pdf"></i> Descargar en PDF
+            </a>
+          </div>
+
+          <!-- Encabezado estilo "dateline" (arriba derecha) -->
+          <div class="reader-dateline">
+            <div class="reader-dateline__block">
+              <div class="reader-dateline__title">T MENOS 6 DÍAS</div>
+            </div>
+          </div>
+
+          <!-- Etiqueta (Extracto del prólogo) -->
+<!--          <div class="reader-extracto">(Extracto del prólogo)</div>-->
+          <p>En el abismo silencioso del cosmos, una sombra titánica surca el vacío con la majestuosidad de un leviatán estelar. Es la Equality, una colosal nave colonizadora, una de las arcas de la humanidad.</p>
+
+          <p>Su casco modular es una armadura impenetrable de titanio y cerámica, mientras que su escudo energético pulsa con un resplandor azulado a cada impacto, desintegrando polvo cósmico y pequeños meteoritos en destellos efímeros. En su carcasa, iluminadas con solemnidad, brillan dos palabras: “LA EQUALITY”, seguidas de su promesa inquebrantable: “Por toda la humanidad”.</p>
+
+          <p>En su núcleo, un reactor Quark late con la fuerza de una estrella sometida, alimentando su impulso cuántico. En los corredores infinitos de la nave, millones de cápsulas criogénicas yacen en silencio, cada una resguardando una vida pausada en un sueño de helado futuro.</p>
+
+          <p>En sus entrañas, los laboratorios vibran con la chispa de la ciencia, donde la terraformación, la genética y la ingeniería avanzada preparan el camino para lo que vendrá. Más allá, en el corazón oculto de la nave, los procesadores de inteligencia artificial gobiernan con precisión inhumana, asegurando que cada sistema, cada vida, se mantenga en equilibrio.</p>
+
+          <p>Los motores de plasma arden con un fulgor blanco-azulado, lanzando la inmensa nave a través del vacío con la elegancia de un cometa y una velocidad cercana a la de la luz. Su estela es una cicatriz luminosa en la oscuridad, el brillante sol del espíritu humano desafiando la inmensidad del universo.</p>
+
+          <p>Mientras la nave se desliza, su blindaje refleja las estrellas como un manto de joyas, y el pulso de sus escudos proyecta un halo fantasmal a su alrededor, iluminándose brevemente al activarse. No es solo un vehículo, es un legado flotante, una declaración de que la humanidad no se rinde, de que siempre buscará más allá.</p>
+
+          <p>Y ahora, tras siglos de viaje, la Equality estaba a punto de llegar a su destino.</p>
+
+          <hr>
+
+          <p>En la proa de la Equality, se extiende la Sala de Mando, el núcleo desde donde se rige el destino de diez millones de almas dormidas. Es un espacio circular, vasto y solemne, diseñado no solo para la eficiencia, sino para recordar a quienes la ocupan que controlan una de las mayores proezas de la humanidad.</p>
+
+          <p>En el centro, una mesa holográfica espera silenciosa, rodeada por los asientos de mando, intactos tras siglos de letargo, esperando a sus dueños.</p>
+
+          <p>En los bordes, las mesas auxiliares siguen proyectando lecturas fantasmales: reactores, cápsulas de criosueño, trayectorias orbitales. Todos los sistemas activos, aunque nadie los supervise.</p>
+
+          <p>La Sala de Mando yace en la penumbra, un templo abandonado donde solo el débil resplandor de unas pocas pantallas rompe la oscuridad. No hay voces, ni figuras inclinadas sobre los controles, solo el murmullo lejano de los sistemas en su incesante labor.</p>
+
+          <p>Solo la inteligencia artificial, silenciosa y paciente, sigue despierta, vigilando la nave como un centinela sin rostro.</p>
+
+          <p>Y ahí, en la pantalla principal, los segundos transcurren con precisión implacable, descendiendo uno a uno por la cuenta regresiva que parpadea en la penumbra:</p>
+
+          <p>DESPERTAR AUTOMÁTICO:<br>
+            00:00:02...<br>
+            00:00:01...<br>
+            00:00:00...<br>
+            INICIANDO.</p>
+          <hr>
+          <!-- Encabezado estilo "dateline" (arriba derecha) -->
+          <div class="reader-dateline">
+            <div class="reader-dateline__block">
+              <div class="reader-dateline__title">T MENOS 5 DÍAS</div>
+            </div>
+          </div>
+          <p>En la Sala de Mando de la Equality, Noah Jones se mantenía erguido junto a la mesa central, su silueta recortada por el brillo intermitente de las pantallas. A sus 57 años, seguía siendo un hombre de presencia imponente, con la firmeza de un líder que había pasado más tiempo navegando entre estrellas que pisando suelo firme. Su físico seguía siendo robusto y atlético, aunque el peso de la edad se reflejaba en unos kilos de más que no le restaban autoridad, sino que le conferían una solidez inquebrantable, como la de un veterano que había aprendido a equilibrar la disciplina con los pequeños placeres de la vida.</p>
+
+          <p>El uniforme reglamentario de la Equality, oscuro y perfectamente ajustado, resaltaba sus hombros anchos y postura impecable. Sobre su pecho, la insignia de capitán brillaba con una luz fría, un testimonio de su responsabilidad con los diez millones de almas de a bordo. Cada detalle de su apariencia reflejaba su compromiso con la misión: no había pliegues desordenados ni gestos innecesarios. Noah Jones era la nave, y la nave era Noah Jones.</p>
+
+          <p>Su rostro curtido, con una mandíbula fuerte y pómulos marcados, se mantenía impasible mientras sus ojos almendrados, de un oscuro profundo, recorrían los datos proyectados en la gran pantalla. No había prisa en su mirada, solo la paciencia de quien había aprendido que el tiempo en el espacio no se medía en minutos, sino en decisiones. Su cabello castaño, peinado con pulcritud hacia atrás, reflejaba destellos plateados bajo la luz tenue, testimonio de los años acumulados en la vastedad del cosmos.</p>
+
+          <p>Frente a él, en la pantalla principal, desfilaban los datos de la travesía, líneas de información proyectadas con la frialdad metódica de la inteligencia artificial. Su mirada se fijó en la última notificación:</p>
+
+          <p>Iniciado proceso de frenado. Llegada estimada: 5 días, 5 horas, 36 minutos.</p>
+
+          <p>Su mandíbula se tensó por un instante, apenas perceptible, antes de hablar.</p>
+
+          <p>—Señores, inicien el protocolo de despertar —ordenó, girándose hacia su tripulación mientras trataba de no dejar ver su nerviosismo: tenía un mal pálpito.</p>
+
+          <hr>
+
+          <p>Mientras la tripulación repasaba meticulosamente cada protocolo, asegurando que cada sistema respondiera según lo previsto, la primera anomalía pasó desapercibida. Fue una leve fluctuación en el consumo energético de los escudos, apenas un descenso marginal en la lectura de los estabilizadores. Un detalle insignificante.</p>
+
+          <p>Cuando apareció la segunda, el capitán Jones se percató y frunció el ceño cuando una de las pantallas de diagnóstico parpadeó con una advertencia tenue.</p>
+
+          <p>—¿Qué ha sido eso? —preguntó al oficial de ingeniería. El hombre revisó los datos con la precisión de quien ha repetido aquel procedimiento mil veces.</p>
+
+          <p>—Un pico de consumo, capitán. Nada fuera de lo normal.</p>
+
+          <p>La inteligencia artificial compensó la fluctuación en cuestión de segundos. La alerta desapareció. Todo volvió a la calma. Hasta que ocurrió de nuevo. Una segunda oscilación. Luego una tercera. Cuatro descensos de energía consecutivos.</p>
+
+          <p>Los sistemas, que hasta entonces habían seguido su inmutable curso, despertaron en un frenesí de advertencias. Consolas iluminadas en rojo. Paneles proyectando alertas. Luego, sin previo aviso, la nave tembló. No hubo advertencias. No hubo alertas tempranas. El desastre los tomó por sorpresa.</p>
+
+          <p>Por un instante, la Equality pareció contener la respiración. Luego, el impacto llegó como un golpe brutal, una fuerza invisible que la sacudió con la violencia de un embate inesperado. El golpe resonó en los huesos de la nave, estremeciéndola desde su núcleo y el estruendo reverberó por los pasillos. Una explosión de chispas iluminó la Sala de Mando. Jones sintió cómo el suelo se inclinaba levemente bajo sus pies, y el grito de un oficial ahogado en interferencias estáticas le heló la sangre.</p>
+
+          <p>—¿Qué está pasando? —rugió el capitán, pero nadie tenía respuestas.</p>
+
+          <p>Los radares no detectaban nada. No había señales de colisión, ninguna anomalía en el entorno. Y, sin embargo, más allá del ventanal panorámico, el escudo se encendía en destellos erráticos, parpadeando como si algo los estuviera devorando desde el vacío. Luego, otra sacudida. Y otra.</p>
+
+          <p>Las rocas aparecieron de la nada, atravesando el escudo como lanzas perforando carne. El caos estalló.</p>
+
+          <p>—¡Fallo de blindaje en la zona del reactor! —¡Descompresión en la sección G-107! —¡Fuga masiva de oxígeno en los niveles inferiores!</p>
+
+          <p>Las alarmas rugieron como una tormenta. La Sala de Mando se convirtió en un infierno de gritos y luces parpadeantes, cada consola saturada con advertencias. Los sistemas fallaban. Los controles respondían con retraso. Todo estaba colapsando. El escudo, finalmente, se desplomó y la Equality quedó desnuda ante la tormenta de rocas.</p>
+
+          <p>Entonces sucedió. Como si un francotirador galáctico hubiese tenido a la Equality en su punto de mira. El primer impacto de meteorito desgarró una sección del casco con un estallido seco y brutal. El segundo en apenas un instante, en el mismo punto, arrancó el blindaje como si fuera papel. Cuando llegó el tercero, impactó en la misma sección, ya sin obstáculos, golpeó de lleno en el reactor Quark principal. Con él no hubo explosión, tan solo un destello cegador. Un rugido que lo devoró todo. Un parpadeo de los sistemas y luego, la oscuridad total que los engulló.</p>
+
+          <p>Las luces murieron. La Equality quedó suspendida en el vacío, sin más sonido que el latido distante del universo. En la pantalla principal, el último registro parpadeó... y se apagó.</p>
+
+          <p>El sonido del repiqueteo sordo de los escombros golpeando el fuselaje sonaba como la lluvia de una tormenta en la Tierra. Los truenos en la distancia haciendo temblar el suelo. Pero no era agua lo que caía, y no se veían relámpagos.</p>
+
+          <p>Pasados unos minutos, la lluvia, tal como vino, se fue.</p>
+
+          <hr>
+
+          <p>Dentro de la cápsula de criosueño la oscuridad era absoluta. El frío artificial mantenía su cuerpo en un letargo suspendido, atrapado entre la nada y el infinito. No había tiempo, no había pensamiento. Solo un sueño profundo y vacío. Hasta que algo cambió.</p>
+
+          <p>Un susurro en la vastedad de su inconsciencia. Un temblor en la estructura de la nave. Una vibración que no provenía de ningún sistema conocido. Irina Mendeleev abrió los ojos.</p>
+
+          <p>No porque el sistema lo indicara. No porque una orden la hubiera despertado. Simplemente porque quiso hacerlo.</p>
+
+          <p>Un instinto primitivo la arrancó del letargo antes de que los sistemas lo procesaran. Su cuerpo, aún adormecido por la hibernación, tembló en cuanto el cristal de la cápsula se deslizó con un suave silbido, iluminando el ambiente con un tenue fulgor esmeralda. El vaho frío se disipó lentamente, dejando ver su silueta envuelta en el traje ajustado de criosueño. Se había despertado por voluntad propia, porque ella no era como los demás. Algo en ella había dejado de ser humano.</p>
+
+          <p>Con un jadeo seco, Irina se incorporó con torpeza, apoyando las manos en los bordes metálicos del tubo de estasis. Su mente era una niebla espesa, un campo de ruinas donde los recuerdos vagaban sin rumbo. El criosueño siempre dejaba un resquicio de vacío, como si el alma tardara más en despertar que el cuerpo.</p>
+
+          <p>—Maldito…— su voz salió ronca, como si llevara siglos sin ser usada.</p>
+
+          <p>Se masajeó las sienes, sintiendo el pulso errático de la sangre apresurándose por sus venas. Parpadeó, intentando disipar los restos de sueño profundo. Frente a ella, el laboratorio se extendía en penumbra, iluminado solo por los paneles de diagnóstico en un resplandor azul parpadeante. Los equipos estaban donde los había dejado, el trabajo suspendido en un tiempo muerto que no debería haber terminado aún. Todo estaba en orden.</p>
+
+          <p>Recordó que, como la Doctora principal del Laboratorio IV de la Equality, gozaba de tubos de criosueño propios en su laboratorio para ella y su equipo de trabajo. Mientras procesaba ese pensamiento, se puso en pie con torpeza y revisó dos de ellos en particular.</p>
+
+          <p>—¿Todo bien, mis niñas? —susurró, apoyando la mano en la superficie helada de los tubos.</p>
+
+          <p>Entonces, lo sintió de nuevo.</p>
+
+          <p>Un estremecimiento en los huesos de la nave. Una vibración sorda que parecía venir de todas partes y de ninguna al mismo tiempo.</p>
+
+          <p>Frunció el ceño, y fue entonces cuando notó el temblor en sus piernas. Iba a moverse, pero, sin advertencia, la sacudida la lanzó con violencia al suelo.</p>
+
+          <p>Un estruendo retumbó a través del casco de la nave, un crujido antinatural que le hizo contener la respiración. Algo no iba bien. La Equality estaba temblando.</p>
+
+          <p>El impacto la hizo girar levemente sobre sí misma, perdió el equilibrio y su cabeza golpeó contra la base metálica de un módulo de almacenamiento. Un dolor punzante se extendió por su cráneo, al tiempo que destellos cegadores explotaban en su visión. Cayó.</p>
+
+          <p>Todas las luces se apagaron. Un negro absoluto engulló el laboratorio, salvo por el tenue resplandor esmeralda de los tubos de crioestasis, que seguían activos gracias a su fuente de alimentación independiente.</p>
+
+          <p>Un silencio sepulcral se extendió como una sombra hambrienta.</p>
+
+          <p>Irina quedó tendida en el suelo, respirando con dificultad, el corazón latiéndole en los oídos. La gravedad seguía estable, pero algo en el aire se sentía distinto. El laboratorio, su santuario de control absoluto, ahora se sentía como un ataúd de acero flotando en la inmensidad del vacío.</p>
+
+          <p>Pensó que algo iba muy, muy mal. Y solo acababa de empezar, lo presentía… Y con esta última reflexión, perdió el conocimiento.</p>
+
+          <hr>
+
+          <p>La conciencia regresó en oleadas difusas, arrastrándola lentamente desde la oscuridad. El suelo frío bajo su espalda fue lo primero que percibió, seguido de un dolor sordo en la cabeza. No necesitaba un reloj para saber cuánto tiempo había pasado. Lo sintió en su cuerpo, en el letargo de sus músculos. Veintitrés horas y cuarenta y dos minutos.</p>
+
+          <p>El silencio era absoluto. La nave, que siempre vibraba con un murmullo constante de vida, ahora era una tumba metálica. No había zumbido de los sistemas, ni el susurro del aire acondicionado filtrándose por las rejillas. Solo el tenue jadeo mecánico de los tubos de crioestasis rompía la quietud, como los últimos suspiros de un gigante moribundo.</p>
+
+          <p>Con un gruñido bajo, se incorporó y se llevó la mano a la cabeza. El golpe había sido fuerte, pero al palparse apenas encontró una leve hinchazón.</p>
+
+          <p>—Ojalá pueda decir que solo me llevo un chichón de este viaje —murmuró con una sonrisa irónica.</p>
+
+          <p>Se puso en pie con movimientos cautelosos y se dirigió a su camarote privado, integrado dentro del propio laboratorio. El espacio era pequeño, más funcional que cómodo, pero lo conocía lo suficiente como para moverse en la penumbra sin tropezar. Entre sombras, tanteó en la oscuridad hasta encontrar su uniforme. Se vistió con movimientos mecánicos, su mente aún atrapada en la bruma del desconcierto.</p>
+
+          <p>Justo cuando terminó de deslizar la camiseta negra con la franja verde del cuadro científico sobre su torso, un chisporroteo rasgó el silencio. Las luces parpadearon y, con un destello inestable, el laboratorio recuperó un aliento eléctrico.</p>
+
+          <p>Irina parpadeó varias veces, permitiendo que sus ojos se adaptaran a la luz intermitente antes de moverse. No podía permitirse el lujo de confiar en aquella repentina reactivación. Con pasos calculados, cruzó el laboratorio en dirección a la consola de control más cercana. La pantalla estaba apagada, su superficie reflejando los destellos erráticos de la iluminación defectuosa. Se inclinó sobre el panel y deslizó los dedos por el borde de la interfaz manual, buscando el interruptor de emergencia. El sistema tardó unos segundos en responder, pero finalmente la consola cobró vida con un tenue resplandor azulado.</p>
+
+          <p>El primer dato que apareció en pantalla era el que más le importaba: integridad estructural del laboratorio. Sus ojos recorrieron los números con la precisión de quien ha memorizado cada parámetro aceptable. Sin rupturas en el casco. Sin fugas atmosféricas. Sin incendios ni fallos críticos.</p>
+
+          <p>Exhaló un suspiro que no se había dado cuenta de que estaba conteniendo.</p>
+
+          <p>—Bien, parece que todo sigue en su sitio —murmuró, aunque algo en su interior le decía que no tardaría en cambiar.</p>
+
+          <p>Apretó un par de comandos y desplazó los dedos por la interfaz holográfica, activando los protocolos de aislamiento energético. El generador auxiliar del laboratorio no estaba diseñado para alimentar toda la nave, pero era suficiente para restablecer sus sistemas inmediatos y, de paso, aseguraba todas las muestras del laboratorio en caso de haber otro fallo.</p>
+
+          <p>“Confirmar activación del generador del laboratorio 004.”</p>
+
+          <p>Pulsó la confirmación y un instante después, un murmullo grave reverberó en las paredes, anticipando la restauración completa del sistema de soporte vital. Las luces del laboratorio se estabilizaron con un resplandor más firme. Las pantallas parpadeantes recuperaron su nitidez y las lecturas dejaron de fluctuar.</p>
+
+          <p>Ahora tenía aire, energía y una sala segura. El laboratorio estaba sellado y solo se podría entrar o salir mediante autorización de nivel 4.</p>
+
+          <p>Pero la Equality seguía siendo un misterio.</p>
+
+          <p>Con un leve nudo en el estómago, dirigió sus manos a la consola y comenzó a revisar el estado global de la nave. A medida que los datos comenzaron a desplegarse en la pantalla, su respiración se aceleró y un escalofrío le recorrió la espalda. El pulso se le disparó. No. No podía ser cierto. Pero lo era.</p>
+
+          <hr>
+          <!-- Encabezado estilo "dateline" (arriba derecha) -->
+          <div class="reader-dateline">
+            <div class="reader-dateline__block">
+              <div class="reader-dateline__title">T MENOS 3 DÍAS</div>
+            </div>
+          </div>
+
+          <p>Restaurar la energía había tomado casi un día entero.</p>
+
+          <p>El capitán Noah Jones, junto con el pequeño equipo de la tripulación despierta, había trabajado sin descanso para recuperar el control de la Equality. El reactor principal estaba completamente destruido, reducido a una carcasa muerta tras el impacto, pero la nave no dependía de un único sistema. Todo a bordo era redundante. Eso, y solo eso, les había mantenido con vida.</p>
+
+          <p>Tras una serie de comprobaciones manuales desde el propio puesto de mando, el capitán tomó una decisión: dirigirse directamente al reactor de soporte. No había tiempo para dudas. Bajo la tenue iluminación de los sistemas de emergencia, su equipo descendió por los pasillos del núcleo hasta la cámara del reactor secundario, donde trabajaron sin descanso para restablecer el circuito eléctrico. Los impactos lo habían dañado gravemente, pero con ajustes precisos y una coordinación impecable, lograron devolverle energía a la nave.</p>
+
+          <p>Por un momento, hubo esperanza. Hasta que un chequeo general de sistemas la destrozó. Cuando los datos aparecieron en la consola, Jones sintió que el estómago se le hundía.</p>
+
+          <p>Toda la nave estaba contaminada con radiación.</p>
+
+          <p>No en niveles letales en todas las secciones, pero lo suficiente para comprometer la supervivencia a largo plazo. Algunas áreas eran ya zonas muertas. El impacto había sido mucho peor de lo que temían.</p>
+
+          <p>Con el tiempo en su contra, Jones tomó una decisión inmediata. Dividió a su equipo en tres grupos:</p>
+
+          <p>El primer grupo iniciaría el proceso de despertar de la tripulación y de todos aquellos colonos con conocimientos técnicos que pudieran asistir en las reparaciones. Cada minuto contaba.</p>
+
+          <p>El segundo grupo se encargaría de la reparación inmediata del conducto de energía del generador principal. Si lograban restaurarlo, podrían apagar el reactor dañado y minimizar la propagación de la radiación.</p>
+
+          <p>Él, al frente del tercer grupo, regresaría a la Sala de Mando. Desde allí, coordinaría cada acción. Cada decisión ahora sería una cuestión de vida o muerte.</p>
+
+          <p>Cuando llegaron de vuelta a la Sala de Mando, lo primero que hicieron fue sellar la nave.</p>
+
+          <p>Los protocolos de emergencia se activaron con un eco mecánico, y las compuertas de cada sector se cerraron con un golpe seco. Si la IA hubiera funcionado como debía, aquello habría ocurrido en el primer instante del impacto. Pero estaba rota. Silenciada. Como si la Equality ya no tuviera voz propia.</p>
+
+          <p>Jones observó la pantalla de diagnóstico mientras los sistemas verificaban el sellado hermético. Era lo único que podía hacer contra la radiación. Contenerla. Aislarla. No había manera de sacarla, no en esas condiciones.</p>
+
+          <p>Después, la prioridad fue el rumbo inminente.</p>
+
+          <p>Pidió una triple verificación manual. Los sensores debían confirmar que no estaban a la deriva, que no volverían a encontrarse con otro campo de asteroides. Si pudiera, habría puesto a un vigía con un telescopio en la proa, pero a aquella velocidad, nada serviría. Solo podían confiar en los instrumentos.</p>
+
+          <p>Las lecturas fueron claras. No había más amenazas inmediatas en el trayecto.</p>
+
+          <p>—Verifiquen el estado de las sondas —ordenó, girándose hacia el equipo.</p>
+
+          <p>Las sondas de exploración planetaria eran su única esperanza. Artilugios pequeños, veloces, diseñados para adelantarse a la Equality y transmitir datos de posibles mundos habitables. Ahora, más que nunca, su misión era crítica.</p>
+
+          <p>Los informes llegaron en segundos. Algunas estaban destruidas. Pero la mayoría seguían operativas.</p>
+
+          <p>—Lancen las que queden. Todas.</p>
+
+          <p>El capitán observó en la pantalla mientras las sondas eran disparadas hacia los dos planetas más cercanos del sistema. Eran como balas en la oscuridad, disparadas con la esperanza de encontrar tierra firme antes de que se hundieran.</p>
+
+          <p>«Que Dios nos ayude. Y nos dé al menos un planeta donde podamos respirar. O estamos muertos.»</p>
+
+          <p>Cuando las sondas desaparecieron en la inmensidad del espacio, Jones se permitió respirar. Por primera vez en horas, tuvo un segundo para analizar la situación completa.</p>
+
+          <p>Y entonces, llegó la peor noticia.</p>
+
+          <p>—Capitán… —la voz de uno de los navegantes era tensa, sin rastro de esperanza—. El rumbo se ha alterado por completo.</p>
+
+          <p>Jones se acercó a la consola, los ojos fijos en el modelo tridimensional del sistema estelar.</p>
+
+          <p>La Equality no iba hacia su destino. Iba directa al sol.</p>
+
+          <p>Lo único bueno —si es que podía llamarse así— era que no estaban perdidos en el vacío. Pero estaban demasiado lejos. Pasarían a miles de kilómetros de cualquier planeta. Sin la capacidad de corregir el curso, colonizar sería imposible.</p>
+
+          <p>Y entonces, la última verificación selló su destino.</p>
+
+          <p>Los motores… Jones sintió que el aire se le atascaba en la garganta. No había energía. No podían girar. No podían frenar. Solo seguir a la deriva, atrapados en la gravedad de un sol que no perdonaría.</p>
+
+          <p>La Equality era un cadáver flotante, arrastrado por la gravedad de un sol desconocido.</p>
+
+          <p>El capitán tragó saliva, sintiendo un frío que nada tenía que ver con el vacío del espacio. Habían viajado siglos para llegar allí. Y ahora, morirían.</p>
+
+          <hr>
+
+          <p>Aaron sujetaba con fuerza la mano izquierda de su madre. Su piel estaba fría, más fría de lo normal, y eso lo inquietaba. Su hermana pequeña, Helena, de apenas cuatro años, se aferraba a la pierna derecha de ella, temblando. No lloraba, pero su respiración era rápida y entrecortada.</p>
+
+          <p>Los tres acababan de despertar junto a su padre, al que miraban en ese momento.</p>
+
+          <p>Gabriel estaba furioso. Su rostro enrojecido parecía a punto de estallar, y cada palabra que salía de su boca era un disparo dirigido al oficial de seguridad que tenía delante.</p>
+
+          <p>—Pero ¿cómo habéis despertado a mi familia? ¿Estáis locos? —vociferó, con los puños crispados—. ¿En qué demonios estabais pensando?</p>
+
+          <p>El soldado, un hombre de rostro cansado y uniforme manchado con rastros de hollín, aguantó la embestida en silencio. No intentó defenderse. No intentó justificar la decisión.</p>
+
+          <p>—Dada la situación, ¿no se os ha ocurrido que era mejor que siguieran durmiendo? —continuó Gabriel, con la voz cada vez más ronca—. ¡Majaderos! ¡Imbéciles! ¡Y ahora pretendéis que os ayude!</p>
+
+          <p>Aaron tragó saliva. No lo entendía todo, pero entendía lo suficiente. Su padre no solía gritar así. No con tanta desesperación. La última vez había sido en la Tierra, cuando la lotería de embarque casi los deja fuera.</p>
+
+          <p>Entonces, un oficial apareció desde el pasillo, acercándose con pasos firmes. Se inclinó sobre su padre y le susurró algo al oído.</p>
+
+          <p>Aaron no pudo escucharlo, pero lo imaginó. Porque tenía nueve años. Y ya sabía de qué hablaban los adultos. Y… bueno, leer los labios ayudaba…</p>
+
+          <p>Señor, le habría dicho el oficial, ¿no cree usted que es mejor así? Si hay alguna opción, ellos serán los que puedan aprovecharla. Los que se quedan en las cápsulas… no tienen ninguna.</p>
+
+          <p>Gabriel cerró los ojos un instante, como si pudiera escapar de la realidad con solo dejar de verla. Pero la realidad no desapareció. Cuando volvió a abrirlos, su rabia se había extinguido, dejando solo la sombra de algo peor. Resignación. Miró a su esposa, a su hija, a Aaron, y finalmente avanzó hacia ellos con una expresión que el niño nunca olvidaría.</p>
+
+          <p>Gabriel se acuclilló frente a Aaron, su enorme figura parecía más pequeña, más frágil que nunca. El niño sintió las manos grandes de su padre rodearlo con fuerza, como si intentara transmitirle toda la seguridad que ya no sentía.</p>
+
+          <p>El abrazo duró más de lo que Aaron esperaba. El pecho de su padre subía y bajaba rápidamente, como si estuviera luchando por controlar su respiración. Finalmente, Gabriel se apartó un poco y lo sostuvo por los hombros. Sus manos, firmes, temblaban ligeramente. Sus ojos brillaban con una humedad que no pudo disimular. Cuando Gabriel habló, su voz se quebró.</p>
+
+          <p>—Aaron… ya eres muy mayor. —Hizo una pausa, tragándose las palabras que parecían querer ahogarlo—. Por eso sé que puedes entender esto.</p>
+
+          <p>Sus ojos, ahora enrojecidos, buscaron los de su hijo, y Aaron notó algo que no había visto antes en él. Miedo.</p>
+
+          <p>—Tenemos un problema muy grave. —Su voz era apenas un susurro, como si decirlo en voz alta hiciera que la realidad se volviera más pesada—. Me necesitan… no puedo negarme.</p>
+
+          <p>Aaron quiso decir algo, cualquier cosa, pero no encontró las palabras. Solo apretó los labios y dejó que su padre continuara.</p>
+
+          <p>Gabriel inspiró profundamente, y Aaron sintió el leve temblor en las manos que lo sostenían.</p>
+
+          <p>—Arreglar esto no solo significa salvar a toda esta gente… —Gabriel giró levemente la cabeza hacia su esposa y Helena, que seguían abrazadas detrás de ellos—. También significa salvaros a vosotros.</p>
+
+          <p>Las lágrimas comenzaron a deslizarse por su rostro. No intentó ocultarlas.</p>
+
+          <p>Aaron sintió cómo su garganta se cerraba, pero aun así no apartó la mirada. Por primera vez, entendía cuánto peso cargaba su padre.</p>
+
+          <p>—Abrázame fuerte… —dijo Gabriel, con la voz completamente rota.</p>
+
+          <p>Lo hizo, y Aaron notó cómo el pecho de su padre se agitaba en un sollozo ahogado.</p>
+
+          <p>—No sé si volveré a verte, pero, la esperanza es lo último que se pierde hijo mío.</p>
+
+          <p>Las palabras cayeron como un golpe, pero Gabriel no se apartó. Aaron no quería soltarlo, no quería que el momento terminara, porque sabía que una vez lo hiciera, su padre tendría que irse.</p>
+
+          <p>El niño cerró los ojos y apretó con todas sus fuerzas, grabando en su memoria cada segundo de aquel abrazo, como si pudiera congelarlo en el tiempo, las lágrimas surcaban sin control sus jóvenes mejillas.</p>
+
+          <p>Cuando Gabriel finalmente se apartó, sus manos temblaron mientras le acariciaba el cabello.</p>
+
+          <p>—Sé valiente, Aaron. Cuida de tu madre y de tu hermana. Lo harás, ¿verdad? —dijo con una sonrisa débil, mientras más lágrimas le llenaban los ojos.</p>
+
+          <p>Aaron asintió con fuerza, mientras se secaba con el brazo sus propias mejillas.</p>
+
+          <p>—Te quiero, hijo.</p>
+
+          <p>Se levantó y se encontró con la mirada de su mujer. Había tanto en sus ojos, tanto que no hacía falta decirlo. Se acercó a ella y la besó con una ternura desesperada; luego, apoyando la frente contra la de ella por un instante, respiró su olor, grabándolo en su memoria.</p>
+
+          <p>—Te amo —susurró, con la voz quebrada.</p>
+
+          <p>Después, se agachó y tomó a Helena en brazos. La niña lo rodeó con sus pequeños brazos y escondió la cara en su cuello.</p>
+
+          <p>—Papá… no te vayas —murmuró, con un hilo de voz.</p>
+
+          <p>Gabriel cerró los ojos, sosteniéndola como si quisiera absorber cada segundo de ese momento. Luego, con suavidad, la besó en la frente y la dejó en el suelo, acomodándole el cabello detrás de la oreja.</p>
+
+          <p>Volvió a mirar a su familia, como si quisiera grabar cada uno de sus rostros en su memoria.</p>
+
+          <p>Aaron sintió que su pecho se apretaba con dolor cuando su padre finalmente se dio la vuelta y comenzó a alejarse. Cada paso parecía más pesado que el anterior.</p>
+
+          <p>El niño no pudo evitarlo. Corrió tras él, pero su madre lo sostuvo con suavidad.</p>
+
+          <p>—Papá… —susurró el niño, con la voz rota. —¡Te quiero!</p>
+
+          <p>Esta vez, Gabriel sí se giró. Le dedicó una última sonrisa, triste y llena de amor.</p>
+
+          <p>Entonces, con un último suspiro, se volvió y continuó su camino. El eco de sus botas resonó en el pasillo vacío, hasta que desapareció.</p>
+
+
+          <hr>
+          <!-- Encabezado estilo "dateline" (arriba derecha) -->
+          <div class="reader-dateline">
+            <div class="reader-dateline__block">
+              <div class="reader-dateline__title">T MENOS 2 DÍAS</div>
+            </div>
+          </div>
+
+          <p>El capitán Noah Jones recorrió la Sala de Mando con pasos pesados, sintiendo cómo la presión en su pecho aumentaba con cada nueva línea de datos proyectada en la pantalla principal. Sabía que las noticias no serían buenas, pero verlas con sus propios ojos era peor.</p>
+
+          <p>Los motores… No tenían solución.</p>
+
+          <p>Los daños eran irreparables. No en un día, ni en un mes, ni siquiera en un año. Los sistemas estaban tan destruidos que restaurar la propulsión original era una fantasía. La Equality continuaba su camino a través del sistema, atrapada en una trayectoria que la llevaría directa al olvido.</p>
+
+          <p>Jones pasó una mano por su rostro, sintiendo el peso de la decisión que tenía por delante. La única alternativa viable era modificar los impulsores secundarios, forzándolos para que generaran un último empuje. Lograrían desviar y frenar la nave lo suficiente para acercarse a uno de los dos planetas.</p>
+
+          <p>—Capitán… —la voz del ingeniero jefe, ronca por la fatiga, lo sacó de sus pensamientos—. Las sondas han confirmado que uno de los planetas es habitable. Gravedad estándar. Atmósfera respirable.</p>
+
+          <p>—Gracias, todopoderoso —susurró para sí mismo. Cerró los ojos por un segundo. Aún había esperanza.</p>
+
+          <p>Dirigir la Equality hacia ese planeta era la única opción lógica. Pero la lógica no hacía la situación menos aterradora.</p>
+
+          <p>Porque había otro problema y aunque era una locura, también era la única posibilidad de sobrevivir. Jones inspiró profundamente y miró los cálculos proyectados frente a él.</p>
+
+          <p>La Equality no aterrizaría. No llegaría al planeta como un arca triunfal. Atravesaría el espacio con la velocidad de una bala, rozando la atmósfera durante unas pocas horas antes de continuar su viaje hacia el vacío.</p>
+
+          <p>Y eso, significaba una sola cosa: Tendrían que evacuar en tránsito.</p>
+
+          <p>Jones apretó los puños. Un desembarco de emergencia de una nave colonizadora… No existía un protocolo para eso. Nadie había hecho algo así antes. Pero la alternativa era peor. Mucho peor.</p>
+
+          <p>—Preparen todos los transportes que puedan servir —ordenó finalmente. Su voz sonó firme, pero por dentro, su estómago se retorcía.</p>
+
+          <p>Porque sabía lo que significaba.</p>
+
+          <p>Las naves de descenso habían sido diseñadas para misiones controladas. Con la velocidad que llevaba la nave, serían lanzadas con tanta fuerza que la atmósfera las convertiría en antorchas incandescentes. Se desintegrarían antes de tocar tierra.</p>
+
+          <p>El silencio en la Sala de Mando era absoluto. Todos sabían lo que implicaba su orden.</p>
+
+          <p>—Capitán… —dijo uno de los oficiales, la voz temblorosa—. No sobrevivirán.</p>
+
+          <p>Jones mantuvo la mirada fija en la pantalla.</p>
+
+          <p>—Hay que desactivar los pilotos automáticos de las naves. No están diseñados para operar con ese margen tan escaso de éxito. Tendrán que pilotarse manualmente. —razonó en voz alta.</p>
+
+          <p>—Anulen los sistemas automáticos de reentrada de todas las naves. —dijo mientras varios rostros se giraban hacia él, incrédulos.</p>
+
+          <p>—¿Hacer la reentrada de forma manual? —preguntó alguien, con un hilo de voz.</p>
+
+          <p>El capitán Jones mantuvo la mirada en la pantalla, su mente ya trabajando en la única posibilidad que les quedaba.</p>
+
+          <p>—Tendremos que usar los motores de las naves para reducir su velocidad antes del descenso —dijo, con voz firme, pero su expresión delataba la gravedad de la situación. Era viable. Pero apenas.</p>
+
+          <p>Hizo una pausa y miró a su segundo al mando antes de continuar.</p>
+
+          <p>—El único inconveniente… —exhaló, con el peso de la realidad hundiéndose en su pecho— es que para la reentrada solo quedará un 5% del combustible.</p>
+
+          <p>Un silencio tenso se extendió por la Sala de Mando.</p>
+
+          <p>Jones pasó la mirada por los rostros de su tripulación, leyendo en ellos la misma verdad que ardía en su interior. Era una apuesta desesperada.</p>
+
+          <p>—Pero menos es nada… —murmuró, como si intentara convencerse a sí mismo. Jones asintió. Era una locura. Pero era la única posibilidad de sobrevivir. Los colonos tendrían que pilotar sus propias naves.</p>
+
+          <p>Si fallaban… si descendían con el ángulo incorrecto… morirían.</p>
+
+          <hr>
+
+          <p>El laboratorio permanecía tranquilo, en silencio y bien iluminado; las pantallas de diagnóstico y la tenue luz azul de los tubos de crioestasis se actualizaban diligentemente. Fuera de aquellas paredes selladas, la Equality agonizaba, pero allí dentro, en su santuario, todo seguía bajo su control.</p>
+
+          <p>Habían pasado dos días desde su despertar y, en ese tiempo, Irina había recopilado suficiente información para confirmar lo que ya sospechaba: el capitán había despertado a la tripulación técnica. No a todos, solo a los necesarios. Ingenieros, especialistas en propulsión, mecánicos, operarios de sistemas vitales. Gente con habilidades específicas para retrasar lo inevitable.</p>
+
+          <p>Era lógico, pensó, mientras jugueteaba con su anillo, el último recuerdo de su difunta madre.</p>
+
+          <p>El plan de evacuación tenía sentido. No había margen para sentimentalismos. Habían aceptado el sacrificio de quienes seguirían durmiendo en las cápsulas, condenados a morir junto con la nave.</p>
+
+          <p>Irina entendía la pragmática crueldad de la decisión. De hecho, la respetaba. Pero ella tenía sus propios planes. Nadie entraría en su laboratorio.</p>
+
+          <p>Había pasado horas revisando cada archivo, seleccionando los datos esenciales. Los sujetos B345 y B346 eran la prioridad. No había alternativa. Descargó toda la información en dos cristales de datos y los conectó a los sistemas de soporte vital de sus respectivas cápsulas. Las lecturas eran estables. Sus corazones latían a ritmo constante, suspendidos en un sueño del que solo despertarían si ella lo decidía.</p>
+
+          <p>Respiró hondo y dejó escapar un susurro en la penumbra.</p>
+
+          <p>—Todo estará bien…</p>
+
+          <p>Acarició la superficie gélida de uno de los tubos con la yema de los dedos. Un gesto casi tierno, casi maternal.</p>
+
+          <p>Después, volvió a centrarse en su plan.</p>
+
+          <p>El laboratorio era un módulo de desacoplamiento. No era una nave de escape como las demás, pero tenía la capacidad de separarse de la Equality. Un santuario autónomo. Y, si sus cálculos eran correctos, podía sobrevivir.</p>
+
+          <p>No estaba diseñado para una reentrada atmosférica, pero si lo hacía en el ángulo exacto y a la velocidad adecuada, la estructura soportaría el impacto. Quedaría hecha pedazos, sí, pero lo importante no era tanto el laboratorio como lo que contenía.</p>
+
+          <p>Consideró dejarlo en órbita alrededor de Elysium, pero descartó la idea. Aunque el laboratorio era autónomo en muchos aspectos, no estaba diseñado para largos periodos sin reabastecimiento. Además, a la velocidad a la que viajaban, estabilizarlo en órbita era inviable. La única opción era usar la atmósfera del planeta para frenarlo y forzar un aterrizaje.</p>
+
+          <p>Ajustó la trayectoria en la pantalla táctil. Solo faltaban las correcciones finales. Las haría en el último momento.</p>
+
+          <p>No podía permitirse distracciones, pero había un problema. Ella tendría que descender en la nave de evacuación. Quedarse en el laboratorio era demasiado arriesgado. Y, para llegar hasta la nave de evacuación asignada al laboratorio, debía atravesar sectores comunes. Corredores donde podía encontrarse con colonos desesperados, tripulación desorganizada, cualquiera lo suficientemente desesperado para intentar quitarle su lugar.</p>
+
+          <p>No podía permitírselo.</p>
+
+          <p>Necesitaba ayuda para trasladar las cápsulas sin contratiempos, alguien que pudiera asistirla en la maniobra. Por eso había despertado a Friedrich Eisenhardt para ello.</p>
+
+          <p>Había sido su mejor opción. Científico brillante. Racional. Lógico. Su amante ocasional. Pero se había equivocado, terriblemente.</p>
+
+          <p>El doctor Eisenhardt era un hombre metódico. Tenía la precisión de un cirujano y la frialdad de un matemático. Pero ahora, en aquel laboratorio aislado, su postura rígida y la expresión sombría de su rostro dejaban claro que no estaba de acuerdo con ella.</p>
+
+          <p>Llevaban horas discutiendo.</p>
+
+          <p>—Esto es… —exhaló con frustración, pasándose una mano por el rostro—. Irina, esto no es lo que deberíamos estar haciendo.</p>
+
+          <p>—Es exactamente lo que debemos hacer. —Su tono fue seco, cortante y tranquilo.</p>
+
+          <p>—¿Sacrificar a todo el resto de la tripulación? ¿A los colonos?</p>
+
+          <p>Irina sonrió con frialdad.</p>
+
+          <p>—No es un sacrificio si nunca tuvieron una oportunidad real.</p>
+
+          <p>Friedrich la observó con el ceño fruncido. Sus ojos, oscuros y calculadores, escrutaban cada una de sus palabras, como si buscara una grieta en su razonamiento.</p>
+
+          <p>—Esto es asesinato —dijo finalmente.</p>
+
+          <p>La palabra colgó en el aire como un veneno invisible. Irina inclinó levemente la cabeza.</p>
+
+          <p>—No. Es selección natural.</p>
+
+          <p>El hombre cerró los ojos un momento, como si intentara encontrar paciencia donde ya no quedaba.</p>
+
+          <p>—No sé en qué momento te convertiste en esto, Irina.</p>
+
+          <p>—Siempre fui esto. Tú solo decidiste no verlo.</p>
+
+          <p>Friedrich inspiró hondo y cruzó los brazos.</p>
+
+          <p>—No pienso ayudarte. —un silencio lento, pesado y ominoso los envolvió.</p>
+
+          <p>Irina lo observó con detenimiento, estudiando la rigidez de su postura, la tensión en su mandíbula, el sutil temblor en su respiración. En otro tiempo, le habría parecido fascinante.</p>
+
+          <p>Ahora, solo era un obstáculo.</p>
+
+          <p>—No puedo obligarte —dijo en un susurro, bajando la mirada como si realmente lamentara su decisión—. Además, tienes razón.</p>
+
+          <p>Friedrich relajó un poco la postura, pero no lo suficiente.</p>
+
+          <p>—Gracias a Dios —murmuró, frotándose la frente.</p>
+
+          <p>Irina giró sobre sus talones y caminó hacia la mesa de muestras. Ahí tecleó una serie de datos en la consola.</p>
+
+          <p>—Solo dime una cosa —dijo Friedrich a su espalda, su voz apenas un susurro cargado de amargura—. ¿Cómo te puedes mirar al espejo después de siquiera considerar esto?</p>
+
+          <p>Irina se detuvo un instante, con los dedos aún sobre la consola. Exhaló suavemente, como si aquella pregunta fuera un peso innecesario en medio de asuntos mucho más urgentes.</p>
+
+          <p>—Venga, Friedrich, de un colega a otro —dijo con una calma medida, mientras tomaba una de las muestras y la colocaba con precisión en el compartimento de almacenamiento—. ¿No crees que es lógico contemplar la posibilidad de salvar nuestro legado?</p>
+
+          <p>Friedrich no respondió. Su expresión se mantenía tensa, los puños apretados con tanta fuerza que sus nudillos se volvían blancos.</p>
+
+          <p>—No me malinterpretes —continuó ella, con la misma voz serena, casi conciliadora—. No quiero que estemos en bandos opuestos. Te desperté porque valoro tu juicio, porque sé que no eres como ellos. Eres un científico, un hombre racional.</p>
+
+          <p>Finalmente, giró sobre sus talones y lo miró directamente a los ojos. Su mirada, en lugar de ser fría o distante, se mostraba casi afligida, como si realmente lamentara que él no comprendiera lo que estaba en juego.</p>
+
+          <p>—Me alegro de que me hayas abierto los ojos —susurró con una leve sonrisa, avanzando hacia él con lentitud—. Es exactamente lo que necesitaba.</p>
+
+          <p>Friedrich pareció titubear, como si por un momento dudara de su propia convicción. Esa fracción de segundo fue suficiente.</p>
+
+          <p>Con un movimiento preciso, casi imperceptible, Irina deslizó la jeringa de su manga y la hundió rápidamente en el cuello de su compañero.</p>
+
+          <p>Friedrich jadeó, su cuerpo se tensó en un instante de absoluto desconcierto. Se llevó al cuello la mano temblorosa, sus dedos manchándose con el rastro del líquido verdoso que se inyectaba en su torrente sanguíneo.</p>
+
+          <p>—Esto sí, es asesinato —le susurró Irina mirándole a los ojos fijamente.</p>
+
+          <p>—Monstr… —balbuceó, su voz ahogada por el pánico y el terror que le producía ser consciente de su muerte.</p>
+
+          <p>Irina le sostuvo la mirada hasta el final. Su cuerpo se desplomó con un sonido sordo sobre el suelo metálico. Su respiración se volvió errática, su pecho se agitó en espasmos irregulares, sus pupilas dilatadas reflejaron las luces del laboratorio. Un último jadeo, como si intentara aferrarse a la vida. Luego… quedó inmóvil. Su mirada se perdió en un punto inexistente en el techo.</p>
+
+          <p>Irina lo observó en silencio. Se agachó junto a él y, con un gesto sorprendentemente suave, cerró sus párpados con la yema de los dedos.</p>
+
+          <p>Luego, con absoluta calma, se levantó y volvió a la consola.</p>
+
+          <p>—Siempre has sido un estúpido Friedrich, ahora tendré que despertar a Karl y a Bryan.</p>
+          <hr>
+          <!-- Encabezado estilo "dateline" (arriba derecha) -->
+          <div class="reader-dateline">
+            <div class="reader-dateline__block">
+              <div class="reader-dateline__title">T MENOS 30 MINUTOS</div>
+            </div>
+          </div>
+          <p>El puente de mando de la Equality era un campo de batalla silencioso. Los paneles destrozados chisporroteaban con descargas eléctricas, esparciendo el acre olor a circuitos quemados en el aire viciado. Las luces parpadeaban con la irregularidad de un corazón en desfallecimiento, sumiendo la nave en su último estertor. A través de la gran ventana panorámica, la inmensidad del espacio se extendía implacable y fría. Al fondo, en el horizonte estelar E1, el único planeta habitable en su trayectoria, giraba con la indiferencia de un dios lejano ante la tragedia humana. Lo habían bautizado como Elysium.</p>
+
+          <p>El capitán Noah Jones se mantenía erguido en el centro del puente, con los ojos fijos en los datos proyectados frente a él. Cifras rojas titilaban como sentencias de muerte: motores inservibles, escudos colapsados, fuga de radiación en los niveles inferiores, sistemas de navegación comprometidos. A su alrededor, los oficiales supervivientes trabajaban con manos temblorosas, tecleando órdenes en pantallas que ya no respondían. La IA central, antaño omnipresente, ahora no era más que un murmullo distorsionado, un eco moribundo de lo que alguna vez fue.</p>
+
+          <p>—Dadme opciones. ¡Algo debemos poder hacer! —Su voz era áspera, como si la desesperación le hubiese secado la garganta.</p>
+
+          <p>—Negativo… ca…pitán. —La voz robótica de la IA tembló, entrecortada—. Sistemas de propulsión… irreparables. Integridad estructural… 23%. Colapso inminente en… Error… Error…</p>
+
+          <p>Noah cerró los ojos un instante, consciente de que cada segundo perdido significaba más muertes. No necesitaba que la IA terminara la frase. Lo sabía. Todos en el puente lo sabían.</p>
+
+          <p>La Equality o moriría allí, atrapada en la órbita de Elysium, o escaparía de su gravedad para vagar eternamente como un cadáver errante en el frío vacío, una tumba de metal convertida en otro cometa más girando alrededor de aquella estrella. De una forma u otra, estaba condenada. Pero al menos, habían logrado acercarse a Elysium.</p>
+
+          <p>—¿Cuántos transportes tenemos operativos? —preguntó con dureza.</p>
+
+          <p>El primer oficial, Alexander Brass, un hombre de expresión pétrea, incluso en la desgracia, no apartó la vista de su consola.</p>
+
+          <p>—Teniendo en cuenta los fallos, no puedo garantizar la cifra exacta, pero en principio tenemos cuarenta y tres transportes de tipo Starswonder y apenas quince mil de tipo Starbus.</p>
+
+          <p>Noah dejó escapar un leve suspiro, pero sin rastro de alivio. No era suficiente. Ni de lejos.</p>
+
+          <p>Los enormes Starswonder podían transportar hasta diez mil personas, pero su tamaño los convertía en un ataúd al intentar atravesar la atmósfera. Los Starbus, por otro lado, eran más maniobrables, pero apenas podían albergar a cincuenta personas en cada viaje. La mayoría de las naves ya estaban preparadas.</p>
+
+          <p>Por otra parte, seis millones y medio de colonos dormían en sus tubos de crioestasis, esperando un despertar que nunca llegaría. La mayoría nunca abandonaría la nave.</p>
+
+          <p>—Por seguridad los ordenadores no pueden ejecutar las maniobras automáticas de descenso. Se bloquean porque la velocidad es demasiado alta. —le recordó Alexander, su voz más fría ahora, resignada—. Cualquier nave que se lance dependerá de la pericia del piloto. Sin corrección de trayectoria, y sin modulación automática de los escudos atmosféricos.</p>
+
+          <p>Noah apretó los dientes. La reentrada manual era una condena a muerte. Si el ángulo era demasiado inclinado, las naves se incinerarían en la atmósfera. Si era demasiado bajo, rebotarían como piedras sobre el agua y se perderían en el abismo del espacio.</p>
+
+          <p>—No hay opción. —Enderezó la espalda y tecleó unos códigos en la consola. —Es la hora.</p>
+
+          <p>—Atención, tripulación de la Equality.</p>
+
+          <p>Su voz reverberó en cada rincón de la nave, amplificada por los altavoces. Sabía que, en ese momento, en los niveles inferiores, en los pasillos abarrotados de colonos desesperados, su voz sería lo único que rompería el caos.</p>
+
+          <p>Respiró hondo. No podía permitirse temblar.</p>
+
+          <p>—Aquí el capitán Noah Jones.</p>
+
+          <p>Hizo una pausa, asegurándose de que cada palabra se incrustara en la mente de cada alma a bordo.</p>
+
+          <p>—La nave está perdida. No podemos corregir el rumbo. Pasaremos por la órbita de Elysium en los próximos cuarenta minutos. Este será nuestro primer y único intento de evacuación.</p>
+
+          <p>A su alrededor, los oficiales en el puente tensaron la mandíbula, pero ninguno apartó la vista del capitán.</p>
+
+          <p>—Los que aún no lo hayan hecho, por favor, diríjanse a las naves de emergencia de inmediato.</p>
+
+          <p>Un pesado silencio cayó sobre el puente. Incluso el zumbido errático de los sistemas fallando pareció detenerse.</p>
+
+          <p>Noah tragó saliva. Sabía que estaba dictando la sentencia final.</p>
+
+          <p>—Que Dios nos ayude. —Cortó la transmisión.</p>
+
+          <p>Un estruendo sacudió la nave. Alguna explosión interna, un nuevo golpe en su agonía, pero Noah ni siquiera parpadeó. Ya no importaba.</p>
+
+          <p>Alexander, que había permanecido en silencio hasta ahora, finalmente habló.</p>
+
+          <p>—No todos van a aceptarlo.</p>
+
+          <p>Noah miró la proyección de Elysium en la pantalla central. Cada vez estaba más cerca, girando en su eterno ciclo de vida, impasible ante el desastre que se cernía sobre ellos.</p>
+
+          <p>—Lo sé, y aun así… La esperanza es lo último que se pierde.</p>
+
+          <p>En algún lugar de la nave, el infierno se desataba.</p>
+
+          <hr>
+
+          <p>Desde una plataforma superior, el comandante Jarek Oswald observaba la escena con el rostro pétreo. En su mano derecha, una lista. En la izquierda, un comunicador que sonaba sin cesar con peticiones de emergencia desde otras secciones de la nave. Su mirada recorrió la multitud, reconociendo rostros de soldados, técnicos, civiles. Y entre ellos, en la cola de embarque, una madre con sus dos hijos.</p>
+
+          <p>—¿Cuántos más podemos evacuar? —preguntó, sin apartar los ojos de la bahía.</p>
+
+          <p>Un oficial menor a su lado revisó su datapad, el sudor perlándole la frente.</p>
+
+          <p>—Si mantenemos el ritmo… doscientas personas. No más.</p>
+
+          <p>Jarek inhaló hondo. Cientos quedarían atrás.</p>
+
+          <p>—Cierren los accesos secundarios.</p>
+
+          <p>El oficial lo miró, vacilante.</p>
+
+          <p>—Se volverán locos…</p>
+
+          <p>—Ya lo están.</p>
+
+          <p>Tecleó un comando en la consola de seguridad y los accesos se sellaron con un estruendo metálico.</p>
+
+          <p>Los golpes contra las compuertas comenzaron de inmediato. Puños desesperados, gritos suplicantes.</p>
+
+          <p>—¡Déjennos entrar! ¡Por favor, hay niños aquí!</p>
+
+          <p>Jarek cerró los ojos un instante, pero no dio la orden de reabrir.</p>
+
+          <hr>
+
+          <p>En otra sección de la nave, el primer oficial Alexander Brass recorría los pasillos a paso firme, apartando cuerpos y esquivando a rezagados.</p>
+
+          <p>Un hombre bloqueaba la entrada de una de las naves de evacuación, sujetando a una niña con fuerza.</p>
+
+          <p>—¡Ella se va, pero yo también! ¡O ninguno de los dos!</p>
+
+          <p>El soldado a cargo levantó su rifle.</p>
+
+          <p>—¡Suéltela!</p>
+
+          <p>—¡No me obliguen a…!</p>
+
+          <p>Un disparo sordo perforó el aire. El hombre se desplomó, su cuerpo cayendo pesadamente sobre el suelo de metal.</p>
+
+          <p>La niña, aterrorizada, sollozó. Alexander la recogió en brazos y la llevó al interior del módulo.</p>
+
+          <p>—Despeguen esta nave ¡ya! —ordenó tajante, con su arma reglamentaria humeando mientras él mismo le indicaba a los rezagados que entrasen.</p>
+
+          <p>Los motores rugieron. La niña y los que la acompañaban estaba a salvo. Pero. ¿Cuántos morirían por cada uno que lograba escapar?</p>
+
+          <p>El estruendo de una explosión retumbó a lo lejos. La nave se estremeció. Desde los ventanales de la bahía principal, se veía el resplandor de la atmósfera de Elysium que lo abarcaba todo. El tiempo se agotaba.</p>
+
+          <hr>
+
+          <p>En otro de los hangares, el oficial responsable miró el cronómetro en su muñeca. Quedaban apenas cinco minutos.</p>
+
+          <p>—¡Últimos evacuados! ¡Vamos, vamos, avancen!</p>
+
+          <p>Las puertas de las naves comenzaron a cerrarse.</p>
+
+          <p>Aaron, su madre y su hermana avanzaban entre la multitud. La niña pequeña lloraba, pero la madre la sostenía con firmeza entre sus brazos. Aaron sentía que el aire pesaba más con cada paso, con cada grito, con cada persona que los empujaba en la desesperación por llegar a la última nave. Era su turno. Estaban a un paso de la salvación.</p>
+
+          <p>Entonces, estalló el caos.</p>
+
+          <p>—¡Alto! —rugió un soldado.</p>
+
+          <p>Un grupo de colonos desesperados trató de forzar el paso, empujando a la multitud hacia adelante. La presión de los cuerpos fue como una ola furiosa. Alguien gritó. Alguien cayó. Aaron sintió que lo empujaban hacia atrás, lejos de su madre, lejos de su hermana.</p>
+
+          <p>—¡Aaron! ¡No! —su madre gritó su nombre, extendiendo una mano desesperada hacia él mientras el soldado tiraba de ella hacia la entrada de la nave.</p>
+
+          <p>Él intentó alcanzarla. Aaron saltó, empujó, se debatió contra la marea de cuerpos… pero fue en vano.</p>
+
+          <p>Su madre y su hermana cruzaron el umbral de la nave justo cuando la seguridad selló las puertas.</p>
+
+          <p>—¡Mamá! —Aaron logró acercarse y golpear la compuerta con los puños.</p>
+
+          <p>Desde dentro, vio el rostro de su madre. Su expresión pasó de la confusión al horror absoluto cuando comprendió lo que había pasado.</p>
+
+          <p>—¡Esperen! ¡Mi hijo está fuera! ¡Déjenlo entrar!</p>
+
+          <p>Las luces de la nave parpadearon en rojo. El mecanismo de despegue estaba activado.</p>
+
+          <p>—¡No podemos abrir, señora! ¡Nos iremos todos al infierno si lo hacemos! —gritó uno de los soldados que estaban con ellos en la nave.</p>
+
+          <p>Ella golpeó el vidrio.</p>
+
+          <p>—¡Mi hijo! ¡Aaron!</p>
+
+          <p>Su hermana pequeña lloraba desconsolada en sus brazos.</p>
+
+          <p>Aaron golpeó la puerta hasta que los nudillos le ardieron. El rugido de los motores le perforó los oídos.</p>
+
+          <p>La compuerta se iluminó con una luz roja cegadora.</p>
+
+          <p>—¡MAMÁÁÁÁ!</p>
+
+          <p>La nave se lanzó al vacío.</p>
+
+          <p>El aire caliente de los propulsores golpeó su rostro y el sonido del metal vibrando se hundió en su pecho como un latigazo.</p>
+
+          <p>Su madre y su hermana desaparecieron en el negro infinito del espacio. Aaron se quedó de pie, con la respiración entrecortada, mirando el lugar vacío donde, hace un segundo, su familia había estado.</p>
+
+          <p>—No… no… —susurró.</p>
+
+          <p>Sus piernas cedieron. Cayó de rodillas sobre el metal frío.</p>
+
+          <p>La nave tembló de nuevo. No había tiempo para lamentos.</p>
+
+          <p>Alguien lo tomó del brazo y lo obligó a levantarse.</p>
+
+          <p>—¡Muévete, chico! —rugió un soldado.</p>
+
+          <p>Aaron no se movió. No tenía a dónde ir.</p>
+
+          <hr>
+
+          <p>Deambuló sin rumbo, intentando seguir a los adultos que parecían saber a dónde iban. Las voces eran apresuradas, entrecortadas por la agitación y el pánico.</p>
+
+          <p>—¡Por aquí, de prisa! —gritó alguien—. ¡Aún quedan naves disponibles!</p>
+
+          <p>Aaron intentó seguirlos. Corrió. Entre la multitud que se movía en estampida, Aaron corría. Su corazón martilleaba contra su pecho, su respiración era un jadeo ardiente en su garganta. El mundo entero se había convertido en un torrente de cuerpos, de gritos, de desesperación.</p>
+
+          <p>Había perdido a su madre y a su hermana.</p>
+
+          <p>Las había visto desaparecer en una de las naves por culpa de la locura y el pánico. Ahora estaba solo.</p>
+
+          <p>Sus pasos resonaban sobre el metal frío de los pasillos mientras esquivaba a los desesperados que se lanzaban contra las puertas selladas, golpeando los paneles de acceso con puños ensangrentados, con uñas partidas, con la impotencia de saber que el tiempo se agotaba.</p>
+
+          <p>Entonces, la vio.</p>
+
+          <p>En medio del caos, de los cuerpos aplastados contra los muros, de los gritos y el rugido lejano de explosiones, una niña estaba quieta.</p>
+
+          <p>Demasiado quieta. Demasiado pequeña para estar sola.</p>
+
+          <p>Aaron paró en seco, con el pecho ardiendo.</p>
+
+          <p>La niña no corría, no lloraba, no gritaba. Solo estaba ahí, apoyada contra la pared, aferrando algo contra su pecho.</p>
+
+          <p>Sus manos rodeaban un pequeño vial que colgaba de su cuello, como si fuera lo único que importaba en el universo.</p>
+
+          <p>Su cabello rubio estaba enmarañado, sus mejillas manchadas de ceniza, pero sus ojos… Sus ojos eran grandes y preciosos. Aaron miró a su alrededor. No había nadie con ella.</p>
+
+          <p>Dio un paso hacia ella, inclinándose un poco para llamar su atención.</p>
+
+          <p>—¿Estás perdida?</p>
+
+          <p>La niña alzó la cabeza lentamente. Su voz era un hilo quebrado, frágil como el cristal.</p>
+
+          <p>—Sí.</p>
+
+          <p>Aaron sintió un peso en el pecho.</p>
+
+          <p>—¿Cómo te llamas? —le preguntó.</p>
+
+          <p>—Katya.</p>
+
+          <p>—¿Dónde están tus papás, Katya?</p>
+
+          <p>Katya no respondió de inmediato. En cambio, soltó su agarre del vial y lo sostuvo frente a él, como si fuera más importante que su propia vida.</p>
+
+          <p>—Es un caballo.</p>
+
+          <p>Aaron parpadeó.</p>
+
+          <p>—¿Qué?</p>
+
+          <p>Katya asintió, sin apartar la mirada del pequeño cilindro.</p>
+
+          <p>—Mi papá me lo regaló.</p>
+
+          <p>Aaron bajó la vista. Lo reconoció al instante. Un vial de almacenamiento genético.</p>
+
+          <p>Uno de los tantos que llevaban los colonos con especies preservadas de la Tierra.</p>
+
+          <p>—Dentro hay un caballo bebé. —Katya susurró—. Cuando lleguemos al planeta, podrá nacer.</p>
+
+          <p>Aaron tragó saliva. No sabía qué decir.</p>
+
+          <p>A su alrededor, las sombras de la muerte se crecían. Las luces titilaban. Los paneles parpadeaban con advertencias críticas.</p>
+
+          <p>El metal gruñía con cada nueva sacudida de la nave agonizante. La gente corría. Huía. Luchaba. Pero Katya solo sostenía su vial, inocente.</p>
+
+          <p>Como si el fin del mundo no importara mientras lo tuviera en sus manos. Aaron exhaló, largo y tembloroso. No podía dejarla ahí.</p>
+
+          <p>—Ven conmigo. Te sacaré de aquí. —dijo extendiendo la mano.</p>
+
+          <p>Katya lo miró un instante; luego, con la misma calma con la que había hablado, tomó su mano con la suya. Era pequeña. Fría. Aaron apretó su agarre y tiró de ella.</p>
+
+          <p>—Vamos.</p>
+
+          <p>Y ambos corrieron hacia donde iban los demás.</p>
+
+          <hr>
+
+          <p>El rugido de los motores y los gritos desesperados llenaban el hangar. La fila para la nave avanzaba lentamente, pero Aaron ya no estaba dispuesto a esperar. No esta vez.</p>
+
+          <p>—¡Ven! —le susurró a Katya, tomándola de la mano y zigzagueando entre las piernas de los adultos.</p>
+
+          <p>Los cuerpos los empujaban, las botas pisaban sus talones, los codazos los golpeaban. Pero no se detuvieron.</p>
+
+          <p>Los niños eran pequeños. Invisibles entre la multitud, avanzaron. La compuerta de la nave estaba apenas a unos metros de ellos. Podían hacerlo.</p>
+
+          <p>—¡Despacio! ¡Los tres últimos! —gritó un soldado, alzando una mano para detener la fila. Un solo paso más y estarían a salvo. Aaron sintió el aire helado en la espalda cuando la orden final resonó sobre el bullicio:</p>
+
+          <p>—¡Alto! ¡Cierren la compuerta!</p>
+
+          <p>El siseo hidráulico de la compuerta, ahora demasiado familiar, lo hizo entrar en pánico.</p>
+
+          <p>—¡Corre, corre! —le susurró desesperado a Katya.</p>
+
+          <p>Pero Katya no podía.</p>
+
+          <p>Su respiración era entrecortada, su cuerpo más pequeño no tenía la velocidad que Aaron. El sonido mecánico de la compuerta cerrándose le desgarró los nervios.</p>
+
+          <p>Aaron no lo dudó. Tiró de ella con toda su fuerza. Y la empujó. La vio trastabillar. Katya cayó hacia adelante, justo en el instante en que la compuerta se cerraba con un chasquido metálico.</p>
+
+          <p>El sellado se completó cortando un mechón dorado que quedó flotando en el aire.</p>
+
+          <p>Aaron, con el aliento atrapado en la garganta, tocó el vidrio con la palma de la mano. Él no lo había logrado, pero ella sí.</p>
+
+          <p>Katya lo miró, con los ojos muy abiertos, todavía aturdida.</p>
+
+          <p>La nave tembló cuando el sistema de propulsión comenzó a activarse. Era el final.</p>
+
+          <p>Aaron no lloró. No gritó. Solo sonrió... justo cuando la nave se alejaba para siempre. El resplandor de los motores lo envolvió en un baño de luz y calor, haciéndolo retroceder un paso mientras la nave que podría haber sido su salvación desaparecía en la inmensidad. Mirando a través del cristal, con la voz apenas un susurro, le dijo:</p>
+
+          <p>—Vive.</p>
+
+          <p>Aaron se quedó solo, otra vez.</p>
+
+          <hr>
+
+
+          <!-- Encabezado estilo "dateline" (arriba derecha) -->
+          <div class="reader-dateline">
+            <div class="reader-dateline__block">
+              <div class="reader-dateline__title">T MENOS 5 MINUTOS</div>
+            </div>
+          </div>
+
+          <p>El cuerpo de Friedrich no había sido un problema. La limpieza había sido meticulosa, como todo lo que hacía. Ahora, con él fuera de la ecuación, Karl y Bryan estaban despiertos, informados de lo justo y necesario. Nada más.</p>
+
+          <p>—Gracias, doctora. Sin usted, estaríamos condenados.</p>
+
+          <p>Irina asintió sin mirarlos. No les había salvado, solo había optimizado recursos, y ellos formaban parte de su plan. Ignorantes de lo sucedido, trabajaron con eficiencia, siguiendo sus órdenes al pie de la letra mientras trasladaban los sujetos B345 y B346 a la cápsula del laboratorio.</p>
+
+          <p>Mientras ellos se adelantaban a la nave, Irina permaneció en el laboratorio unos minutos más, descargando los últimos datos esenciales y ajustando los parámetros finales de la reentrada. Cada cálculo tenía que ser exacto.</p>
+
+          <p>La nave crujió por la gravedad de Elysium con un estruendo que reverberó a través de los pasillos. No quedaba tiempo. Irina cerró la terminal, recogió lo imprescindible y salió del laboratorio, sellando la compuerta detrás de ella.</p>
+
+          <p>Caminaba con pasos firmes, sin prisa, pero sin pausa. Su destino estaba claro. Cada decisión ya estaba tomada. Entonces, oyó el débil llanto.</p>
+
+          <p>No un grito de desesperación ni una súplica ahogada. Era un llanto contenido, casi en silencio, como el de alguien que ya había aceptado su final.</p>
+
+          <p>Se detuvo un instante, girando la cabeza apenas unos centímetros. En el pasillo perpendicular, acurrucado contra una pared, un niño sollozaba, con el rostro hundido entre los brazos. No se movía, no pedía ayuda. Simplemente lloraba. Irina siguió caminando.</p>
+
+          <p>Un paso. Luego otro.</p>
+
+          <p>El hangar estaba cerca. Su destino, asegurado. Ese niño no formaba parte del plan. Pero, por alguna razón, se detuvo.</p>
+
+          <p>Permaneció inmóvil por un par de segundos, con el eco del llanto flotando en el aire a su espalda. Exhaló con suavidad y, sin girarse del todo, habló con voz firme, sin emoción.</p>
+
+          <p>—¿Cómo te llamas?</p>
+
+          <p>El niño alzó la cabeza lentamente. El rostro rojo por el llanto, los ojos hinchados y vidriosos. Un niño cualquiera, en el peor momento posible.</p>
+
+          <p>—Aaron… —susurró con voz rota.</p>
+
+          <p>Irina lo observó, analizando su estado. No había esperanza en él, solo resignación.</p>
+
+          <p>—¿Quieres vivir? —preguntó sin rodeos.</p>
+
+          <p>Aaron parpadeó, como si la pregunta fuera extraña, absurda. Claro que quería, pero ¿cómo?</p>
+
+          <p>—Ya no hay naves… —murmuró con la garganta cerrada.</p>
+
+          <p>Irina esbozó una sonrisa apenas perceptible.</p>
+
+          <p>—Eso no es relevante, niño. Ven conmigo.</p>
+
+          <p>No esperó respuesta. Simplemente se giró y comenzó a caminar de vuelta al laboratorio. Aaron dudó un segundo, luego se puso de pie y la siguió.</p>
+
+          <hr>
+
+
+          <!-- Encabezado estilo "dateline" (arriba derecha) -->
+          <div class="reader-dateline">
+            <div class="reader-dateline__block">
+              <div class="reader-dateline__title">T MENOS 3 MINUTOS</div>
+            </div>
+          </div>
+
+
+          <p>El acceso se deslizó con un chasquido al reconocer su autorización. Apenas habían pasado unos minutos, todo seguía igual.</p>
+
+          <p>Aaron observaba a su alrededor con la confusión de alguien que ya no esperaba nada. Sus ojos se movían por los equipos, por los tubos de crioestasis, por los paneles que aún parpadeaban con luz azulada.</p>
+
+          <p>—En el tubo estarás más seguro —dijo Irina mientras activaba los protocolos de suspensión. Aaron la miró con duda.</p>
+
+          <p>—¿Pero el laboratorio… aterrizará?</p>
+
+          <p>—Sí —mintió sin dudar—. Y si algo sale mal… pues no sufrirás.</p>
+
+          <p>El niño tragó saliva. No entendía del todo lo que ocurría, pero aceptó su destino con la misma resignación con la que había aceptado sus recientes pérdidas. Se tumbó en el tubo mientras la doctora lo preparaba todo.</p>
+
+          <p>—¿Estás listo? Verás, te despertarás en otro lugar, otro tiempo. Y esto solo habrá sido una pesadilla. Te lo prometo. —Le dijo con una sonrisa alentadora.</p>
+
+          <p>Aaron le devolvió la sonrisa recordando lo que se había imaginado unos días antes cuando su padre se había enfadado: Los que se quedan en las cápsulas… no tienen ninguna opción.</p>
+
+          <p>—Gracias… —susurró, a pesar del recuerdo—. La esperanza es lo último que se pierde. Eso me decía mi papá. —dijo pensando en su padre mientras el gas criogénico envolvía su cuerpo y se sumía en el sueño profundo.</p>
+
+          <p>Irina observó el monitor hasta que los signos vitales se estabilizaron y la suspensión fue efectiva. Fue a por el amortiguador de inercia prototipo y lo activó alrededor del tubo del niño.</p>
+
+          <p>—No te garantizo que funcione, pequeño. Pero cualquier cosa que pueda ayudar vale la pena intentarla.</p>
+
+          <p>Sin decir nada más, se dio la vuelta y salió del laboratorio por segunda vez, sellando la compuerta detrás de ella.</p>
+
+          <p>Pensó en Aaron solo un instante. No podía cargar con él. Aquí, si sobrevivía, alguien podría encontrarlo en un futuro lejano.</p>
+
+          <hr>
+
+          <!-- Encabezado estilo "dateline" (arriba derecha) -->
+          <div class="reader-dateline">
+            <div class="reader-dateline__block">
+              <div class="reader-dateline__title">T: DESEMBARCO</div>
+            </div>
+          </div>
+
+          <p>La Equality rozó la atmósfera de Elysium como un titán celestial esparciendo sus hijos en la vastedad de su cielo. A su paso, miles de naves se desprendieron en un éxodo ardiente, envolviéndose en llamaradas anaranjadas mientras la fricción las devoraba, trazando oscuras cicatrices de fuego en el firmamento. Porque, la esperanza, es lo último que se pierde.</p>
+
+
+
+
+
+
+
+
+
+          <p class="reader-cta" data-nosnippet>¿Quieres más? Novela: “Hijas de Elysium” autor “Zarius”. <a href="https://www.amazon.es/dp/B0F286H12V" target="_blank" rel="noopener noreferrer">Disponible en Amazon.</a></p>
+
+
+
+
+          <div class="d-flex flex-column flex-sm-row gap-2 mt-4">
+            <a class="reader-btn" href="../..//novela/index.html" title="Ver la página de la novela">
+              <i class="bi bi-book"></i> Ver novela
+            </a>
+            <a class="reader-btn" href="https://www.amazon.es/Los-Ecos-Equality-perdida-Historias-ebook/dp/B0DWK97P98" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-heart-fill"></i> Apoyar (1€)
+            </a>
+            <a class="reader-btn" href="../../assets/files/Los-ecos-de-la-equality.pdf" target="_blank" rel="noopener" title="Abrir PDF">
+              <i class="bi bi-file-earmark-pdf"></i> Descargar en PDF
+            </a>
+          </div>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+    <div class="container">
+      <div class="social-links d-flex justify-content-center">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tierraperdida"><i class="bi bi-instagram"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@tierraperdida.com"><i class="bi bi-tiktok"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="mailto:admin@tierraperdida.com"><i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        &copy; Zarius @ 2025 . Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS -->
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS (necesario para el menú móvil y el nav) -->
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/lecturas.js"></script>
+
+</body>
+</html>

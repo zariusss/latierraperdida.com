@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Historias cortas | La puerta al universo</title>
+
+  <meta name="description" content="Historias cortas del universo La Tierra Perdida. Una historia gratis y relatos [1€] para descubrir el mundo y sus personajes.">
+
+  <!-- Favicons -->
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;600;800&display=swap">
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/vendor/aos/aos.css">
+  <link rel="stylesheet" href="../assets/vendor/glightbox/css/glightbox.min.css">
+  <link rel="stylesheet" href="../assets/vendor/swiper/swiper-bundle.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/nav.css">
+  <link rel="stylesheet" href="../assets/css/novela.css">
+  <link rel="stylesheet" href="../assets/css/historias.css">
+
+  <script>
+    // Filtro simple: /historias?f=1e o /historias?f=gratis
+    document.addEventListener('DOMContentLoaded', () => {
+      const f = new URLSearchParams(window.location.search).get('f');
+      if (!f) return;
+      const target = (f === '1e') ? 'uno-euro' : (f === 'gratis') ? 'gratis' : null;
+      if (!target) return;
+      const el = document.getElementById(target);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  </script>
+</head>
+
+<body class="novela-page historias-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div style="margin-right:100px" class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+
+      <a href="/index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">La Tierra Perdida</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html">Indice</a></li>
+          <!-- Leer (dropdown) -->
+          <li class="dropdown">
+            <a href="#">
+              <span>Leer</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="../novela/index.html">Novela</a></li>
+              <li><a href="#uno-euro">Historias [1€]</a></li>
+              <li><a href="#gratis">Historia gratis</a></li>
+            </ul>
+          </li>
+
+          <!-- Escuchar -->
+<!--          <li><a href="/podcast">Escuchar</a></li>-->
+
+          <!-- Universo -->
+<!--          <li><a href="/universo">Universo</a></li>-->
+
+          <!-- Botón / CTA -->
+<!--          <li><a href="/#contrib" class="nav-cta">🤍 Apoyar</a></li>-->
+
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- HERO -->
+    <section id="puerta" class="hero section dark-background">
+<!--      <img src="../assets/img/testimonials-bg.jpg" alt="" data-aos="fade-in">-->
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="book-hero" style="max-width: 880px;">
+          <p class="book-hero__kicker">Historias cortas</p>
+          <h1 class="book-hero__title" style="font-size: clamp(28px, 4vw, 44px);">La puerta al universo</h1>
+          <p class="book-hero__subtitle">
+            Relatos para entrar en <strong>La Tierra Perdida</strong> en una tarde: misterio, supervivencia,
+            tecnología y humanidad al límite.
+          </p>
+
+          <div class="d-flex gap-2 justify-content-center hero-ctas">
+            <a class="producto-enlace flex-fill text-center" href="../lecturas/los-ecos-de-la-equality/relato.html">Leer gratis</a>
+            <a class="producto-enlace flex-fill text-center" href="#uno-euro">Ver historias [1€]</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GRATIS -->
+    <!-- GRATIS -->
+    <section id="gratis" class="section">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-card gratis-banner"
+             style="--gratis-bg: url('../../assets/img/bgecos.jpg');">
+
+          <h2 class="section-title">Historia gratis</h2>
+
+          <div class="gratis-banner__inner">
+            <div class="gratis-banner__content">
+              <h3 class="gratis-banner__title">Los ecos de la Equality</h3>
+
+              <div class="d-flex flex-wrap gap-2 mb-2">
+                <span class="tag-pill"><i class="bi bi-unlock"></i> Gratis</span>
+                <span class="tag-pill"><i class="bi bi-clock"></i> 25–35 min</span>
+                <span class="tag-pill"><i class="bi bi-compass"></i> Precuela</span>
+              </div>
+
+              <p class="book-hero__subtitle">
+                Disfrútalo gratis a continuación, o descárgalo en tu formato preferido.
+              </p>
+
+              <div class="d-flex flex-column flex-md-row gap-2 align-items-stretch align-items-md-center mt-3">
+                <a class="producto-enlace" href="../lecturas/los-ecos-de-la-equality/relato.html"><i class="bi bi-book"></i> Leer gratis</a>
+                <a class="producto-enlace" href="los-ecos-de-la-equality/index.html"><i class="bi bi-card-text"></i> Ver ficha</a>
+<!--                <a class="producto-enlace" href="https://www.amazon.es/TU-ENLACE" target="_blank" rel="noopener noreferrer">-->
+<!--                  <i class="bi bi-heart-fill"></i> Apoyar (1€)-->
+<!--                </a>-->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 1€ -->
+    <section id="uno-euro" class="section">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-card">
+          <h2 class="section-title">Historias [1€]</h2>
+          <p style="margin-top:-6px;">
+            Relatos autoconclusivos con la misma estética y el mismo universo.
+          </p>
+
+          <div class="row g-4 mt-1">
+            <!-- Card: La piloto -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="section-card" style="margin:0; height:100%;">
+                <img class="img-fluid rounded-3 mb-3" style="border: 1px solid rgba(255,255,255,.14);" 
+                     src="../assets/img/covers/hc2.jpg" alt="Portada: La piloto">
+                <h3 style="margin:0 0 10px; font-family: Orbitron, sans-serif;">La piloto</h3>
+                <div class="d-flex flex-wrap gap-2 mb-2">
+                  <span class="tag-pill"><i class="bi bi-currency-euro"></i> 0,99€</span>
+                  <span class="tag-pill"><i class="bi bi-clock"></i> 30–40 min</span>
+                </div>
+                <p style="margin: 0 0 14px;">Carreras ilegales, tensión y un universo industrial que no perdona.</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="producto-enlace" href="la-piloto/index.html">Ver ficha</a>
+<!--                  <a class="producto-enlace" href="la-piloto/leer.html">-->
+<!--                    🤍 Apoyar [1€]-->
+<!--                  </a>-->
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: El renacimiento de Erik -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="section-card" style="margin:0; height:100%;">
+                <img class="img-fluid rounded-3 mb-3" style="border: 1px solid rgba(255,255,255,.14);" 
+                     src="../assets/img/covers/hc3.jpg" alt="Portada: El renacimiento de Erik">
+                <h3 style="margin:0 0 10px; font-family: Orbitron, sans-serif;">El renacimiento de Erik</h3>
+                <div class="d-flex flex-wrap gap-2 mb-2">
+                  <span class="tag-pill"><i class="bi bi-currency-euro"></i> 0,99€</span>
+                  <span class="tag-pill"><i class="bi bi-clock"></i> 25–35 min</span>
+                </div>
+                <p style="margin: 0 0 14px;">En las tribus chamánicas de Elysium el renacimiento es el ritual para pasar a la edad adulta... o morir. </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="producto-enlace" href="el-renacimiento-de-erik/index.html">Ver ficha</a>
+<!--                  <a class="producto-enlace" href="el-renacimiento-de-erik/leer.html">-->
+<!--                    🤍 Apoyar [1€]-->
+<!--                  </a>-->
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: La piloto, el despertar -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="section-card" style="margin:0; height:100%;">
+                <img class="img-fluid rounded-3 mb-3" style="border: 1px solid rgba(255,255,255,.14);" 
+                     src="../assets/img/covers/hc2.1.jpg" alt="Portada: La piloto, el despertar">
+                <h3 style="margin:0 0 10px; font-family: Orbitron, sans-serif;">La piloto, el despertar</h3>
+                <div class="d-flex flex-wrap gap-2 mb-2">
+                  <span class="tag-pill"><i class="bi bi-currency-euro"></i> 0,99€</span>
+                  <span class="tag-pill"><i class="bi bi-clock"></i> 25–35 min</span>
+                </div>
+                <p style="margin: 0 0 14px;">¿Qué le está sucediendo a la <i>leyenda</i> Rayne? Descubrelo al mismo tiempo que ella...</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="producto-enlace" href="la-piloto-el-despertar/index.html">Ver ficha</a>
+<!--                  <a class="producto-enlace" href="la-piloto-el-despertar/leer.html">-->
+<!--                    🤍 Apoyar [1€]-->
+<!--                  </a>-->
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: Variable no reconocida -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="section-card" style="margin:0; height:100%;">
+                <img class="img-fluid rounded-3 mb-3" style="border: 1px solid rgba(255,255,255,.14);" 
+                     src="../assets/img/covers/hc4.jpg" alt="Portada: Variable no reconocida">
+                <h3 style="margin:0 0 10px; font-family: Orbitron, sans-serif;">Variable no reconocida</h3>
+                <div class="d-flex flex-wrap gap-2 mb-2">
+                  <span class="tag-pill"><i class="bi bi-currency-euro"></i> 0,99€</span>
+                  <span class="tag-pill"><i class="bi bi-clock"></i> 25–35 min</span>
+                </div>
+                <p style="margin: 0 0 14px;">¿Qué pasa cuando toman el control de tu cuerpo y no puedes hacer nada para evitarlo?.</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="producto-enlace" href="variable-no-reconocida/index.html">Ver ficha</a>
+<!--                  <a class="producto-enlace" href="variable-no-reconocida/leer.html">-->
+<!--                    🤍 Apoyar [1€]-->
+<!--                  </a>-->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="cta-band section-card" style="margin-top: 18px;">
+          <div class="cta-band__text">
+            <h2 class="cta-band-title">¿Quieres leer el arco largo?</h2>
+            <p class="cta-band-desc">Si te engancha el universo, entra por la primera novela: <strong>Hijas de Elysium</strong>.</p>
+          </div>
+          <a class="producto-enlace producto-enlace--sm btn-secondary" href="../novela/index.html"><i class="bi bi-box-arrow-up-right"></i> Ver novela</a>
+        </div>
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="social-links d-flex justify-content-center">
+        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/tierraperdida"><i class="bi bi-instagram"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@tierraperdida.com"><i class="bi bi-tiktok"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="mailto:admin@tierraperdida.com"><i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        &copy; Zarius @ 2025 . Todos los derechos reservados.
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="../assets/js/main.js"></script>
+
+
+</body>
+</html>

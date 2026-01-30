@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!-- python -m http.server 8000 -->
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hijas de Elysium (novela) | Ciencia ficción épica | La Tierra Perdida</title>
+
+  <meta name="description" content="Página de lectura de La Tierra Perdida: muestra de Hijas de Elysium. Modo lectura con tema claro/oscuro y ajustes de tipografía.">
+  <meta name="robots" content="index,follow">
+
+  <!-- Favicons -->
+  <link rel="icon" href="../../assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400;600;800&display=swap">
+
+  <!-- Vendor CSS Files (mínimo) -->
+  <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/nav.css">
+  <link rel="stylesheet" href="../../assets/css/lectora.css">
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMTQEQV0HZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PMTQEQV0HZ');
+  </script>
+
+</head>
+
+<body class="reader-page">
+
+  <!-- Barra de progreso -->
+  <div class="reader-progress" aria-hidden="true">
+    <div class="reader-progress__bar" id="readerProgressBar"></div>
+  </div>
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div style="margin-right:100px" class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">La Tierra Perdida</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../../index.html">Indice</a></li>
+          <!-- Leer (dropdown) -->
+          <li class="dropdown">
+            <a href="#">
+              <span>Leer</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i>
+            </a>
+            <ul>
+              <li><a href="../../novela/index.html">Novela</a></li>
+              <li><a href="/historias?f=1e">Historias por 1€</a></li>
+              <li><a href="/historias#gratis">Historia gratis</a></li>
+            </ul>
+          </li>
+
+<!--          <li><a href="/podcast">Escuchar</a></li>-->
+<!--          <li><a href="/universo">Universo</a></li>-->
+<!--          <li><a href="/#contrib" class="nav-cta">Apoyar</a></li>-->
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Toolbar de lectura -->
+    <div class="reader-toolbar">
+      <div class="inner">
+
+        <div class="left">
+          <a class="reader-btn reader-btn--ghost" id="btnBack" href="#" title="Volver">
+            <i class="bi bi-arrow-left"></i> Volver
+          </a>
+        </div>
+
+        <div class="right">
+          <button class="reader-btn" id="toggleTheme" type="button" title="Cambiar tema">
+            <i class="bi bi-circle-half"></i> Modo lectura
+          </button>
+
+          <button class="reader-btn" id="decFont" type="button" title="Reducir tamaño de letra">
+            <i class="bi bi-dash-lg"></i> A
+          </button>
+          <button class="reader-btn" id="incFont" type="button" title="Aumentar tamaño de letra">
+            <i class="bi bi-plus-lg"></i> A
+          </button>
+
+          <button class="reader-btn" id="toggleWidth" type="button" title="Cambiar ancho">
+            <i class="bi bi-arrows-angle-expand"></i> Ancho
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <section class="reader-wrap">
+      <div class="container">
+        <article class="reader" id="readerArticle">
+
+          <h1>Prólogo (muestra)</h1>
+
+          <div class="meta">
+            <span id="readingTime">Tiempo de lectura: —</span>
+            <span class="dot">·</span>
+            <span>Hijas de Elysium [extracto del prólogo]</span>
+          </div>
+
+          <!-- Encabezado estilo "dateline" (arriba derecha) -->
+          <div class="reader-dateline">
+            <div class="reader-dateline__block">
+              <div class="reader-dateline__title">EL PASADO</div>
+              <div class="reader-dateline__line">AÑO DEL CALENDARIO TERRESTRE: <span class="num">3727</span></div>
+              <div class="reader-dateline__line">SISTEMA SOLAR ELYSIUM</div>
+              <div class="reader-dateline__line">PLANETA ELYSIUM</div>
+              <div class="reader-dateline__line">EN ÓRBITA</div>
+            </div>
+          </div>
+
+          <!-- Etiqueta (Extracto del prólogo) -->
+          <div class="reader-extracto">(Extracto del prólogo)</div>
+
+          <p>El sonido estridente de las alarmas seguía resonando en el estrecho compartimento de la cápsula. Irina permanecía inmóvil frente al panel de control, evaluando las lecturas con frialdad. Y sin dudarlo, pulsó el botón de cierre de la compuerta. Luego, por el micrófono, dijo: —Preparados para desacoplar.</p>
+
+          <p>Apartó la mirada de la cámara exterior, intentando bloquear las caras que clamaban por su compasión. Por un instante, su dedo titubeó sobre el panel de control. "Podría esperar unos segundos más", pensó. Pero no podía permitírselo. Cada segundo reducía las probabilidades de éxito. Sabía que, si dudaba, todo se perdería: su trabajo, sus sueños, quizás la humanidad misma. Más allá de la puerta se escuchaban los gritos desesperados de los compañeros que había abandonado. “¡Irina! ¡No puedes hacer esto! ¡Aún hay espacio!" rugió una voz masculina desde el intercomunicador. Golpes secos contra la puerta. Gritos de desesperación. Llantos ahogados por el pánico, y por un momento… Con un nudo en la garganta, cerró los ojos y respiró profundamente. "Lo siento", murmuró.</p>
+
+          <p>Su mano tembló ligeramente al teclear el procedimiento de desacople. No quería volver a mirar hacia la cámara exterior, pero no pudo evitarlo. Los rostros de sus colegas, desfigurados por el terror, se apiñaban alrededor de la entrada. Más de quince personas, sus suplicas se mezclaban con la cacofonía de alarmas y advertencias automáticas. Cerró los ojos.</p>
+
+          <p>“No puedo permitirme el lujo de fracasar,” murmuró, casi en un susurro, como si buscara convencerse a sí misma.</p>
+
+          <p>Sabía que, si vivían para contarlo, los supervivientes cargarían contra su decisión. Dio igual. Cambiaría de identidad si hacía falta. Los tubos de estasis, el experimento… era su prioridad. Su legado, y el futuro de la humanidad.</p>
+
+          <p>Con un movimiento rápido, tecleó las últimas instrucciones. Los gritos se apagaron cuando la esclusa intermedia se vació de aire. "El experimento ante todo" Pensó.</p>
+
+          <p>Accionó el desacople de la cápsula, sintiendo el tirón al separarse del casco de la Equality. Una parte de ella quería volverse, mirar atrás. Pero no lo hizo. Derramó una lágrima. El futuro estaba delante. Atrás solo quedaba muerte.</p>
+
+          <hr>
+
+          <p>El estruendo se desvaneció, y con él, solo quedó el silencio... Dejó escapar un suspiro largo y tembloroso. Miró nuevamente los indicadores; las luces verdes mostraban que la maniobra había sido un éxito. Acto seguido accionó el último comando del panel, el que pondría en marcha el desacople del laboratorio. Las manos de Irina temblaban ligeramente mientras sus dedos danzaban sobre los controles, revisando cada parámetro, cada cifra crítica. Sabía que las posibilidades eran mínimas. La velocidad de descenso y el ángulo de reentrada hacían que cualquier intento de salvaguardar el módulo pareciera inútil, pero no podía permitirse no intentarlo. Aquello no era solo un laboratorio: era la culminación de su vida, de su propósito. Sus experimentos, su legado, estaban encerrados allí.</p>
+
+          <p>El sistema respondió con un retraso angustiante, emitiendo un pitido monótono antes de que un indicador se iluminara en la consola. Irina aguantó la respiración mientras observaba cómo el laboratorio se separaba lentamente del casco principal de la Equality. En la pantalla, el módulo apareció como una pequeña figura en el vacío, aún se distinguían las letras “EQ-LAB-004" mientras se alejaba gradualmente. Ahí, encapsulado en esa fría carcasa de metal, no solo estaba su trabajo; estaba la esperanza de la humanidad.</p>
+
+          <p>"Está hecho", pensó, con una frialdad que no sentía realmente. Apoyó ambas manos sobre el panel y cerró los ojos. No había tiempo para arrepentimientos, en menos de veinte minutos entrarían en la atmósfera.</p>
+
+          <hr>
+
+          <p>El sonido estridente de nuevas alarmas resonaba en la estrecha cabina; la reentrada había comenzado, y con ella, la amenaza inminente. La cápsula vibraba como si estuviera a punto de desintegrarse. El rugido del rozamiento con la atmósfera llenaba el interior, mientras los indicadores de velocidad y temperatura parpadeaban en un rojo constante. Irina estaba recostada sobre el asiento por la fuerza de la reentrada, los ojos entrecerrados para ignorar el sudor que le resbalaba por la frente.</p>
+
+          <p>“Demasiada velocidad. No vamos a lograrlo”, murmuró para sí misma, apretando los dientes mientras sus dedos volaban sobre los interruptores. Los sistemas automáticos se habían desactivado desde el principio de la maniobra, incapaces de manejar el descenso crítico. Todo dependía de ella.</p>
+
+          <p>La cápsula se sacudió con violencia, lanzándola contra el arnés de su asiento. El parabrisas reforzado se había resquebrajado por el calor y una grieta serpenteaba en una de las pantallas de monitoreo, pero aún se podía distinguir los números: 4.700 km/h y bajando lentamente. Era insuficiente.</p>
+
+          <p>—¡Vamos, maldita sea! —gruñó, golpeando un interruptor que desplegó manualmente los estabilizadores laterales. Las alas emergieron con un chirrido metálico y comenzaron a arder casi de inmediato por la fricción. La nave gimió en protesta, pero la velocidad comenzó a descender.</p>
+
+          <p>—¡Vaaamos! —gritó esta vez.</p>
+
+          <p>A pesar de su diseño antitérmico, la cabina se había transformado en una auténtica sauna. Le ardía la piel y notó que su cabello se pegaba al rostro, empapado por el sudor. En la pantalla, las temperaturas alcanzaban los 1.400 grados en el exterior. Activó el sistema de ventilación de emergencia, liberando refrigerante adicional por los circuitos.</p>
+
+          <p>De repente, un fuerte impacto sacudió la cápsula. Una de las alas estabilizadoras se desgajó, arrancada por la fuerza brutal de la entrada. Irina se tambaleó hacia un lado, sujetándose al panel con ambas manos mientras la nave empezaba a dar trombos. La fuerza la aplastó contra su asiento.</p>
+
+          <p>—No, no, no... —jadeó, buscando desesperadamente una solución. Todo daba vueltas.</p>
+
+          <p>Entonces vio el indicador de los propulsores de maniobra: un sistema diseñado para pequeños ajustes en el espacio, no para frenar una cápsula en caída libre. Pero no había más alternativas. Iban a morir y cualquier opción se había convertido en una posibilidad real de éxito.</p>
+
+          <p>Con un esfuerzo tremendo debido a las fuerzas G logró levantar el brazo derecho, donde en su dedo anular llevaba el Neoring de su madre. Era un anillo inteligente que le había regalado cuando cumplió diez años. Por un momento se quedó paralizada, incapaz de mover el brazo más allá, como si estuviera atrapada en un pulso invisible contra el propio universo.</p>
+
+          <p>Su mirada se fijó en el anillo, y en un acto desesperado, sacó fuerzas de lo imposible, pulsando finalmente el indicador, desvió toda la energía restante al sistema de propulsión secundaria. Las luces de la cabina parpadearon y se apagaron durante un segundo, antes de que los propulsores se activaran con un enorme rugido, lanzando una explosión de gas hacia el vacío. La cápsula tembló con tanta fuerza que creyó que se partiría en dos, los trompos se convirtieron en un giro mucho más fácil de tolerar y la velocidad comenzó a disminuir, pero a pesar de todo estaba empezando a marearse.</p>
+
+          <p>Sus ojos volvieron a los indicadores. La altitud en la pantalla mostraba que estaban demasiado cerca del suelo. O eso creía, las vibraciones hacían difícil la lectura. La velocidad seguía siendo demasiado elevada. Eso lo tenía claro: sobraba un dígito en ese indicador, iban a más de mil kilómetros por hora. No era suficiente.</p>
+
+          <p>En un último esfuerzo desesperado tiró con todas sus fuerzas de la palanca para tratar de nivelar la nave y posicionarla horizontalmente al suelo. Pero la pérdida del ala hizo que la cápsula empezara a dar vueltas nuevamente sobre sí misma como una peonza. A pesar de ello, el rumbo se corrigió levemente. Vio pasar una gran selva bajo ella, a menos de mil metros de altitud.</p>
+
+          <p>Finalmente, tras unos largos minutos en paralelo al suelo, la velocidad disminuyó. Irina, con una seguridad que solo daba la desesperación, desplegó los paracaídas. “Ahora o nunca”. Sabía que, a esta velocidad, servirían de poco y probablemente la velocidad los arrancaría de cuajo. Pero llegados a este punto, cualquier cosa era buena.</p>
+
+          <p>La cápsula volvió a sacudirse violentamente por el frenazo y notó como la sangre le subía de golpe al cerebro aturdiéndola aún más. Súbitamente el horizonte desapareció, reemplazado por una enorme extensión de árboles verdes.</p>
+
+          <p>El impacto llegó como un latigazo precedido de enormes temblores debido a la vegetación arrancada de cuajo. La cápsula golpeó el suelo a una velocidad de más de trescientos kilómetros por hora, deslizándose por un terreno selvático y dejando tras de sí un rastro de fuego, escombros y destrucción. Irina sintió un dolor agudo en el costado cuando el cinturón de seguridad la sujetó con fuerza. Su cabeza golpeó con algo, y una ola de calor la invadió.</p>
+
+          <hr>
+
+          <p>Un espeso líquido le goteaba de la frente. Consciente sólo a medias, examinó el panel de control. Veía borroso, le costaba respirar, tuvo que concentrarse enormemente para enfocar. Todos los indicadores de los tubos de estasis estaban en verde. Revisó los sensores del estado del casco, la zona circundante y sus posibles peligros.</p>
+
+          <p>A pesar de lo tenso del descenso Irina había ajustado los cálculos de la trayectoria con precisión. Sabía que, tras abandonar la Equality, cualquier margen de error podría significar el fin de su misión. El análisis preliminar del planeta había revelado la existencia de vastos océanos, pantanos y zonas de terreno inestable. Cualquier aterrizaje en esos lugares no solo pondría en riesgo su experimento, sino también la posibilidad de garantizar su propia supervivencia. Por eso, eligió con cuidado un área firme y estable para el aterrizaje. Usó los escáneres de topografía de la cápsula para localizar una región que, según los datos, parecía un valle rocoso con suelo compacto y vegetación. Era su mejor opción, lejos de las aguas profundas del océano, las trampas de las ciénagas y cualquier terreno que pudiera tragarse la cápsula.</p>
+
+          <p>Así pues, había logrado aterrizar en medio de lo que parecía una selva tropical. A pesar de su creciente dolor de cabeza sonrió al pensar que había usado la palabra “Aterrizar”.</p>
+
+          <p>Según los datos, la cápsula de salvamento estaba muy dañada, pero no presentaba daños estructurales ni fisuras en el casco. Sin embargo, la ausencia de la señal del laboratorio confirmó sus peores temores: se había perdido durante la reentrada, consumido por las llamas y la brutalidad del descenso. La idea de haber perdido los datos de su experimento le pesó más que cualquier herida física. Suspiró, intentando acallar la decepción que latía como un eco persistente en su pecho. No se puede tenerlo todo, pensó, forzándose a concentrarse en lo que aún podía salvar.</p>
+
+          <p>Por último, revisó los datos biométricos del personal a bordo. Tres heridos muy graves. Ella entre ellos. Dos de sus compañeros estaban muy mal heridos e inconscientes, todo el resto había fallecido. “No. No puedo morir.” El pensamiento irrumpió con la fuerza de un instinto primario. Si moría, lo olvidaría todo. Su vida, sus recuerdos, quién era… el experimento. Su mente se aferró a la consciencia con desesperación, pero la luz se atenuó de forma irremediable, deslizándose fuera de su alcance, hasta que la engulló la oscuridad.</p>
+
+          <p>Pasados unos pocos segundos, los datos biométricos de la cápsula redujeron el contador de supervivientes a dos. Algo menos de tres horas después del accidente, la cápsula sólo contenía cadáveres.</p>
+
+          <p>Quedó en silencio, incrustada en el suelo como una cicatriz en el paisaje desconocido. El cuerpo de Irina, atrapado entre los arneses, colgando de lado por la inclinación de la nave. Dos costillas sobresalían de su esternón, un reguero le cubría media cara. El charco de sangre formado en el suelo había dejado de crecer desde el momento que su corazón había dejado de latir.</p>
+
+          <p class="reader-cta" data-nosnippet>¿Quieres más? “Hijas de Elysium” autor “Zarius”. <a href="https://www.amazon.es/dp/B0F286H12V" target="_blank" rel="noopener noreferrer">Disponible en Amazon.</a></p>
+
+
+
+
+          <div class="d-flex flex-column flex-sm-row gap-2 mt-4">
+            <a class="reader-btn" href="../../novela/index.html" title="Ver la página de la novela">
+              <i class="bi bi-book"></i> Ver ficha
+            </a>
+            <a class="reader-btn" target="_blank" href="https://www.amazon.es/dp/B0F286H12V" title="Comprar en Amazon">
+              <i class="bi bi-cart"></i> Comprar
+            </a>
+            <a class="reader-btn" href="../../assets/files/Hijas_de_Elysium_Extracto.pdf" target="_blank" rel="noopener" title="Abrir PDF">
+              <i class="bi bi-file-earmark-pdf"></i> Descargar muestra en PDF
+            </a>
+          </div>
+
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+    <div class="container">
+      <div class="social-links d-flex justify-content-center">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/tierraperdida"><i class="bi bi-instagram"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@tierraperdida.com"><i class="bi bi-tiktok"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="mailto:admin@tierraperdida.com"><i class="bi bi-envelope"></i></a>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        &copy; Zarius @ 2025 . Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS -->
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS (necesario para el menú móvil y el nav) -->
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/lecturas.js"></script>
+
+</body>
+</html>
