@@ -333,3 +333,20 @@
     color: #fff;
   }
 }
+
+
+/***************************************************/
+
+/* Active robusto: si el JS pone .active en <li> o en <a>, subraya igual */
+@media (min-width: 1200px){
+  .navmenu > ul > li.active > a:before,
+  .navmenu > ul > li > a.active:before{
+    visibility: visible;
+    width: 100%;
+  }
+
+  .navmenu > ul > li.active > a,
+  .navmenu > ul > li > a.active{
+    color: var(--nav-hover);
+  }
+}

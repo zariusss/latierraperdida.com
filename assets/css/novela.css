@@ -465,3 +465,89 @@ body.novela-page main.main section{
 
 
 /***********************************************/
+
+/* =========================
+   PODCAST: grid de plataformas
+   ========================= */
+.escuchar-page .podcast-platforms{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Card base */
+.escuchar-page .platform-card{
+  --p: #66a3ff; /* color por defecto */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-height: 92px;
+  padding: 14px 12px;
+
+  border-radius: 14px;
+  border: 1px solid color-mix(in srgb, var(--p) 38%, rgba(255,255,255,.10));
+  background: rgba(0,0,0,.28);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  color: rgba(255,255,255,.92);
+  text-decoration: none;
+  font-weight: 600;
+
+  box-shadow:
+    0 10px 18px rgba(0,0,0,.45),
+    inset 0 0 0 1px rgba(255,255,255,.06),
+    0 0 22px color-mix(in srgb, var(--p) 18%, transparent);
+
+  transition: transform .15s ease, filter .15s ease, box-shadow .15s ease;
+}
+
+.escuchar-page .platform-card i{
+  font-size: 24px;
+  line-height: 1;
+  color: color-mix(in srgb, var(--p) 88%, white 12%);
+  opacity: .95;
+}
+
+.escuchar-page .platform-card span{
+  font-size: 14px;
+  letter-spacing: .02em;
+}
+
+/* Hover */
+.escuchar-page .platform-card:hover{
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+  box-shadow:
+    0 14px 24px rgba(0,0,0,.55),
+    inset 0 0 0 1px rgba(255,255,255,.10),
+    0 0 30px color-mix(in srgb, var(--p) 26%, transparent);
+}
+
+/* Colores por plataforma */
+.escuchar-page .platform-spotify{ --p: #1DB954; }
+.escuchar-page .platform-ivoox{ --p: #ff6a00; }
+.escuchar-page .platform-apple{ --p: #d6d6d6; }
+.escuchar-page .platform-youtube{ --p: #ff0033; }
+.escuchar-page .platform-amazon{ --p: #ff9900; }
+.escuchar-page .platform-podimo{ --p: #00e5a8; }
+
+/* Responsive */
+@media (max-width: 768px){
+  .escuchar-page .podcast-platforms{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 520px;
+  }
+}
+@media (max-width: 420px){
+  .escuchar-page .podcast-platforms{
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+}
