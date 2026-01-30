@@ -1,9 +1,9 @@
 
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Inter", sans-serif;
   --sci-font: "Orbitron", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
@@ -419,31 +419,15 @@ section,
   z-index: 3;
 }
 
-.hero h2 {
-  margin: 0;
-  font-size: 50px;
-  font-weight: 700;
-}
 
 .hero p {
   margin: 5px 0 0 0;
-  font-size: 36px;
-  font-weight: 600;
 }
 
 .hero p span {
   letter-spacing: 1px;
 }
 
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 20px;
-  }
-}
 
 /*--------------------------------------------------------------
 # About Section
@@ -1590,9 +1574,6 @@ p.blue{
 }
 
 
-.card a:hover {
-  background: #0055bb;
-}
 
 /* Fondos específicos */
 .card.novela {
