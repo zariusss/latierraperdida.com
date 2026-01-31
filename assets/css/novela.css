@@ -551,3 +551,79 @@ body.novela-page main.main section{
     max-width: 360px;
   }
 }
+
+
+/**************************/
+div.portadaimg {
+    margin: 13px 0 0;
+}
+
+
+div.portadaimg div.portada-container {
+    width: 100%;
+    max-width: 110px;
+    margin: 0 auto 12px;
+    aspect-ratio: 2 / 3;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.14);
+    background: rgba(0,0,0,.25);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.portadaimg div.portada-container img.portada-img{
+    all: unset;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+/* Buybox: portada lateral SIN romper el ancho */
+.section-card.buybox .buybox-row{
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+/* evita que el texto se “salga” o se comprima raro */
+.section-card.buybox .buybox-content{
+  min-width: 0;
+}
+
+/* en fila, no uses el centrado auto */
+.section-card.buybox .portada-container{
+  margin: 0;
+}
+
+/* evita que el precio se parta en 3 líneas */
+.section-card.buybox .price{
+  white-space: nowrap;
+  text-align: left; /* opcional, suele verse mejor aquí */
+}
+
+/* por si el link de "Ver opiniones" necesita romper */
+.section-card.buybox .stars{
+  flex-wrap: wrap;
+}
+
+/* móvil: portada arriba centrada */
+@media (max-width: 576px){
+  .section-card.buybox .buybox-row{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .section-card.buybox .buybox-content{
+    width: 100%;
+  }
+  .section-card.buybox .portada-container{
+    margin: 0 auto 12px;
+  }
+  .section-card.buybox .price{
+    text-align: right; /* si quieres mantener el look en móvil */
+  }
+}
