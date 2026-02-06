@@ -1,0 +1,432 @@
+{
+  "version": 1,
+  "format": "narrativo",
+  "arcs": [
+    {
+      "id": "origen",
+      "title": "Origen",
+      "orderMode": "top_down",
+      "chapters": [
+        {
+          "id": "1",
+          "order": 1,
+          "capNumber": "1",
+          "kicker": "Capítulo 1",
+          "title": "[Space Opera] Narración: Introducción, La Tierra y el comienzo - Cap 1°",
+          "thumb": "../../assets/img/podcast-img/cap1.jpg",
+          "descLines": [
+            "Introducción, La Tierra y el comienzo",
+            "32 min - Fundacional."
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/6gdT0jDAkndkIz8t3Y3VlK",
+            "ivoox": "https://www.ivoox.com/space-opera-narracion-introduccion-la-tierra-el-audios-mp3_rf_60095211_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/space-opera-narraci%C3%B3n-introducci%C3%B3n-la-tierra-y-el/id1541459038?i=1000499688620",
+            "youtube": "https://www.youtube.com/watch?v=6xDxnvMOOmY&t",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/c476d14a-d079-4e45-a958-7268515c5d97/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-space-opera-narraci%C3%B3n-introducci%C3%B3n-la-tierra-y-el-comienzo---cap-1%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 1",
+            "modalSubtitle": "Introducción, La Tierra y el comienzo",
+            "duration": "32 min",
+            "route": "Origen",
+            "longDescription": "Capítulo fundacional: Los avances del siglo XXI llevaron a la creación de las cuatro primeras naves colonizadoras. Las fundadoras del universo de La Tierra Perdida.",
+            "tags": [
+              "Space Opera", "Narración", "Fundacional"
+            ]
+          }
+        },
+        {
+          "id": "2",
+          "order": 2,
+          "capNumber": "2",
+          "kicker": "Capítulo 2",
+          "title": "[Space Opera] Narración: Introducción, La Tierra y la expansión - Cap. 2°",
+          "thumb": "../../assets/img/podcast-img/cap2.webp",
+          "descLines": [
+            "Introducción, La Tierra y la expansión",
+            "35 min - Continuación del cap 1"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/6tPPg7lGWtFlbiyII3cZWE",
+            "ivoox": "https://www.ivoox.com/space-opera-narracion-introduccion-la-tierra-la-audios-mp3_rf_60096055_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/space-opera-narraci%C3%B3n-introducci%C3%B3n-la-tierra-y-la-expansi%C3%B3n/id1541459038?i=1000499688621",
+            "youtube": "https://www.youtube.com/watch?v=bCPtSdqxi10",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/b45f99be-db42-4ca4-a475-2cc06a930709/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-space-opera-narraci%C3%B3n-introducci%C3%B3n-la-tierra-y-la-expansi%C3%B3n---cap-2%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 2",
+            "modalSubtitle": "Introducción, La Tierra y la expansión",
+            "duration": "35 min",
+            "route": "Origen",
+            "longDescription": "Capítulo fundacional: Continuación del capítulo 1. <br/>Los avances del siglo XXI llevaron a la creación de las cuatro primeras naves colonizadoras. Las fundadoras del universo de La Tierra Perdida.",
+            "tags": [
+              "Space Opera", "Narración"
+            ]
+          }
+        },
+        {
+          "id": "10",
+          "order": 3,
+          "capNumber": "10",
+          "kicker": "Capítulo 10",
+          "title": "[Mito Sci-Fi] Narración: Sin esperanza - Cap. 10°",
+          "thumb": "../../assets/img/podcast-img/cap11.webp",
+          "descLines": [
+            "Sin esperanza",
+            "30 min - Salto al 6º Milenio"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/2dQOWTfkFzzEIRCJEePEET",
+            "ivoox": "https://www.ivoox.com/mito-sci-fi-narracion-sin-esperanza-cap-11-audios-mp3_rf_63004320_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/mito-sci-fi-narraci%C3%B3n-sin-esperanza-cap-11%C2%BA/id1541459038?i=1000503494489",
+            "youtube": "https://www.youtube.com/watch?v=KiCr9RjBi3A",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/09f6ea29-c9b9-439a-9025-82ac11e277ca/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-mito-sci-fi-narraci%C3%B3n-sin-esperanza---cap-11%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 11",
+            "modalSubtitle": "Sin esperanza",
+            "duration": "30 min",
+            "route": "Elysium",
+            "longDescription": "Hacemos un salto en el futuro al 6º milenio. Hace siglos que Kentaurus, Olympia y Elysium se han unido en un imperio galáctico, y finalmente, el portal a la Tierra llega a su destino: el sistema Solar. ¿Que se encontrarán ahí los descendientes de los antiguos colonos?",
+            "tags": [
+              "Mito Sci-Fi", "Narración" , "Independiente"
+            ]
+          }
+        },
+        {
+          "id": "11",
+          "order": 4,
+          "capNumber": "11",
+          "kicker": "Capítulo 11",
+          "title": "[Mito Sci-Fi] Narración: Misterios - Cap. 11",
+          "thumb": "../../assets/img/podcast-img/cap11bis.webp",
+          "descLines": [
+            "Misterios",
+            "31 min - Continuación del cap. 10"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/57QAKOsXT4X7OD5aB64a6l",
+            "ivoox": "https://www.ivoox.com/mito-sci-fi-narracion-misterios-cap-11-audios-mp3_rf_64288019_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/mito-sci-fi-narraci%C3%B3n-sin-esperanza-cap-10%C2%BA/id1541459038?i=1000503494489",
+            "youtube": "https://www.youtube.com/watch?v=7k31oeg5608",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/598fee45-a473-4268-9b76-40eab5f3b952/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-mito-sci-fi-narraci%C3%B3n-misterios---cap-11",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 11",
+            "modalSubtitle": "Misterios",
+            "duration": "31 min",
+            "route": "Elysium",
+            "longDescription": "Continuación del cap. 11. <br/> ¿Qué ocurre en el sistema solar? Se habre el portal de la Tierra... otra vez...",
+            "tags": [
+              "Mito Sci-Fi",
+              "Narración"
+            ]
+          }
+        },
+        {
+          "id": "12",
+          "order": 5,
+          "capNumber": "12",
+          "kicker": "Capítulo 12",
+          "title": "[Space Opera] Narración: Los Ancestros - Cap. 12°",
+          "thumb": "../../assets/img/podcast-img/cap12.webp",
+          "descLines": [
+            "Los Ancestros",
+            "33 min - Continuación del cap 11"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/1ylt6IDBze5tXhhKbPO7vz",
+            "ivoox": "https://www.ivoox.com/space-opera-narracion-los-ancestros-cap-12-audios-mp3_rf_64633832_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/space-opera-narraci%C3%B3n-los-ancestros-cap-12%C2%BA/id1541459038?i=1000507046743",
+            "youtube": "https://www.youtube.com/watch?v=zBc4BJ2laMU",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/cef712f1-493a-4bf4-9717-993166e3303f/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-space-opera-narraci%C3%B3n-los-ancestros---cap-12%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 12",
+            "modalSubtitle": "Los Ancestros",
+            "duration": "33 min",
+            "route": "Elysium",
+            "longDescription": "Continuación del cap. 11.<br/>La DreamWalk nos desvelará más misterios de los que esperábamos. También hará que nos planteemos más preguntas.",
+            "tags": [
+              "Space Opera",
+              "Narración"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "olympus",
+      "title": "Olympus",
+      "orderMode": "top_down",
+      "chapters": [
+        {
+          "id": "7",
+          "order": 1,
+          "capNumber": "7",
+          "kicker": "Capítulo 7",
+          "title": "[Space Opera] Narración: Olympia, Inicios - Cap. 7°",
+          "thumb": "../../assets/img/podcast-img/cap7.webp",
+          "descLines": [
+            "Olympia, Inicios",
+            "26 min - Inicio de la saga."
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/1LDkAlhWe8oqBpsSxsMnaJ",
+            "ivoox": "https://www.ivoox.com/space-opera-narracion-olympia-inicios-cap-7-audios-mp3_rf_61380682_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/space-opera-narraci%C3%B3n-olympia-inicios-cap-7%C2%BA/id1541459038?i=1000501315763",
+            "youtube": "https://www.youtube.com/watch?v=1dxKxhsxg9M",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/38ce9363-193a-446d-9e1f-c05b6db3bcdd/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-space-opera-narraci%C3%B3n-olympia-inicios---cap-7%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 7",
+            "modalSubtitle": "Olympia, Inicios",
+            "duration": "26 min",
+            "route": "Olympus",
+            "longDescription": "Como fue la llegada de los primeros colonos al sistema solar Olympiano. ",
+            "tags": [
+              "Space Opera", "Narración", "Fundacional"
+            ]
+          }
+        },
+        {
+          "id": "8",
+          "order": 2,
+          "capNumber": "8",
+          "kicker": "Capítulo 8",
+          "title": "[Space Opera] Narración: Olympia, El Imperio - Cap. 8°",
+          "thumb": "../../assets/img/podcast-img/cap8.webp",
+          "descLines": [
+            "Olympia, El Imperio",
+            "26 min - Continuación del cap 7"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/7toAEKBvUCoV1YLLCGYprN",
+            "ivoox": "https://www.ivoox.com/space-opera-narracion-olympia-el-imperio-cap-audios-mp3_rf_62192147_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/space-opera-narraci%C3%B3n-olympia-el-imperio-cap-8%C2%BA/id1541459038?i=1000502053902",
+            "youtube": "https://www.youtube.com/watch?v=KYfgaPAjbh8",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/04c79703-113a-429a-ba43-ac54827d0360/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-space-opera-narraci%C3%B3n-olympia-el-imperio---cap-8%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 8",
+            "modalSubtitle": "Olympia, El Imperio",
+            "duration": "26 min",
+            "route": "Olympus",
+            "longDescription": "Continuación del capítulo 7. <br/>Descubre como los Olympianos se alzaron como la civilización predominante entre las estrellas, construyendo un auténtico imperio y logrando contactar con los Kentianos y los Elyseanos. ¿Cuándo lograrán por fin contactar con la Tierra?",
+            "tags": [
+              "Space Opera",
+              "Narración"
+            ]
+          }
+        },
+        {
+          "id": "14",
+          "order": 3,
+          "capNumber": "14",
+          "kicker": "Capítulo 14",
+          "title": "[Space Opera] Narración: Chromo - Cap. 14°",
+          "thumb": "../../assets/img/podcast-img/cap14.webp",
+          "descLines": [
+            "Chromo",
+            "34 min - Independiente"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/3ojw1pEABnDwzfczVkU3m6",
+            "ivoox": "https://www.ivoox.com/space-opera-narracion-chromo-cap-14-audios-mp3_rf_65348833_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/space-opera-narraci%C3%B3n-chromo-cap-14%C2%BA/id1541459038?i=1000508732874",
+            "youtube": "https://www.youtube.com/watch?v=Ewz0C02uGZw",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/bc291d3b-7b14-495d-91e7-7c4894dce65b/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-space-opera-narraci%C3%B3n-chromo---cap-14%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 14",
+            "modalSubtitle": "Chromo",
+            "duration": "34 min",
+            "route": "Olympus",
+            "longDescription": "Historia independiente. <br> Descubre cómo una nave exploradora Olympiana halla una nueva raza de robots que venera a los humanos como si fueran dioses.",
+            "tags": [
+              "Space Opera", "Independiente",
+              "Narración"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "elysium",
+      "title": "Elysium",
+      "orderMode": "top_down",
+      "chapters": [
+        {
+          "id": "5",
+          "order": 1,
+          "capNumber": "5",
+          "kicker": "Capítulo 5",
+          "title": "[Thriller Sci-Fi] Narración: Elysium, Catastrofe - Cap. 5°",
+          "thumb": "../../assets/img/podcast-img/cap5.webp",
+          "descLines": [
+            "Elysium, Catastrofe",
+            "36 min - Inicios"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/0aVjR4bML5W1TNzrG0bICc",
+            "ivoox": "https://www.ivoox.com/thriller-sci-fi-narracion-elysium-catastrofe-cap-5-audios-mp3_rf_60700261_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/thriller-sci-fi-narraci%C3%B3n-elysium-catastrofe-cap-5%C2%BA/id1541459038?i=1000499688617",
+            "youtube": "https://www.youtube.com/watch?v=dZKL5PgXeoA",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/99f982c3-b6df-432d-9e83-1ec5c6c7f554/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-thriller-sci-fi-narraci%C3%B3n-elysium-catastrofe---cap-5%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 5",
+            "modalSubtitle": "Elysium, Catástrofe",
+            "duration": "36 min",
+            "route": "Elysium",
+            "longDescription": "¿Qué destino sufrió la nave colonizadora Equality? ¿Fueron capaces, sus intrépidos colonos, de superar la adversidad como lo hicieron sus ancestros Terranos antes que ellos? Este, es el primer capitulo de la saga de Elysium.",
+            "tags": [
+              "Thriller Sci-Fi", "Narración", "Independiente", "Fundacional"
+            ]
+          }
+        },
+        {
+          "id": "6",
+          "order": 2,
+          "capNumber": "6",
+          "kicker": "Capítulo 6",
+          "title": "[Tribal Sci-Fi] Narración: Elysium, Guerra fría - Cap. 6°",
+          "thumb": "../../assets/img/podcast-img/cap6.webp",
+          "descLines": [
+            "Elysium, Guerra fría",
+            "37 min - Continuación del cap 5"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/2um2u2b3yaeHFDZcETXFbV",
+            "ivoox": "https://www.ivoox.com/tribal-sci-fi-narracion-elysium-guerra-fria-cap-audios-mp3_rf_61035373_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/tribal-sci-fi-narraci%C3%B3n-elysium-guerra-fr%C3%ADa-cap-6%C2%BA/id1541459038?i=1000500495409",
+            "youtube": "https://www.youtube.com/watch?v=J76_7C6GiHs",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/e408d1c4-ff34-42b1-bf0a-7fcc8a82f5a1/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-tribal-sci-fi-narraci%C3%B3n-elysium-guerra-fr%C3%ADa---cap-6%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 6",
+            "modalSubtitle": "Elysium, Guerra fría",
+            "duration": "37 min",
+            "route": "Elysium",
+            "longDescription": "Continuación del capítulo 5. <br/>¿Lograrán los humanos liberarse del yugo de los chamanes, o sucumbirán y serán esclavos de por vida? Este, es el segundo capítulo de la saga de Elysium.",
+            "tags": [
+              "Tribal Sci-Fi",
+              "Narración"
+            ]
+          }
+        }
+
+      ]
+    },
+    {
+      "id": "kentaurus",
+      "title": "Kentaurus",
+      "orderMode": "top_down",
+      "chapters": [
+        {
+          "id": "3",
+          "order": 1,
+          "capNumber": "3",
+          "kicker": "Capítulo 3",
+          "title": "[Thriller Sci-Fi] Narración: Kentaurus, la llegada - Cap. 3°",
+          "thumb": "../../assets/img/podcast-img/cap3.webp",
+          "descLines": [
+            "Kentaurus, la llegada",
+            "37 min - Inicios"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/3Hi0D4UDu3SaTNAHeneYvi",
+            "ivoox": "https://www.ivoox.com/thriller-sci-fi-narracion-kentaurus-llegada-cap-audios-mp3_rf_60096609_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/thriller-sci-fi-narraci%C3%B3n-kentaurus-la-llegada-cap-3%C2%BA/id1541459038?i=1000499688619",
+            "youtube": "https://www.youtube.com/watch?v=MIR72AKnbtI",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/eec0a6f3-84b4-49a1-a5a8-821a71f42fa2/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-thriller-sci-fi-narraci%C3%B3n-kentaurus-la-llegada---cap-3%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 3",
+            "modalSubtitle": "Kentaurus, la llegada",
+            "duration": "37 min ",
+            "route": "Kentaurus",
+            "longDescription": "¿Qué destino sufrió la nave colonizadora Fraternity? ¿Fueron capaces, sus intrépidos colonos, de superar la adversidad como lo hicieron sus ancestros Terranos antes que ellos? Este, es el primer capitulo de la saga de Kentaurus.",
+            "tags": [
+              "Thriller Sci-Fi", "Narración", "Independiente", "Fundacional"
+            ]
+          }
+        },
+        {
+          "id": "4",
+          "order": 2,
+          "capNumber": "4",
+          "kicker": "Capítulo 4",
+          "title": "[Apocalyptic Sci-Fi] Narración: Kentaurus, La guerra - Cap. 4°",
+          "thumb": "../../assets/img/podcast-img/cap4.webp",
+          "descLines": [
+            "Kentaurus, La guerra",
+            "36 min - Continuación del cap 3"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/5EjpiUUoUWYUv6R68mYk54",
+            "ivoox": "https://www.ivoox.com/apocalyptic-sci-fi-narracion-kentaurus-la-guerra-cap-audios-mp3_rf_60357774_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/apocalyptic-sci-fi-narraci%C3%B3n-kentaurus-la-guerra-cap-4%C2%BA/id1541459038?i=1000499688618",
+            "youtube": "https://www.youtube.com/watch?v=RDhDnfy6SjU",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/2b6fc627-03be-4d79-ac09-ce3f111807dc/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-apocalyptic-sci-fi-narraci%C3%B3n-kentaurus-la-guerra---cap-4%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 4",
+            "modalSubtitle": "Kentaurus, La guerra",
+            "duration": "36 min",
+            "route": "Kentaurus",
+            "longDescription": "Continuación del cap 3.<br/>¿Cómo logran los Kentianos vencer cuando todo parecía perdido? Y por si fuera poco ¿Cómo se situaron a la vanguardia del arte de la guerra?",
+            "tags": [
+              "Apocalyptic Sci-Fi", "Saga",
+              "Narración"
+            ]
+          }
+        },
+        {
+          "id": "13",
+          "order": 3,
+          "capNumber": "13",
+          "kicker": "Capítulo 13",
+          "title": "[Space Horror] Narración: Arnold Plant - Cap. 13°",
+          "thumb": "../../assets/img/podcast-img/cap13.webp",
+          "descLines": [
+            "Arnold Plant",
+            "30 min - Independiente"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/3wgTXoKfucK2lYMsg6dZhb",
+            "ivoox": "https://www.ivoox.com/space-horror-narracion-arnold-plant-cap-13-audios-mp3_rf_64982249_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/space-horror-narraci%C3%B3n-arnold-plant-cap-13%C2%BA/id1541459038?i=1000507873897",
+            "youtube": "https://www.youtube.com/watch?v=6gsqbU455hc",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/ae62670c-fa4f-459e-b470-0d63725b3502/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-space-horror-narraci%C3%B3n-arnold-plant---cap-13%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 13",
+            "modalSubtitle": "Arnold Plant",
+            "duration": "30 min",
+            "route": "Kentaurus",
+            "longDescription": "Independiente",
+            "tags": [
+              "Space Horror",
+              "Narración"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

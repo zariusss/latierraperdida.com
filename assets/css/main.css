@@ -31,12 +31,6 @@
 
 
 
-.main {
-    background-color: #666666;
-}
-.main section {
-    background-color: #666666;
-}
 
 .light-background {
   --background-color: #f9f9f9;
@@ -335,7 +329,7 @@ div.page-move-div{
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+
   padding: 60px 0;
   scroll-margin-top: 92px;
   overflow: clip;
@@ -1868,4 +1862,43 @@ h1.sitename{
 .header .navmenu a,
 .header .navmenu a:focus{
   color: #66a3ff;
+}
+
+/** para que la imgen no se oscurezca **/
+
+/* Fondo continuo (opt-in con body.bg-universo) */
+body.bg-universo{
+  background: #07090d; /* base */
+}
+
+/* Imagen de fondo */
+body.bg-universo::before{
+  content:"";
+  position: fixed;
+  inset: -60px;
+  background: url("/img/testimonials-bg.jpg") center 20% / cover no-repeat;
+  opacity: .85;             /* ajusta: más alto = más visible */
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* Overlay (si te queda demasiado oscuro, baja opacidades) */
+body.bg-universo::after{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 20%,
+    rgba(0,0,0,.20) 0%,
+    rgba(0,0,0,.55) 60%,
+    rgba(0,0,0,.70) 100%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Importante: no tapar el fondo con la maqueta */
+body.bg-universo .main,
+body.bg-universo main.main section{
+  background: transparent !important;
 }

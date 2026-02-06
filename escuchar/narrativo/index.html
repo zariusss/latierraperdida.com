@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es-ES" data-episodes-json="../../assets/data/e-narrativo.json">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guía – Audiorelatos narrativos | La Tierra Perdida</title>
+    <meta name="description" content="Guía de escucha: ruta de audiorelatos narrativos. Elige un arco y empieza por el episodio recomendado.">
+
+    <!-- Favicons -->
+    <link rel="icon" href="../../assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;600;800&display=swap">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css">
+
+    <!-- ÚNICO CSS propio -->
+    <link rel="stylesheet" href="../../assets/css/escuchar.css">
+</head>
+
+<!-- Modal -->
+<div class="modal fade" id="episodeInfoModal" tabindex="-1" aria-labelledby="episodeInfoTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div
+                class="modal-content"
+                style="background: rgba(0,0,0,.92);
+             border: 1px solid rgba(255,255,255,.22);
+             color: rgba(255,255,255,.92);
+             box-shadow: 0 18px 60px rgba(0,0,0,.55);">
+
+            <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,.18);">
+                <div>
+                    <div id="episodeInfoTitle" class="h5 mb-1" style="font-family: Orbitron, system-ui; font-weight: 800;">Episodio</div>
+                    <div id="episodeInfoSubtitle" style="opacity:.78; font-size:.95rem;">—</div>
+                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="d-flex flex-wrap gap-2 mb-2" style="opacity:.82; font-size:.92rem;">
+                    <span><i class="bi bi-clock me-1"></i><span id="episodeInfoDuration">—</span></span>
+                    <span>·</span>
+                    <span><i class="bi bi-diagram-3 me-1"></i><span id="episodeInfoRoute">—</span></span>
+                </div>
+
+                <div id="episodeInfoHook" style="opacity:.90; line-height:1.35;">—</div>
+
+                <div id="episodeInfoTags" class="d-flex flex-wrap gap-2 mt-3"></div>
+            </div>
+
+            <div class="modal-footer" style="border-top: 1px solid rgba(255,255,255,.18); justify-content: flex-end;">
+                <!-- ÚNICO botón: play + texto -->
+                <a id="episodeInfoPlay"
+                   class="route-step__btn route-step__btn--play"
+                   href="#"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Abrir en plataforma"
+                   title="Abrir en plataforma"
+                   style="width:auto; padding: 8px 12px; gap:.5rem;">
+                    <i class="bi bi-play-fill"></i>
+                    <span style="font-weight: 800; font-size: 12px; letter-spacing: .02em;">Abrir en plataforma</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+
+<body class="bg-universo">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+        <a href="../../index.html" class="logo d-flex align-items-center">
+            <h1 class="sitename">La Tierra Perdida</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="../../index.html">Indice</a></li>
+
+                <li class="dropdown">
+                    <a href="#">
+                        <span>Leer</span>
+                        <i class="bi bi-chevron-down toggle-dropdown"></i>
+                    </a>
+                    <ul>
+                        <li><a href="../../novela/index.html">Novela</a></li>
+                        <li><a href="../../historias/index.html#uno-euro">Historias [1€]</a></li>
+                        <li><a href="../../historias/index.html#gratis">Historia gratis</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="active" href="../index.html">Escuchar</a></li>
+            </ul>
+
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="hero section dark-background">
+        <div class="container d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="book-hero" style="max-width: 980px;">
+                <p class="book-hero__kicker">Guía de escucha</p>
+                <h1 class="book-hero__title">&nbsp;&nbsp; Audiorelatos narrativos &nbsp;&nbsp;</h1>
+                <p class="book-hero__subtitle">
+                    Acción, tensión y escenas sonoras. Elige un arco y empieza por el episodio recomendado.
+                </p>
+
+                <div class="volver mt-2">
+                    <a class="volver-link" href="../cinematografico/">
+                        <i class="bi bi-arrow-left"></i> Ir a formato Audiorelato
+                    </a>
+                </div>
+
+                <!-- PANEL PLATAFORMA (GLOBAL) -->
+                <div class="route-grid__header platform-panel mt-4">
+                    <div class="panel-head">
+                        <h2 class="route-grid__title">Elige plataforma</h2>
+                        <div class="panel-selected">
+                            <span>Seleccionada:</span> <strong id="platformName">iVoox</strong>
+                        </div>
+                    </div>
+
+                    <p class="route-grid__lead platform-lead">
+                        <i class="bi bi-link-45deg" aria-hidden="true"></i>
+                        Todos los enlaces de esta página se abrirán en la plataforma seleccionada.
+                    </p>
+
+                    <div class="platform-selector" role="group" aria-label="Selecciona plataforma">
+                        <button class="pchip platform-spotify" type="button" data-platform="spotify" aria-pressed="false">
+                            <i class="bi bi-spotify" aria-hidden="true"></i><span>Spotify</span>
+                        </button>
+
+                        <button class="pchip platform-ivoox is-active" type="button" data-platform="ivoox" aria-pressed="true">
+                            <i class="bi bi-broadcast" aria-hidden="true"></i><span>iVoox</span>
+                        </button>
+
+                        <button class="pchip platform-apple" type="button" data-platform="apple" aria-pressed="false">
+                            <i class="bi bi-apple" aria-hidden="true"></i><span>Apple</span>
+                        </button>
+
+                        <button class="pchip platform-youtube" type="button" data-platform="youtube" aria-pressed="false">
+                            <i class="bi bi-youtube" aria-hidden="true"></i><span>YouTube</span>
+                        </button>
+
+                        <button class="pchip platform-amazon" type="button" data-platform="amazon" aria-pressed="false">
+                            <i class="bi bi-cart3" aria-hidden="true"></i><span>Amazon</span>
+                        </button>
+
+                        <button class="pchip platform-podimo" type="button" data-platform="podimo" aria-pressed="false">
+                            <i class="bi bi-headphones" aria-hidden="true"></i><span>Podimo</span>
+                        </button>
+                    </div>
+                </div>
+
+                <section class="route-panel mt-3">
+
+                    <div class="route-panel__head">
+                        <h2 class="route-grid__title">Elige un arco narrativo</h2>
+                        <p class="route-grid__lead">Un origen, tres civilizaciones, cuatro arcos.</p>
+                        <p class="route-grid__lead">Si no sabes por donde empezar te recomiendo el capitulo con más éxito de todos: el <a href="../cinematografico/index.html" style="color:orange">15 de audiorelatos</a></p>
+
+                    </div>
+
+                    <div class="route-grid route-grid--inside">
+                        <!-- Arco Origen  -->
+                        <article class="route-card">
+
+                            <div class="route-card__top">
+<!--                              <span class="route-card__badge">-->
+<!--                                <i class="bi bi-film"></i> Cinemático-->
+<!--                              </span>-->
+
+                                <h3 class="route-card__title">Origen</h3>
+
+                                <p class="route-card__desc">
+                                    Evolución del universo de La Tierra Perdida desde nuestra época actual y reciente (el siglo XXI d enuestra era).
+                                </p>
+
+
+                                <!-- Lista encadenada (orden recomendado: abajo -> arriba) -->
+                                <div class="route-chain" aria-label="Orden recomendado de escucha">
+                                    <div class="route-chain__label">
+                                        <i class="bi bi-diagram-3"></i> Orden cronológico
+                                        <span class="route-chain__hint">Empieza de abajo</span>
+                                    </div>
+
+                                    <ol id="origen-list" class="route-steps">
+                                        <!-- HTML fallback puede quedarse o no; el JS lo vaciará al cargar -->
+                                    </ol>
+                                </div>
+                            </div>
+
+
+                        </article>
+                        <!-- ARCO Kentaurus -->
+                        <article class="route-card">
+
+                            <div class="route-card__top">
+                                <h3 class="route-card__title">Olympus</h3>
+
+                                <p class="route-card__desc">
+                                    El mayor imperio de la humanidad, lo construyeron los descendientes de la nave colonizadora Liberty.
+                                </p>
+
+
+                                <!-- Lista encadenada (orden recomendado: abajo -> arriba) -->
+                                <div class="route-chain" aria-label="Orden recomendado de escucha">
+                                    <div class="route-chain__label">
+                                        <i class="bi bi-diagram-3"></i> Orden cronológico
+                                        <span class="route-chain__hint">Empieza de abajo</span>
+                                    </div>
+
+                                    <ol id="olympus-list" class="route-steps">
+                                        <!-- HTML fallback puede quedarse o no; el JS lo vaciará al cargar -->
+                                    </ol>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Arco Elysium  -->
+                        <article class="route-card">
+
+                            <div class="route-card__top">
+                                <h3 class="route-card__title">Elysium</h3>
+
+                                <p class="route-card__desc">
+                                    Las aventuras de los descendientes de la nave colonizadora Equality y su catastrófica llegada a Elysium.
+                                </p>
+
+                                <!-- Lista encadenada (orden recomendado: abajo -> arriba) -->
+                                <div class="route-chain" aria-label="Orden recomendado de escucha">
+                                    <div class="route-chain__label">
+                                        <i class="bi bi-diagram-3"></i> Orden cronológico
+                                        <span class="route-chain__hint">Empieza de abajo</span>
+                                    </div>
+
+                                    <ol id="elysium-list" class="route-steps">
+                                        <!-- HTML fallback puede quedarse o no; el JS lo vaciará al cargar -->
+                                    </ol>
+                                </div>
+                            </div>
+
+
+                        </article>
+
+                        <!-- ARCO Olympia -->
+                        <article class="route-card">
+
+                            <div class="route-card__top">
+                                <h3 class="route-card__title">Kentaurus</h3>
+                                <p class="route-card__desc">
+                                    La facción militar por excelencia. Una civilización entre medias de Elysium y Olympia.
+                                </p>
+                                <!-- Lista encadenada (orden recomendado: abajo -> arriba) -->
+                                <div class="route-chain" aria-label="Orden recomendado de escucha">
+                                    <div class="route-chain__label">
+                                        <i class="bi bi-diagram-3"></i> Orden cronológico
+                                        <span class="route-chain__hint">Empieza de abajo</span>
+                                    </div>
+
+                                    <ol id="kentaurus-list" class="route-steps">
+                                        <!-- HTML fallback puede quedarse o no; el JS lo vaciará al cargar -->
+                                    </ol>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer" class="footer accent-background">
+    <div class="container">
+        <div class="social-links d-flex justify-content-center">
+            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/tierraperdida"><i class="bi bi-instagram"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@tierraperdida.com"><i class="bi bi-tiktok"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="mailto:admin@tierraperdida.com"><i class="bi bi-envelope"></i></a>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+            &copy; Zarius @ 2025 . Todos los derechos reservados.
+        </div>
+    </div>
+</footer>
+
+<!-- Vendor JS (Bootstrap) -->
+<script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Menú móvil mínimo (si lo tienes ya creado) -->
+<script src="../../assets/js/menu-min.js"></script>
+<script src="../../assets/js/escuchas-narra.js"></script>
+<!-- Selector plataforma -> reescribe href de .js-start -->
+<script>
+    (function () {
+      const STORAGE_KEY = 'ltp_platform';
+
+      const buttons = Array.from(document.querySelectorAll('.platform-selector .pchip'));
+      const startLinks = Array.from(document.querySelectorAll('a.js-start'));
+      const platformName = document.getElementById('platformName');
+
+      const labelMap = {
+        spotify: 'Spotify',
+        ivoox: 'iVoox',
+        apple: 'Apple Podcasts',
+        youtube: 'YouTube',
+        amazon: 'Amazon Music',
+        podimo: 'Podimo'
+      };
+
+      const iconMap = {
+        spotify: 'bi-spotify',
+        ivoox: 'bi-broadcast',
+        apple: 'bi-apple',
+        youtube: 'bi-youtube',
+        amazon: 'bi-cart3',
+        podimo: 'bi-headphones'
+      };
+
+      function resolveUrl(a, platform) {
+        const wanted = (a.dataset[platform] || '').trim();
+        if (wanted) return { url: wanted, used: platform };
+
+        const fallback = (a.dataset.ivoox || '').trim();
+        if (fallback) return { url: fallback, used: 'ivoox' };
+
+        const first = ['spotify','apple','youtube','amazon','podimo','ivoox']
+          .map(p => ({ p, u: (a.dataset[p] || '').trim() }))
+          .find(x => x.u);
+
+        return first ? { url: first.u, used: first.p } : { url: '#', used: platform };
+      }
+
+      function setActive(platform) {
+        buttons.forEach(btn => {
+          const isOn = btn.dataset.platform === platform;
+          btn.classList.toggle('is-active', isOn);
+          btn.setAttribute('aria-pressed', isOn ? 'true' : 'false');
+        });
+
+        if (platformName) platformName.textContent = labelMap[platform] || platform;
+
+        startLinks.forEach(a => {
+          const r = resolveUrl(a, platform);
+          a.href = r.url;
+
+          // Icono del botón "Empezar"
+          const icon = a.querySelector('i');
+          if (icon) {
+            icon.className = 'bi ' + (iconMap[r.used] || 'bi-play-circle');
+          }
+
+          // Etiqueta
+          const baseLabel = (a.dataset.label || 'Empezar').trim();
+          a.lastChild.nodeValue = ' ' + baseLabel;
+
+          // Title si hay fallback
+          a.title = (r.used !== platform)
+            ? ('No disponible en ' + (labelMap[platform] || platform) + '. Abriendo ' + (labelMap[r.used] || r.used) + '.')
+            : ('Abrir en ' + (labelMap[platform] || platform) + '.');
+        });
+
+        try { localStorage.setItem(STORAGE_KEY, platform); } catch (e) {}
+      }
+
+      function init() {
+        let platform = 'ivoox';
+        try {
+          const saved = localStorage.getItem(STORAGE_KEY);
+          if (saved) platform = saved;
+        } catch (e) {}
+
+        setActive(platform);
+
+        buttons.forEach(btn => {
+          btn.addEventListener('click', () => setActive(btn.dataset.platform));
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', init);
+    })();
+</script>
+<script>
+    (function () {
+      const STORAGE_KEY = 'ltp_platform';
+
+      const labelMap = {
+        spotify: 'Spotify',
+        ivoox: 'iVoox',
+        apple: 'Apple Podcasts',
+        youtube: 'YouTube',
+        amazon: 'Amazon Music',
+        podimo: 'Podimo'
+      };
+
+      function getCurrentPlatform() {
+        try {
+          const saved = localStorage.getItem(STORAGE_KEY);
+          if (saved) return saved;
+        } catch (e) {}
+
+        const active = document.querySelector('.platform-selector .pchip.is-active');
+        return active ? active.dataset.platform : 'ivoox';
+      }
+
+      function getUrlFromDataset(ds, platform) {
+        // Espera data-urlIvoox / data-urlSpotify / data-urlApple / ...
+        const key = 'url' + platform.charAt(0).toUpperCase() + platform.slice(1); // urlIvoox
+        const wanted = (ds[key] || '').trim();
+        if (wanted) return { url: wanted, used: platform };
+
+        // fallback a iVoox si existe
+        const fallback = (ds.urlIvoox || '').trim();
+        if (fallback) return { url: fallback, used: 'ivoox' };
+
+        return { url: '#', used: platform };
+      }
+
+      const modalEl = document.getElementById('episodeInfoModal');
+      if (!modalEl) return;
+
+      const titleEl = document.getElementById('episodeInfoTitle');
+      const subEl   = document.getElementById('episodeInfoSubtitle');
+      const durEl   = document.getElementById('episodeInfoDuration');
+      const routeEl = document.getElementById('episodeInfoRoute');
+      const hookEl  = document.getElementById('episodeInfoHook');
+      const tagsEl  = document.getElementById('episodeInfoTags');
+      const playBtn = document.getElementById('episodeInfoPlay');
+
+      modalEl.addEventListener('show.bs.modal', function (evt) {
+        const trigger = evt.relatedTarget; // el botón/enlace que abrió el modal
+        if (!trigger) return;
+
+        const ds = trigger.dataset;
+
+        if (titleEl) titleEl.textContent = (ds.title || 'Episodio');
+        if (subEl)   subEl.textContent   = (ds.subtitle || '');
+        if (durEl)   durEl.textContent   = (ds.duration || '—');
+        if (routeEl) routeEl.textContent = (ds.route || '—');
+        if (hookEl)  hookEl.textContent  = (ds.hook || '—');
+
+        // Tags
+        if (tagsEl) {
+          tagsEl.innerHTML = '';
+          const tags = (ds.tags || '').split(',').map(s => s.trim()).filter(Boolean);
+          tags.forEach(t => {
+            const span = document.createElement('span');
+            span.className = 'badge';
+            span.textContent = t;
+            span.style.cssText =
+              'background: rgba(255,255,255,.08);' +
+              'border: 1px solid rgba(255,255,255,.14);' +
+              'color: rgba(255,255,255,.88);';
+            tagsEl.appendChild(span);
+          });
+        }
+
+        // Enlace del único botón (play) según plataforma elegida
+        const platform = getCurrentPlatform();
+        const r = getUrlFromDataset(ds, platform);
+
+        if (playBtn) {
+          playBtn.href = r.url;
+
+          // Texto del botón (si tienes <span> dentro)
+          const span = playBtn.querySelector('span');
+          if (span) {
+            span.textContent = (r.url === '#')
+              ? 'Enlace no disponible'
+              : ('Abrir en ' + (labelMap[r.used] || r.used));
+          }
+
+          playBtn.title = (r.used !== platform)
+            ? ('No disponible en ' + (labelMap[platform] || platform) + '. Abriendo ' + (labelMap[r.used] || r.used) + '.')
+            : ('Abrir en ' + (labelMap[platform] || platform) + '.');
+
+          // Si no hay enlace, desactiva interacción
+          if (r.url === '#') {
+            playBtn.setAttribute('aria-disabled', 'true');
+            playBtn.style.pointerEvents = 'none';
+            playBtn.style.opacity = '.6';
+          } else {
+            playBtn.removeAttribute('aria-disabled');
+            playBtn.style.pointerEvents = '';
+            playBtn.style.opacity = '';
+          }
+        }
+      });
+
+      // Evita salto/scroll si el botón de info es un <a href="#">
+      document.addEventListener('click', function (e) {
+        const a = e.target.closest('a.js-epinfo');
+        if (!a) return;
+        const href = (a.getAttribute('href') || '').trim();
+        if (href === '' || href === '#') e.preventDefault();
+      });
+    })();
+</script>
+
+</body>
+</html>

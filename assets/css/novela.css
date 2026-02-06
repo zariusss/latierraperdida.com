@@ -25,7 +25,6 @@ body.novela-page::before{
   position: fixed;
   inset: -60px; /* margen para que el blur no recorte */
   background: url("../../assets/img/testimonials-bg.jpg") center 20% / cover no-repeat;
-  opacity: .75;
   z-index: -2;
 }
 

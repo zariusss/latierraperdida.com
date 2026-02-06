@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "format": "cinematografico",
+  "arcs": [
+    {
+      "id": "elysium",
+      "title": "Elysium",
+      "orderMode": "top_down",
+      "chapters": [
+        {
+          "id": "16",
+          "order": 1,
+          "capNumber": "16",
+          "kicker": "Capítulo 16",
+          "title": "[Space Opera] Los ecos de la Equality 1º - Cap. 16º",
+          "thumb": "../../assets/img/podcast-img/Portada1.jpg",
+          "descLines": [
+            "Los ecos de la Equality 1º parte",
+            "26 min - Inicio de la saga"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/7GtrGDNplZyCxLyBWZEqjz",
+            "ivoox": "https://www.ivoox.com/space-opera-audiorelato-los-ecos-equality-audios-mp3_rf_159180348_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/space-opera-audiorelato-los-ecos-de-la-equality-1%C2%BA-cap-16%C2%BA/id1541459038?i=1000728099586",
+            "youtube": "https://www.youtube.com/watch?v=OPxOORLAC7w&t",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/4fbf2624-9abf-4273-8f4e-805412af4e19/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-space-opera-audiorelato-los-ecos-de-la-equality-1%C2%BA---cap-16%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 16",
+            "modalSubtitle": "Los ecos de la Equality 1º parte",
+            "duration": "26min",
+            "route": "Elysium · Cinematográfico",
+            "longDescription": "La Equality, una de las últimas arcas de la humanidad, surca el vacío con su legado de diez millones de almas dormidas. Su misión: alcanzar un nuevo hogar entre las estrellas. Pero cuando está a punto de llegar a su destino tras miles de años de viaje, algo no va bien.\n\nLas luces parpadean. En los corredores, el silencio se vuelve ominoso. Y en la pantalla principal de la vacía Sala de Mando, una cuenta regresiva ha comenzado.\n\nEl destino de la Equality ya está escrito. Pero nadie a bordo lo sabe…",
+            "tags": ["Ficción inmersiva / cinematográfica", "Inicios" ]
+          }
+        },
+        {
+          "id": "17",
+          "order": 2,
+          "capNumber": "17",
+          "kicker": "Capítulo 17",
+          "title": "[Space Opera] Los ecos de la Equality 2º - Cap. 17º",
+          "thumb": "../../assets/img/podcast-img/Portada2.jpg",
+          "descLines": [
+            "Los ecos de la Equality 2º parte",
+            "36 min - Continuación del cap 16"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/0aPua6xY9mYTOSOanJVkQt",
+            "ivoox": "https://www.ivoox.com/space-opera-audiorelato-los-ecos-equality-audios-mp3_rf_159181737_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/space-opera-audiorelato-los-ecos-de-la-equality-2%C2%BA-cap-17%C2%BA/id1541459038?i=1000728099744",
+            "youtube": "https://www.youtube.com/watch?v=vJp8bYu979U",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/ede3b006-6bed-4af4-a331-651e40208079/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-space-opera-audiorelato-los-ecos-de-la-equality-2%C2%BA---cap-17%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 17",
+            "modalSubtitle": "Los ecos de la Equality 2º parte",
+            "duration": "36 min",
+            "route": "Elysium · Cinematográfico",
+            "longDescription": "Continuación directa del capítulo 16.<br/>Sigue las aventuras de los personajes atrapados en la catástrofe. ¿Lograrán escapar?",
+            "tags": ["Ficción inmersiva / cinematográfica", "Saga"]
+          }
+        },
+        {
+          "id": "18",
+          "order": 3,
+          "capNumber": "18",
+          "kicker": "Capítulo 18",
+          "title": "[Space Opera] Los ecos de la Equality 3º - Cap. 18º",
+          "thumb": "../../assets/img/podcast-img/Portada3.jpg",
+          "descLines": [
+            "Los ecos de la Equality 3º parte",
+            "34 min - Continuación del cap 17"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/7meEbrTnCZePuX5t2t6DyZ",
+            "ivoox": "https://www.ivoox.com/space-opera-audiorelato-los-ecos-equality-audios-mp3_rf_159189961_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/space-opera-audiorelato-los-ecos-de-la-equality-3%C2%BA-cap-18%C2%BA/id1541459038?i=1000728106251",
+            "youtube": "https://www.youtube.com/watch?v=yZaUAyoVgmI",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/fe89a5ad-8975-4b19-bd0d-a0428acdc361/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-space-opera-audiorelato-los-ecos-de-la-equality-3%C2%BA---cap-18%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 18",
+            "modalSubtitle": "Los ecos de la Equality 3º parte",
+            "duration": "34 min",
+            "route": "Elysium · Cinematográfico",
+            "longDescription": "Continuación directa del capítulo 17.<br/>Sigue las aventuras de Irina y Aaron en la catástrofe. ¿Cómo terminarán?",
+            "tags": ["Ficción inmersiva / cinematográfica", "Saga"]
+          }
+        },
+        {
+          "id": "9",
+          "order": 4,
+          "capNumber": "9",
+          "kicker": "Capítulo 9",
+          "title": "[Thriller Sci-Fi] El último destino - Cap. 9º",
+          "thumb": "../../assets/img/podcast-img/ultimodestino.webp",
+          "descLines": [
+            "El último destino",
+            "30 min - Independiente"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/4r5EBxBELQ1Jii7VTehMRP",
+            "ivoox": "https://www.ivoox.com/thriller-sci-fi-audiorelato-el-ultimo-destino-cap-audios-mp3_rf_62638857_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/thriller-sci-fi-audiorelato-el-%C3%BAltimo-destino-cap-9%C2%BA/id1541459038?i=1000502837378",
+            "youtube": "https://www.youtube.com/watch?v=PHKvhWaSgKQ",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/dcc2020f-b001-4831-bece-7c033b72247e/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-thriller-sci-fi-audiorelato-el-%C3%BAltimo-destino---cap-9%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 9",
+            "modalSubtitle": "El último destino",
+            "duration": "30 min",
+            "route": "Elysium · Cinematográfico",
+            "longDescription": "Continuación independiente de los acontecimientos del capítulo 18.<br/> Tras la eyección de las capsulas de salvamento sobre Elysium el capitán Noah Jones trata de salvar al resto de los pasajeros de su nave. Descubrirá que el último destino de la Equality no es la muerte... Es algo peor... ",
+            "tags": ["Thriller Sci-Fi", "Independiente"]
+          }
+        },
+        {
+          "id": "15",
+          "order": 5,
+          "capNumber": "15",
+          "kicker": "Capítulo 15",
+          "title": "[Tribal Sci-Fi] Kira Alúe Caluah Gaarek - Cap. 15º",
+          "thumb": "../../assets/img/podcast-img/15.webp",
+          "descLines": [
+            "Kira Alúe Caluah Gaarek",
+            "32 min - ¡Más escuchado!"
+          ],
+          "highlightBorderColor": "orange",
+          "links": {
+            "spotify": "https://open.spotify.com/episode/4y8kLyZYq5FLbSoYFrveh0",
+            "ivoox": "https://www.ivoox.com/tribal-sci-fi-audiorelato-kira-alue-caluah-gaarek-audios-mp3_rf_66038602_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/tribal-sci-fi-audiorelato-kira-al%C3%BAe-caluah-gaarek-cap-15%C2%BA/id1541459038?i=1000510787961",
+            "youtube": "https://www.youtube.com/watch?v=Rhi7yglEi4g",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/e993160c-d246-4d41-bb39-17e2b7d88ca4/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-tribal-sci-fi-audiorelato-kira-al%C3%BAe-caluah-gaarek---cap-15%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 15",
+            "modalSubtitle": "Kira Alúe Caluah Gaarek",
+            "duration": "32 min",
+            "route": "Elysium · Cinematográfico",
+            "longDescription": "Aunque es un ritual reservado a los hombres, Kira y su hermana gemela lo tienen claro: quieren convertirse en cazadoras. Para lograrlo se someten al Ritual del Renacimiento. No saben que solo una de ellas renacerá. El verdadero final se revelará en la novela: <a class=\"own-link\" style=\"color: orange; font-weight: 700;text-decoration: none;\" href=\"../../novela/\">'Hijas de Elysium'.</a>",
+            "tags": ["Tribal Sci-Fi", "Más escuchado", "Independiente" ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "olympus",
+      "title": "Olympus",
+      "orderMode": "top_down",
+      "chapters": [
+        {
+          "id": "19",
+          "order": 1,
+          "capNumber": "19",
+          "kicker": "Capítulo 19",
+          "title": "[Thriller-SciFi] Audiorelato: La Piloto - Cap. 19º",
+          "thumb": "../../assets/img/podcast-img/lapiloto1.webp",
+          "descLines": [
+            "La Piloto",
+            "1:12 min - Inicio de la saga 'Zara Rayne'"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/3oqdrOTGT49T6u8zWj8MT8",
+            "ivoox": "https://www.ivoox.com/thriller-scifi-audiorelato-la-piloto-cap-19-audios-mp3_rf_161238552_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/thriller-scifi-audiorelato-la-piloto-cap-19%C2%BA/id1541459038?i=1000733291722",
+            "youtube": "https://www.youtube.com/watch?v=9h85rMqMoJQ&t",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/2fdc28a4-02e9-4a26-b21f-33371d347dac/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-thriller-scifi-audiorelato-la-piloto---cap-19%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 19",
+            "modalSubtitle": "La Piloto",
+            "duration": "1:12 min",
+            "route": "Olympus · Cinematográfico",
+            "longDescription": "Zara Rayne es una leyenda. Estos son sus inicios y la historia de como acabó siendo la Piloto de la Nohva en la novela: <a class=\"own-link\" style=\"color: orange; font-weight: 700;text-decoration: none;\" href=\"../../novela/\">'Hijas de Elysium'.</a>",
+            "tags": ["Thriller-SciFi", "Audiorelato"]
+          }
+        },
+        {
+          "id": "20",
+          "order": 2,
+          "capNumber": "20",
+          "kicker": "Capítulo 20",
+          "title": "[Cyberpunk-SciFi] Audiorelato: La Piloto, el despertar - Cap. 20º",
+          "thumb": "../../assets/img/podcast-img/lapiloto2.webp",
+          "descLines": [
+            "La Piloto, el despertar",
+            "1:40 min Continuación del cap 19"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/0Co3oPkoue106IkGm6Ww0a",
+            "ivoox": "https://www.ivoox.com/cyberpunk-scifi-audiorelato-la-piloto-despertar-cap-audios-mp3_rf_162996188_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/cyberpunk-scifi-audiorelato-la-piloto-el-despertar-cap-20%C2%BA/id1541459038?i=1000737773551",
+            "youtube": "https://www.youtube.com/watch?v=qTxrMBqYRKs&t",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/262b4ba9-a5ad-4cbe-8fab-0030a84b779e/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-cyberpunk-scifi-audiorelato-la-piloto-el-despertar---cap-20%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 20",
+            "modalSubtitle": "La Piloto, el despertar",
+            "duration": "1:40 min",
+            "route": "Olympus · Cinematográfico",
+            "longDescription": "Continuación del capítulo 19.<br/>¿Qué pasó tras la carrera? La respuesta es mucho más escalofriante de lo que Zara piensa. De pronto se encadenan una serie de acontecimientos que la cambiarán para siempre... o... ¿Siempre fue así, y simplemente se había olvidado? <br/>Esta es la historia de como acabó siendo la Piloto de la Nohva en la novela: <a class=\"own-link\" style=\"color: orange; font-weight: 700;text-decoration: none;\" href=\"../../novela/\">'Hijas de Elysium'.</a>",
+            "tags": ["Cyberpunk-SciFi", "Audiorelato"]
+          }
+        },
+        {
+          "id": "21",
+          "order": 3,
+          "capNumber": "21",
+          "kicker": "Capítulo 21",
+          "title": "[Thriller Sci-Fi] Audiorelato: La piloto y la Trampa del sistema - Cap. 21º",
+          "thumb": "../../assets/img/podcast-img/lapiloto3.webp",
+          "descLines": [
+            "La piloto y la Trampa del sistema",
+            "53 min - Continuación del cap 20"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/5BnhJ4yGfDBBdFOwTRETI4",
+            "ivoox": "https://www.ivoox.com/thriller-sci-fi-audiorelato-la-piloto-trampa-audios-mp3_rf_163843834_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/thriller-sci-fi-audiorelato-la-piloto-y-la-trampa-del/id1541459038?i=1000740988561",
+            "youtube": "https://www.youtube.com/watch?v=Qk2CsZkvlgo",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/12dc1dab-175e-4284-ab97-85a8eb36fdc4/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-thriller-sci-fi-audiorelato-la-piloto-y-la-trampa-del-sistema---cap-21%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 21",
+            "modalSubtitle": "La piloto y la Trampa del sistema",
+            "duration": "53 min",
+            "route": "Olympus · Cinematográfico",
+            "longDescription": "Continuación del capítulo 20.<br/>Todo se transforma en una increíble conspiración contra Finn. ¿Pero quien es en realidad Zara Rayne? ¿Porqué ha conspirado contra Finn? <br/>Esta es la historia de como se conocieron los aventureros de la Nohva en la novela: <a class=\"own-link\" style=\"color: orange; font-weight: 700;text-decoration: none;\" href=\"../../novela/\">'Hijas de Elysium'.</a>",
+            "tags": ["Thriller Sci-Fi", "Audiorelato"]
+          }
+        },
+        {
+          "id": "22",
+          "order": 4,
+          "capNumber": "22",
+          "kicker": "Capítulo 22",
+          "title": "[Techno-Horror] Audiorelato: Variable no reconocida - Cap. 22º",
+          "thumb": "../../assets/img/podcast-img/VariableNoRecnocidao.jpg",
+          "descLines": [
+            "Variable no reconocida",
+            "51 min - Independiente"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/5h8ObAfdrmNUzlESfKHVde",
+            "ivoox": "https://www.ivoox.com/techno-horror-audiorelato-variable-no-reconocida-cap-22-audios-mp3_rf_166852755_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/techno-horror-audiorelato-variable-no-reconocida-cap-22%C2%BA/id1541459038?i=1000745397565",
+            "youtube": "https://www.youtube.com/watch?v=jMYoh5vocDU&t",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/2e7b1861-4559-41a5-86ed-7b7b915f2096/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-techno-horror-audiorelato-variable-no-reconocida---cap-22%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 22",
+            "modalSubtitle": "Variable no reconocida",
+            "duration": "51 min",
+            "route": "Olympus · Cinematográfico",
+            "longDescription": "Irina Mendeleev no solo está construyendo una IA. Está dándole un cuerpo.<br/>En una sala clínica automatizada la integración comienza. Irina, dispuesta a todo, es la paciente cero.<br/>Pero algo sale mal. Muy mal. Un error de cálculo lo arrastra todo al borde del desastre.<br/>Y, sin embargo, ese error —esa variable desconocida, el Etheryum— es lo único que la salva de ser borrada de la existencia.<br/>Entonces aparece un pulso donde no debería existir.<br/>Una lógica que observa.<br/>Una presencia que no pide permiso.",
+            "tags": ["Techno-Horror", "Independiente"]
+          }
+        }
+      ]
+    }
+  ]
+}
