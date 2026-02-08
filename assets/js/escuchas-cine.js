@@ -91,18 +91,23 @@ function sanitizeHtml(input) {
   }
 
   function resolveChapterUrl(chapter, platform) {
+    const prem = isPremiereLocked(chapter);
+    if (prem.locked) {
+      return { url: '#', used: platform, locked: true, premiereDate: prem.date };
+    }
+
     const links = (chapter && chapter.links) ? chapter.links : {};
 
     const wanted = (links[platform] || '').trim();
-    if (wanted) return { url: wanted, used: platform };
+    if (wanted) return { url: wanted, used: platform, locked: false, premiereDate: null };
 
     const fallback = (links.ivoox || '').trim();
-    if (fallback) return { url: fallback, used: 'ivoox' };
+    if (fallback) return { url: fallback, used: 'ivoox', locked: false, premiereDate: null };
 
     const first = Object.entries(links).find(([, u]) => (u || '').trim());
-    if (first) return { url: String(first[1]).trim(), used: first[0] };
+    if (first) return { url: String(first[1]).trim(), used: first[0], locked: false, premiereDate: null };
 
-    return { url: '#', used: platform };
+    return { url: '#', used: platform, locked: false, premiereDate: null };
   }
 
   function getArc(data, arcId) {
@@ -124,14 +129,84 @@ function sanitizeHtml(input) {
     return list;
   }
 
+
+  // =========================
+  // Pre-estreno (opcional)
+  // - Si existe ch.premiere.at o ch.premiereAt y la fecha es futura:
+  //   - el LI se renderiza en modo "pre-estreno"
+  //   - el botón de escuchar queda deshabilitado hasta la fecha
+  // =========================
+  function getPremiereAtRaw(ch) {
+    if (!ch) return '';
+    if (ch.premiere && typeof ch.premiere === 'object') {
+      return safeStr(ch.premiere.at || ch.premiere.date || '');
+    }
+    // Compatibilidad: permite nombres alternativos
+    return safeStr(
+      ch.premiereAt ||
+      ch.preEstrenoAt ||
+      ch.preestrenoAt ||
+      ch.preEstreno ||
+      ch.preestreno ||
+      ''
+    );
+  }
+
+  function getPremiereLabel(ch) {
+    if (!ch) return 'Estreno';
+    if (ch.premiere && typeof ch.premiere === 'object' && ch.premiere.label) {
+      return safeStr(ch.premiere.label, 'Estreno');
+    }
+    return safeStr(ch.premiereLabel || ch.preEstrenoLabel || 'Estreno');
+  }
+
+  function parsePremiereDate(raw) {
+    const s = safeStr(raw, '').trim();
+    if (!s) return null;
+
+    // Recomendado: ISO 8601 con zona horaria, ej:
+    // 2026-02-10T20:00:00+01:00
+    const d = new Date(s);
+    if (!isFinite(d.getTime())) return null;
+    return d;
+  }
+
+  function isPremiereLocked(ch, nowMs = Date.now()) {
+    const d = parsePremiereDate(getPremiereAtRaw(ch));
+    if (!d) return { locked: false, date: null };
+    return { locked: (nowMs < d.getTime()), date: d };
+  }
+
+function formatPremiereDate(isoString) {
+  const d = new Date(isoString);
+  if (Number.isNaN(d.getTime())) return "";
+
+  const parts = new Intl.DateTimeFormat("es-ES", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "2-digit",
+
+    // Si quieres forzar Madrid, descomenta:
+    timeZone: "Europe/Madrid",
+  }).formatToParts(d);
+
+  const get = (type) => parts.find((p) => p.type === type)?.value ?? "";
+  return `${get("day")}/${get("month")}/${get("year")}`;
+}
+
+
+
   // =========================
   // Render LI (estructura compatible con tu CSS)
   // =========================
   function buildRouteStepLi(ch) {
-    const chId = safeStr(ch.id);
-    const kickerText = safeStr(ch.kicker || ('Capítulo ' + safeStr(ch.capNumber || '')));
+    const chId = safeStr(ch && ch.id);
+    const kickerText = safeStr(ch && (ch.kicker || ('Capítulo ' + safeStr(ch.capNumber || ''))));
 
     const li = el('li', 'route-step');
+
+    const prem = isPremiereLocked(ch);
+    if (prem.locked) li.classList.add('route-step--premiere');
 
     if (ch && ch.highlightBorderColor) {
       li.style.borderColor = ch.highlightBorderColor;
@@ -139,8 +214,8 @@ function sanitizeHtml(input) {
 
     const thumb = el('span', 'route-step__thumb');
     const img = document.createElement('img');
-    img.src = safeStr(ch.thumb || '');
-    img.alt = safeStr(ch.title || kickerText);
+    img.src = safeStr(ch && ch.thumb || '');
+    img.alt = safeStr(ch && (ch.title || kickerText));
     img.loading = 'lazy';
     img.decoding = 'async';
     thumb.appendChild(img);
@@ -148,15 +223,25 @@ function sanitizeHtml(input) {
     const body = el('div', 'route-step__body');
 
     const kicker = el('div', 'route-step__kicker', kickerText);
-    kicker.title = safeStr(ch.title || kickerText);
+    kicker.title = safeStr(ch && (ch.title || kickerText));
     body.appendChild(kicker);
+
+    // Aviso de pre-estreno (si procede)
+    if (prem.locked && prem.date) {
+      const label = getPremiereLabel(ch);
+      const when = formatPremiereDate(prem.date);
+      const note = el('div', 'route-step__meta', label + ' ' + when);
+      note.setAttribute('data-premiere', 'true');
+      body.appendChild(note);
+    }
 
     // meta: en cine hay casos con HTML <p>... (en tu HTML original)
     // Para mantener simplicidad: usamos 1-2 líneas (descLines).
-    const descLines = Array.isArray(ch.descLines) ? ch.descLines : [];
-    if (descLines[0]) body.appendChild(el('div', 'route-step__meta', safeStr(descLines[0])));
-    if (descLines[1]) body.appendChild(el('div', 'route-step__meta', safeStr(descLines[1])));
-
+    const descLines = Array.isArray(ch && ch.descLines) ? ch.descLines : [];
+    if (!(prem.locked && prem.date)) {
+        if (descLines[0]) body.appendChild(el('div', 'route-step__meta', safeStr(descLines[0])));
+        if (descLines[1]) body.appendChild(el('div', 'route-step__meta', safeStr(descLines[1])));
+    }
     const actions = el('div', 'route-step__actions');
     actions.setAttribute('aria-label', 'Acciones');
 
@@ -181,6 +266,20 @@ function sanitizeHtml(input) {
     const playI = document.createElement('i');
     playI.className = 'bi bi-play-fill';
     playA.appendChild(playI);
+
+    // Si está en pre-estreno: deshabilita el botón de escuchar
+    if (prem.locked && prem.date) {
+      const label = getPremiereLabel(ch);
+      const when = formatPremiereDate(prem.date);
+
+      playA.setAttribute('aria-label', 'Próximamente');
+      playA.setAttribute('aria-disabled', 'true');
+      playA.style.pointerEvents = 'none';
+      playA.style.opacity = '.6';
+      playA.title = label + ' Disponible el ' + when;
+
+      playI.className = 'bi bi-clock';
+    }
 
     actions.appendChild(infoA);
     actions.appendChild(playA);
@@ -224,7 +323,28 @@ function sanitizeHtml(input) {
       if (subEl)   subEl.textContent   = safeStr(info.modalSubtitle || chObj.title || '');
       if (durEl)   durEl.textContent   = safeStr(info.duration || '—');
       if (routeEl) routeEl.textContent = safeStr(info.route || '—');
-      if (hookEl) hookEl.innerHTML = sanitizeHtml(info.longDescription || '—');
+      const prem = isPremiereLocked(chObj);
+
+      if (hookEl) {
+        hookEl.innerHTML = '';
+
+        if (prem.locked && prem.date) {
+          const box = document.createElement('div');
+          box.textContent = getPremiereLabel(chObj) + ': disponible el ' + formatPremiereDate(prem.date);
+          box.style.cssText =
+            'margin-bottom:10px;' +
+            'padding:10px 12px;' +
+            'border:1px solid rgba(255,255,255,.14);' +
+            'border-radius:12px;' +
+            'background:rgba(255,255,255,.06);' +
+            'font-weight:700;';
+          hookEl.appendChild(box);
+        }
+
+        const desc = document.createElement('div');
+        desc.innerHTML = sanitizeHtml(info.longDescription || '—');
+        hookEl.appendChild(desc);
+      }
 
       if (tagsEl) {
         tagsEl.innerHTML = '';
@@ -248,14 +368,22 @@ function sanitizeHtml(input) {
 
         const span = playBtn.querySelector('span');
         if (span) {
-          span.textContent = (r.url === '#')
-            ? 'Enlace no disponible'
-            : ('Abrir en ' + (labelMap[r.used] || r.used));
+          if (r.locked && r.premiereDate) {
+            span.textContent = 'Disponible el ' + formatPremiereDate(r.premiereDate);
+          } else if (r.url === '#') {
+            span.textContent = 'Enlace no disponible';
+          } else {
+            span.textContent = 'Abrir en ' + (labelMap[r.used] || r.used);
+          }
         }
 
-        playBtn.title = (r.used !== platform)
-          ? ('No disponible en ' + (labelMap[platform] || platform) + '. Abriendo ' + (labelMap[r.used] || r.used) + '.')
-          : ('Abrir en ' + (labelMap[platform] || platform) + '.');
+        if (r.locked && r.premiereDate) {
+          playBtn.title = getPremiereLabel(chObj) + ': disponible el ' + formatPremiereDate(r.premiereDate);
+        } else {
+          playBtn.title = (r.used !== platform)
+            ? ('No disponible en ' + (labelMap[platform] || platform) + '. Abriendo ' + (labelMap[r.used] || r.used) + '.')
+            : ('Abrir en ' + (labelMap[platform] || platform) + '.');
+        }
 
         if (r.url === '#') {
           playBtn.setAttribute('aria-disabled', 'true');

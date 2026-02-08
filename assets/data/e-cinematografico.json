@@ -120,7 +120,7 @@
           }
         },
         {
-          "id": "15",
+          "id": "23",
           "order": 5,
           "capNumber": "15",
           "kicker": "Capítulo 15",
@@ -128,7 +128,7 @@
           "thumb": "../../assets/img/podcast-img/15.webp",
           "descLines": [
             "Kira Alúe Caluah Gaarek",
-            "32 min - Independiente"
+            "32 min - ¡Más escuchado!"
           ],
           "highlightBorderColor": "orange",
           "links": {
@@ -146,6 +146,40 @@
             "route": "Elysium · Cinematográfico",
             "longDescription": "Aunque es un ritual reservado a los hombres, Kira y su hermana gemela lo tienen claro: quieren convertirse en cazadoras. Para lograrlo se someten al Ritual del Renacimiento. No saben que solo una de ellas renacerá. El verdadero final se revelará en la novela: <a class=\"own-link\" style=\"color: orange; font-weight: 700;text-decoration: none;\" href=\"../../novela/\">'Hijas de Elysium'.</a>",
             "tags": ["Tribal Sci-Fi", "Más escuchado", "Independiente" ]
+          }
+        },
+
+        {
+          "id": "15",
+          "order": 6,
+          "capNumber": "23",
+          "kicker": "Capítulo 23",
+          "title": "[Tribal Sci-Fi] El Cazador, renacimiento - Cap. 23º",
+          "thumb": "../../assets/img/podcast-img/ElCazador1-mini.jpg",
+          "descLines": [
+            "El Cazador, renacimiento 1º parte",
+            "36 min - Inicio de la saga"
+          ],
+          "premiere": {
+            "label": "¡Próximo estreno! ",
+            "at": "2026-02-13T12:00:00+01:00"
+          },
+
+          "links": {
+            "spotify": "https://open.spotify.com/episode/7GtrGDNplZyCxLyBWZEqjz",
+            "ivoox": "https://www.ivoox.com/space-opera-audiorelato-los-ecos-equality-audios-mp3_rf_159180348_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/space-opera-audiorelato-los-ecos-de-la-equality-1%C2%BA-cap-16%C2%BA/id1541459038?i=1000728099586",
+            "youtube": "https://www.youtube.com/watch?v=OPxOORLAC7w&t",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/4fbf2624-9abf-4273-8f4e-805412af4e19/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-space-opera-audiorelato-los-ecos-de-la-equality-1%C2%BA---cap-16%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 23",
+            "modalSubtitle": "El Cazador, renacimiento 1º parte",
+            "duration": "36min",
+            "route": "Elysium · Cinematográfico",
+            "longDescription": "Erik de Dasanash es un joven marcado por una tragedia familiar que ha logrado superar solo gracias a su amada. Al fin llega a la mayoría de edad. Pero para ser libre deberá superar la prueba del Renacimiento. Infancia del personaje de la novela: <a class=\"own-link\" style=\"color: orange; font-weight: 700;text-decoration: none;\" href=\"../../novela/\">'Hijas de Elysium'.</a>",
+            "tags": ["Ficción inmersiva / cinematográfica", "Inicios" ]
           }
         }
       ]

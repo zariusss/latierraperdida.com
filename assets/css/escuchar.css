@@ -1225,3 +1225,58 @@ a.own-link{
     color: #FFFFFF;
     font-weight: 700;
 }
+
+.route-step--premiere [data-premiere="true"]{
+  font-weight: 700;
+  opacity: .95;
+}
+/* =========================
+   PRE-ESTRENO / PRIMICIA
+   ========================= */
+
+/* Resalta el LI completo */
+.route-step--premiere{
+  border-color: color-mix(in srgb, var(--accent-color) 55%, transparent) !important;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--accent-color) 18%, transparent),
+    0 0 26px color-mix(in srgb, var(--accent-color) 14%, transparent);
+}
+
+/* Convierte la línea "Pre-estreno · Estreno: ..." en una pill visible */
+.route-step__meta[data-premiere="true"]{
+
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+
+  border: 1px solid color-mix(in srgb, var(--accent-color) 60%, transparent);
+  background: color-mix(in srgb, var(--accent-color) 18%, rgba(0,0,0,.40));
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  color: orange;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+
+  /* Evita el "..." si tu CSS original trunca metas */
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  -webkit-line-clamp: unset !important;
+  -webkit-box-orient: unset !important;
+}
+
+
+/* Pulso suave (opcional) */
+@media (prefers-reduced-motion: no-preference){
+  .route-step__meta[data-premiere="true"]{
+    animation: premierePulse 2.6s ease-in-out infinite;
+  }
+  @keyframes premierePulse{
+    0%,100%{ filter: brightness(1); }
+    50%{ filter: brightness(1.12); }
+  }
+}
