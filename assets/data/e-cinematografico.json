@@ -181,6 +181,39 @@
             "longDescription": "Erik de Dasanash es un joven marcado por una tragedia familiar que ha logrado superar solo gracias a su amada. Al fin llega a la mayoría de edad. Pero para ser libre deberá superar la prueba del Renacimiento. Infancia del personaje de la novela: <a class=\"own-link\" style=\"color: orange; font-weight: 700;text-decoration: none;\" href=\"../../novela/\">'Hijas de Elysium'.</a>",
             "tags": ["Ficción inmersiva / cinematográfica", "Inicios" ]
           }
+        },
+        {
+          "id": "24",
+          "order": 7,
+          "capNumber": "24",
+          "kicker": "Capítulo 24",
+          "title": "[Tribal Sci-Fi] El Cazador, El Desgarro del Vínculo - Cap. 24º",
+          "thumb": "../../assets/img/podcast-img/ElCazador2-mini.jpg",
+          "descLines": [
+            "El Cazador, El Desgarro del Vínculo ",
+            "34 min - Continuación del cap 23"
+          ],
+          "premiere": {
+            "label": "¡Próximo estreno! ",
+            "at": "2026-02-13T12:00:00+01:00"
+          },
+
+          "links": {
+            "spotify": "https://open.spotify.com/episode/4HbbZP7InZJJFh9mbXN9U4",
+            "ivoox": "https://www.ivoox.com/tribal-sci-fi-audiorelato-el-cazador-el-desgarro-del-audios-mp3_rf_170063602_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/tribal-sci-fi-audiorelato-el-cazador-el-desgarro/id1541459038?i=1000755058209",
+            "youtube": "https://www.youtube.com/watch?v=FSebQ7kXpi4",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/d66782d3-e78b-4080-92ce-8e926fc1f35f/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-tribal-sci-fi-audiorelato-el-cazador-el-desgarro-del-v%C3%ADnculo---cap-24%C2%BA",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 24",
+            "modalSubtitle": "El Cazador, El Desgarro del Vínculo 2º parte",
+            "duration": "34min",
+            "route": "Elysium · Cinematográfico",
+            "longDescription": "Erik vuelve a su aldea tras haber matado al Dragúu. Pero no le espera la gloria. Le acecha la tragedia... Este capítulo es un homenaje a Erik de Dasanash, personaje secundario de la novela  <a class=\"own-link\" style=\"color: orange; font-weight: 700;text-decoration: none;\" href=\"../../novela/\">'Hijas de Elysium'.</a>",
+            "tags": ["Ficción inmersiva / cinematográfica", "El Cazador" ]
+          }
         }
       ]
     },
