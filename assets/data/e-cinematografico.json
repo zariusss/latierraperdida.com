@@ -366,6 +366,39 @@
             "longDescription": "<p>En Trazzia, la ciudad de hierro, Zara avanza entre sombras con una sensación creciente de amenaza. Cada paso en su huida la acerca a una verdad que apenas empieza a intuir: la Fuente… ¿Logrará ver el mensaje que se grabó a sí misma en la cámara? ¿O la detendrán las fuerzas del orden?</p> ",
             "tags": ["Thriller Sci-Fi", "Audiorelato"]
           }
+        },
+        {
+          "id": "26",
+          "order": 6,
+          "capNumber": "26",
+          "kicker": "Capítulo 26",
+          "title": "[Thriller Sci-Fi] Audiorelato: La piloto, Interdicción - Cap. 26º",
+          "thumb": "../../assets/img/podcast-img/Interdiccion-mini.jpg",
+          "descLines": [
+            "¿Quién es Zara Rayne?",
+            "59 min - Continuación del cap 25"
+          ],
+          "premiere": {
+            "label": "¡Próximo estreno! ",
+            "at": "2026-05-15T12:00:00+01:00"
+          },
+
+          "links": {
+            "spotify": "https://www.ivoox.com/podcast-tierra-perdida-ciencia-ficcion-epica-audio_sq_f11098716_1.html",
+            "ivoox": "https://www.ivoox.com/podcast-tierra-perdida-ciencia-ficcion-epica-audio_sq_f11098716_1.html",
+            "apple": "https://www.ivoox.com/podcast-tierra-perdida-ciencia-ficcion-epica-audio_sq_f11098716_1.html",
+            "youtube": "https://www.ivoox.com/podcast-tierra-perdida-ciencia-ficcion-epica-audio_sq_f11098716_1.html",
+            "amazon": "https://www.ivoox.com/podcast-tierra-perdida-ciencia-ficcion-epica-audio_sq_f11098716_1.html",
+            "podimo": "https://www.ivoox.com/podcast-tierra-perdida-ciencia-ficcion-epica-audio_sq_f11098716_1.html"
+          },
+          "info": {
+            "modalTitle": "Capítulo 26",
+            "modalSubtitle": "La piloto, Interdicción",
+            "duration": "59 min",
+            "route": "Olympus · Cinematográfico",
+            "longDescription": "<p>Perseguida por los centinelas, Zara se esconde entre los obreros de una factoría de Trazzia mientras algo imposible empieza a cambiar bajo su piel. Al mismo tiempo, Cerbero convence a Temis de activar Interdicción, un protocolo reservado para amenazas que no deberían existir.  ¿Podrá Zara escapar si ni siquiera su cuerpo es suyo?</p>",
+            "tags": ["Thriller Sci-Fi", "Audiorelato"]
+          }
         }
       ]
     }
