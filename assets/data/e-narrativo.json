@@ -12,11 +12,11 @@
           "order": 1,
           "capNumber": "1",
           "kicker": "Capítulo 1",
-          "title": "[Space Opera] Narración: Introducción, La Tierra y el comienzo - Cap 1°",
+          "title": "[Space Opera] Narración: La Caída de la Conqueror - Cap 1°",
           "thumb": "../../assets/img/podcast-img/cap1.jpg",
           "descLines": [
-            "Introducción, La Tierra y el comienzo",
-            "32 min - Fundacional."
+            "[Remake 2026] La Caída de la Conqueror",
+            "52 min - Fundacional."
           ],
           "links": {
             "spotify": "https://open.spotify.com/episode/6gdT0jDAkndkIz8t3Y3VlK",
@@ -28,10 +28,10 @@
           },
           "info": {
             "modalTitle": "Capítulo 1",
-            "modalSubtitle": "Introducción, La Tierra y el comienzo",
-            "duration": "32 min",
+            "modalSubtitle": "La Caída de la Conqueror",
+            "duration": "52 min",
             "route": "Origen",
-            "longDescription": "Capítulo fundacional: Los avances del siglo XXI llevaron a la creación de las cuatro primeras naves colonizadoras. Las fundadoras del universo de La Tierra Perdida.",
+            "longDescription": "Año 15492. La IA Temis custodia un imperio humano de 581 sistemas… pero entre ellos no está el Sistema Solar.\nLa Tierra —la cuna— se ha perdido. Y la humanidad se apaga.\n\nPara salvar a sus siervos, Temis abre el Gran Archivo Central Olympiano y empieza la búsqueda del misterioso origen del planeta Tierra.",
             "tags": [
               "Space Opera", "Narración", "Fundacional"
             ]
