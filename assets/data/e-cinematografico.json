@@ -399,6 +399,39 @@
             "longDescription": "<p>Perseguida por los centinelas, Zara se esconde entre los obreros de una factoría de Trazzia mientras algo imposible empieza a cambiar bajo su piel. Al mismo tiempo, Cerbero convence a Temis de activar Interdicción, un protocolo reservado para amenazas que no deberían existir.  ¿Podrá Zara escapar si ni siquiera su cuerpo es suyo?</p>",
             "tags": ["Thriller Sci-Fi", "Audiorelato"]
           }
+        },
+        {
+          "id": "27",
+          "order": 7,
+          "capNumber": "27",
+          "kicker": "Capítulo 27",
+          "title": "[Thriller Sci-Fi] Audiorelato: La piloto, El Interdicto - Cap. 27º",
+          "thumb": "../../assets/img/podcast-img/Interdicto-mini.jpg",
+          "descLines": [
+            "¿Qué despierta en las entrañas de Trazzia?",
+            "44 min - Continuación del cap 26"
+          ],
+          "premiere": {
+            "label": "¡Próximo estreno! ",
+            "at": "2026-06-08T12:00:00+01:00"
+          },
+
+          "links": {
+            "spotify": "https://open.spotify.com/episode/1SKzIVPiF7M9vWxFir46ww",
+            "ivoox": "https://www.ivoox.com/thriller-sci-fi-audiorelato-la-piloto-el-interdicto-audios-mp3_rf_175436919_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/thriller-sci-fi-audiorelato-la-piloto-el-interdicto-cap-27%C2%BA/id1541459038?i=1000772320112",
+            "youtube": "https://www.youtube.com/watch?v=tjUix1pyznw",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/99f60d54-63fb-47bd-b898-438142893a26/la-tierra-perdida-ciencia-ficci%C3%B3n-%C3%A9pica-en-audio-thriller-sci-fi-audiorelato-la-piloto-el-interdicto---cap-27%C2%BA",
+            "podimo": "https://www.ivoox.com/podcast-tierra-perdida-ciencia-ficcion-epica-audio_sq_f11098716_1.html"
+          },
+          "info": {
+            "modalTitle": "Capítulo 27",
+            "modalSubtitle": "La piloto, El Interdicto",
+            "duration": "44 min",
+            "route": "Olympus · Cinematográfico",
+            "longDescription": "<p>Zara logra por fin escapar. Pero mientras, en las profundidades de Trazzia, Cerbero despierta al depredador Alpha. Despierta al Interdicto 001. Despierta a Josuah Krail. </p>",
+            "tags": ["Thriller Sci-Fi", "Audiorelato"]
+          }
         }
       ]
     }
