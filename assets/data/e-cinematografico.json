@@ -432,6 +432,39 @@
             "longDescription": "<p>Zara logra por fin escapar. Pero mientras, en las profundidades de Trazzia, Cerbero despierta al depredador Alpha. Despierta al Interdicto 001. Despierta a Josuah Krail. </p>",
             "tags": ["Thriller Sci-Fi", "Audiorelato"]
           }
+        },
+        {
+          "id": "28",
+          "order": 8,
+          "capNumber": "28",
+          "kicker": "Capítulo 28",
+          "title": "[Thriller Sci-Fi] Audiorelato: La piloto, El Cepo - Cap. 28º",
+          "thumb": "../../assets/img/podcast-img/elcepo-mini.jpg",
+          "descLines": [
+            "El interdicto ha convertido la ciudad en una trampa...",
+            "42 min - Continuación del cap 27"
+          ],
+          "premiere": {
+            "label": "¡Próximo estreno! ",
+            "at": "2026-07-10T12:00:00+02:00"
+          },
+
+          "links": {
+            "spotify": "",
+            "ivoox": "",
+            "apple": "",
+            "youtube": "",
+            "amazon": "",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+          },
+          "info": {
+            "modalTitle": "Capítulo 28",
+            "modalSubtitle": "La piloto, El Cepo",
+            "duration": "42 min",
+            "route": "Olympus · Cinematográfico",
+            "longDescription": "<p>El refugio de Zara ya no es seguro. Mientras descansaba, Trazzia ha cambiado de pulso: Josuah Krail mueve el tablero desde las sombras. La caza de la piloto entra en su recta final.</p>",
+            "tags": ["Thriller Sci-Fi", "Audiorelato"]
+          }
         }
       ]
     }
