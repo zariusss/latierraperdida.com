@@ -42,11 +42,11 @@
           "order": 2,
           "capNumber": "2",
           "kicker": "Capítulo 2",
-          "title": "[Space Opera] Narración: Introducción, La Tierra y la expansión - Cap. 2°",
-          "thumb": "../../assets/img/podcast-img/cap2.webp",
+          "title": "[Space Opera] Narración: Introducción, La última señal de la Tierra - Cap. 2°",
+          "thumb": "../../assets/img/podcast-img/La_ultima_senal_de_la_Tierra-mini.jpg",
           "descLines": [
             "Introducción, La Tierra y la expansión",
-            "35 min - Continuación del cap 1"
+            "1:05 min - Continuación del cap 1"
           ],
           "links": {
             "spotify": "https://open.spotify.com/episode/6tPPg7lGWtFlbiyII3cZWE",
@@ -59,9 +59,9 @@
           "info": {
             "modalTitle": "Capítulo 2",
             "modalSubtitle": "Introducción, La Tierra y la expansión",
-            "duration": "35 min",
+            "duration": "1:05 min",
             "route": "Origen",
-            "longDescription": "Capítulo fundacional: Continuación del capítulo 1. <br/>Los avances del siglo XXI llevaron a la creación de las cuatro primeras naves colonizadoras. Las fundadoras del universo de La Tierra Perdida.",
+            "longDescription": "La caída de la Conqueror no detuvo a la humanidad: la obligó a transformarse. <br/>Irina Mendeleev buscará una respuesta imposible al mayor problema de la colonización interestelar: quién debe velar por millones de humanos dormidos durante siglos.",
             "tags": [
               "Space Opera", "Narración"
             ]
