@@ -339,11 +339,11 @@
           "order": 1,
           "capNumber": "3",
           "kicker": "Capítulo 3",
-          "title": "[Thriller Sci-Fi] Narración: Kentaurus, la llegada - Cap. 3°",
-          "thumb": "../../assets/img/podcast-img/cap3.webp",
+          "title": "[Thriller Sci-Fi] Narración: El Mundo que devoro la esperanza - Cap. 3°",
+          "thumb": "../../assets/img/podcast-img/Viridium - el mundo que devoró la esperanza-mini.jpg",
           "descLines": [
             "Kentaurus, la llegada",
-            "37 min - Inicios"
+            "58 min - Inicios"
           ],
           "links": {
             "spotify": "https://open.spotify.com/episode/3Hi0D4UDu3SaTNAHeneYvi",
@@ -355,10 +355,10 @@
           },
           "info": {
             "modalTitle": "Capítulo 3",
-            "modalSubtitle": "Kentaurus, la llegada",
-            "duration": "37 min ",
+            "modalSubtitle": "El Mundo que devoro la esperanza",
+            "duration": "58 min ",
             "route": "Kentaurus",
-            "longDescription": "¿Qué destino sufrió la nave colonizadora Fraternity? ¿Fueron capaces, sus intrépidos colonos, de superar la adversidad como lo hicieron sus ancestros Terranos antes que ellos? Este, es el primer capitulo de la saga de Kentaurus.",
+            "longDescription": "Conocerás el valor de nuestros hermanos al enfrentarse a la simple, llana, y cruel supervivencia.",
             "tags": [
               "Thriller Sci-Fi", "Narración", "Independiente", "Fundacional"
             ]
