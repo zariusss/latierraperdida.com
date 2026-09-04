@@ -465,7 +465,14 @@
             "longDescription": "<p>El refugio de Zara ya no es seguro. Mientras descansaba, Trazzia ha cambiado de pulso: Josuah Krail mueve el tablero desde las sombras. La caza de la piloto entra en su recta final.</p>",
             "tags": ["Thriller Sci-Fi", "Audiorelato"]
           }
-        },
+        }
+      ]
+    },
+    {
+      "id": "kentaurus",
+      "title": "Kentaurus",
+      "orderMode": "top_down",
+      "chapters": [
         {
           "id": "29",
           "order": 9,
@@ -489,7 +496,7 @@
             "modalTitle": "Capítulo 29",
             "modalSubtitle": "Hijos de la Fronda",
             "duration": "1 h 1 min",
-            "route": "Olympus · Cinematográfico",
+            "route": "Kentaurus · Cinematográfico",
             "longDescription": "Conoce los inicios del que será el mayor emperador de Kentaurus. Gracias al cual la reunificación con Oplympia será posible.",
             "tags": ["Space Opera", "Audiorelato"]
           }
