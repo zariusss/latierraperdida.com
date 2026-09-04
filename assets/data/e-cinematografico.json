@@ -450,12 +450,12 @@
           },
 
           "links": {
-            "spotify": "",
-            "ivoox": "",
-            "apple": "",
-            "youtube": "",
-            "amazon": "",
-            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
+            "spotify": "https://open.spotify.com/episode/7GGsOnC4GWw0AjCFbtuWOC",
+            "ivoox": "https://www.ivoox.com/thriller-sci-fi-audiorelato-la-piloto-el-cepo-cap-audios-mp3_rf_177093615_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/thriller-sci-fi-audiorelato-la-piloto-el-cepo-cap-28%C2%BA/id1541459038?i=1000776216658",
+            "youtube": "https://www.youtube.com/watch?v=wgCAeqy5YZw",
+            "amazon": "https://music.amazon.es/?showId=8371d58b-9463-4cda-8eb0-47e1f5276091&episodeId=f2a18de1-6c60-4d82-ab29-20fa42ad3ef4&episodeName=la-tierra-perdida-ciencia-ficcin-pica-en-audio-thriller-scifi-audiorelato-la-piloto-el-cepo-cap-28",
+            "podimo": "https://www.ivoox.com/podcast-tierra-perdida-ciencia-ficcion-epica-audio_sq_f11098716_1.html"
           },
           "info": {
             "modalTitle": "Capítulo 28",
@@ -464,6 +464,34 @@
             "route": "Olympus · Cinematográfico",
             "longDescription": "<p>El refugio de Zara ya no es seguro. Mientras descansaba, Trazzia ha cambiado de pulso: Josuah Krail mueve el tablero desde las sombras. La caza de la piloto entra en su recta final.</p>",
             "tags": ["Thriller Sci-Fi", "Audiorelato"]
+          }
+        },
+        {
+          "id": "29",
+          "order": 9,
+          "capNumber": "29",
+          "kicker": "Capítulo 29",
+          "title": "Kentaurus, Hijos de la Fronda",
+          "thumb": "../../assets/img/podcast-img/Hijos de la Fronda-mini.jpg",
+          "descLines": [
+            "Nueva línea historica. Kentaurus y el emperador Maximilan Aurelian.En Viridium, el planeta capital del sistema solar Kentaurus, la guerra no tiene fin.",
+            "1 h 1 min"
+          ],
+          "links": {
+            "spotify": "https://open.spotify.com/episode/0vRmEjBq3GCvQHIgBoEisJ",
+            "ivoox": "https://www.ivoox.com/space-opera-audiorelato-kentaurus-hijos-fronda-audios-mp3_rf_180022059_1.html",
+            "apple": "",
+            "youtube": "https://www.youtube.com/watch?v=8oKAmM7TK-g",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/460132c8-fbc3-42ce-8ec5-5abec57421a5/la-tierra-perdida-ciencia-ficcin-pica-en-audio-space-opera-audiorelato-kentaurus-hijos-de-la-fronda--cap-29",
+            "podimo": "https://www.ivoox.com/podcast-tierra-perdida-ciencia-ficcion-epica-audio_sq_f11098716_1.html"
+          },
+          "info": {
+            "modalTitle": "Capítulo 29",
+            "modalSubtitle": "Hijos de la Fronda",
+            "duration": "1 h 1 min",
+            "route": "Olympus · Cinematográfico",
+            "longDescription": "Conoce los inicios del que será el mayor emperador de Kentaurus. Gracias al cual la reunificación con Oplympia será posible.",
+            "tags": ["Space Opera", "Audiorelato"]
           }
         }
       ]
