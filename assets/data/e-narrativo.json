@@ -257,6 +257,38 @@
               "Narración"
             ]
           }
+        },
+        {
+          "id": "nacar",
+          "order": 4,
+          "capNumber": "",
+          "kicker": "Nácar",
+          "title": "Nácar",
+          "thumb": "../../assets/img/podcast-img/Nacar-mini.jpg",
+          "descLines": [
+            "Nácar",
+            "46:35"
+          ],
+          "premiere": {
+            "label": "¡Próximo estreno! ",
+            "at": "2026-10-15T12:00:00+02:00"
+          },
+          "links": {
+            "spotify": "",
+            "ivoox": "",
+            "apple": "",
+            "youtube": "",
+            "amazon": "",
+            "podimo": ""
+          },
+          "info": {
+            "modalTitle": "Nácar",
+            "modalSubtitle": "",
+            "duration": "46:35",
+            "route": "Olympus",
+            "longDescription": "Descubre la Cuarta Humanidad: el punto de ruptura en que los descendientes de la colonización humana descubren que todo el universo conocido hasta entonces no era más que el principio.",
+            "tags": ["Thriller Sci-Fi", "Narración", "Independiente", "El misterio"]
+          }
         }
       ]
     },
