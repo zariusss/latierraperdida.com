@@ -274,12 +274,12 @@
             "at": "2026-10-15T12:00:00+02:00"
           },
           "links": {
-            "spotify": "",
-            "ivoox": "",
-            "apple": "",
-            "youtube": "",
-            "amazon": "",
-            "podimo": ""
+            "spotify": "https://open.spotify.com/episode/58aP2Qu1BdnY7ZAbfo7geK",
+            "ivoox": "https://www.ivoox.com/space-opera-narracion-nacar-cap-30-audios-mp3_rf_182286258_1.html",
+            "apple": "https://podcasts.apple.com/es/podcast/space-opera-narraci%C3%B3n-n%C3%A1car-cap-30%C2%BA/id1541459038?i=1000796597010",
+            "youtube": "https://www.youtube.com/watch?v=lq4z-eLY9vM",
+            "amazon": "https://music.amazon.es/podcasts/8371d58b-9463-4cda-8eb0-47e1f5276091/episodes/a72c73f6-66bf-44bb-bea3-d216d493f29b/la-tierra-perdida-ciencia-ficcin-pica-en-audio-space-opera-narracin-ncar--cap-30",
+            "podimo": "https://open.podimo.com/podcast/20d82e5b-1776-4d92-95ac-5db700c47727"
           },
           "info": {
             "modalTitle": "Nácar",
